@@ -1,7 +1,7 @@
 #ifndef Car_h
 #define Car_h
-#include "Position.h"
-#include "Event.h"
+#include "position.h"
+#include "event.h"
 
 using namespace tfg
 {

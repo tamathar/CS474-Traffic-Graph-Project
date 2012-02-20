@@ -1,7 +1,7 @@
 #ifndef Position_h
 #define Position_h
-#include "Road.h"
-#include "Intersection.h"
+#include "road.h"
+#include "intersection.h"
 
 using namespace tfg
 {

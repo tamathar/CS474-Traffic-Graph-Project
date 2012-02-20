@@ -1,8 +1,9 @@
 #ifndef Graph_h
 #define Graph_h
 #include <iostream>
-#include "Road.h"
-#include "Intersection.h"
+#include "road.h"
+#include "intersection.h"
+#include "event.h"
 using namespace std;
 
 namespace tfg

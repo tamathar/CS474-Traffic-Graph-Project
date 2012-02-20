@@ -35,14 +35,6 @@ namespace tfg
         const unsigned long maxID; //Auto-inc when creating a new Event. That way every Event has a UID
         
         unsigned long myID;
-        unsigned long currentTravel; //Unsigned gives more space, time can't be negative
-        unsigned short averageTravel; //average time can be teeny
-        unsigned int usage;
-        bool blocked:1; //Using a bitfield to save space, since there could be millions of Event objects on a map
-        bool oneWay:1;
-        string name;
-        Intersection *beginning;
-        Intersection *end;
         
 	}    
 }

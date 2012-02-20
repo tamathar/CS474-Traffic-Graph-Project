@@ -7,7 +7,7 @@
 #ifndef Road_h
 #define Road_h
 #include <iostream>
-#include "Intersection.h"
+#include "intersection.h"
 using namespace std;
 
 namespace tfg
