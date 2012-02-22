@@ -36,6 +36,6 @@ namespace tfg
         
         unsigned long myID;
         
-	}    
+	};    
 }
 #endif	
