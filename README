@@ -1,2 +1,4 @@
-Rad Add content!
-Add content! More
+Hey, do we want set <data info that should be average time or whatnot> for road/intersection to average automatically when set or for car to do that?
+If we let car do it it allows the programmer to totally screw up the object's values.
+
+~T
