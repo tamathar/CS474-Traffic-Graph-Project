@@ -15,10 +15,9 @@ namespace tfg
 	class Road	
 	{
     public:
-        //Default constructors will not work because of dynamic arrays
-        Road();
-        Road(const Road & other);
-        Road(Intersection *mBeginning, Intersection *mEnd); //
+        //Default constructor is not allowed due to needing beginning and end. Can be constructed w/ or w/o a name
+        Road(Intersection *mBeginning, Intersection *mEnd); 
+        Road(Intersection *mBeginning, Intersection *mEnd, string mName); 
         ~Road();
         
         
@@ -51,6 +50,8 @@ namespace tfg
         bool SetEnd(unsigned long iID);
         
     private:
+		Road(); //we don't want the class to ever not have a beginning and end, so we don't want ppl calling the default
+		
         const unsigned long maxID; //Auto-inc when creating a new road. That way every road has a UID
         
         unsigned long myID;
