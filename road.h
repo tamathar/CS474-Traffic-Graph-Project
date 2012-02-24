@@ -44,11 +44,14 @@ namespace tfg
         
         //Road objects are broken up into the segments between intersections/nodes
         bool SetBeginning(Intersection *intersection);
-        bool SetBeginning(unsigned long iID);
+
         
         bool SetEnd(Intersection *intersection);
+		
+		/* we can't do these bc we don't know where to look for their ID's
         bool SetEnd(unsigned long iID);
-        
+        bool SetBeginning(unsigned long iID); */
+		
     private:
 		Road(); //we don't want the class to ever not have a beginning and end, so we don't want ppl calling the default
 		

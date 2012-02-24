@@ -49,7 +49,7 @@ namespace tfg
 		}
         
 		//=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-Getters/Setters=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-		// All getters are standard. All setters have explanation by declaration
+		// All getters are standard. All setters have explanation inline.
 		
         int GetID() const
 		{
@@ -60,48 +60,86 @@ namespace tfg
 		{
 			return currentTravel;
 		}
-        
+       		
 		void SetCurrentTravel(int time)
 		{
-			
+			//for now basic
+			currentTravel = time;
 		}
         
         int GetAverageTravel() const
 		{
 			return averageTravel;
 		}
-        //void SetAverageTravel(int time);
+        
+		void SetAverageTravel(int time)
+		{
+			//for now basic
+			averageTravel = time;
+		}
         
         int GetUsage() const
 		{
 			return usage;
 		}
-        //void SetUsage(int num);
+        
+		void SetUsage(int num)
+		{
+			//This will stay basic - car has the duty to be responsible
+			usage = num;
+		}
         
         bool IsBlocked() const
 		{
 			return blocked;
 		}
-        //void SetBlocked(bool isBlocked);
+        
+		void SetBlocked(bool isBlocked)
+		{
+			//This is just your basic setter
+			if(isBlocked)
+				blocked = 1;
+			
+			blocked = 0;
+		}
         
         bool IsOneWay() const
 		{
 			return oneWay;
 		}
-        //void SetOneWay(bool isOneWay);
+        
+		void SetOneWay(bool isOneWay)
+		{
+			//This is just your basic setter
+			if(isOneWay)
+				oneWay = 1;
+			
+			oneWay = 0;
+		}
         
         string GetName() const
 		{
 			return name;
 		}
-        //void SetName(string mName);
         
-        //=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-Set Beginning/Ending (technically setters) =-=-=-=-=-=-=-=-=-=-=-=
-        bool SetBeginning(Intersection *intersection);
-        bool SetBeginning(unsigned long iID);
+		void SetName(string mName)
+		{
+			//basic setter
+			name = mName;
+		}
         
-        bool SetEnd(Intersection *intersection);
-        bool SetEnd(unsigned long iID);
+        bool SetBeginning(Intersection *intersection)
+		{	
+			//copy pointer, not object
+			begginning = intersection;
+		}
+         
+        bool SetEnd(Intersection *intersection)
+		{
+			//copyt pointer, not object
+			end = intersection;
+		}
+        
 	}
         /* Private Vars
         const unsigned long maxID;         
