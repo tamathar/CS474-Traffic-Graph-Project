@@ -18,36 +18,42 @@ namespace tfg
         //Default constructors will not work because of dynamic arrays
         Intersection();
         Intersection(const Intersection & other);
-        Intersection(Road *mRoads); //Array of Road
+        Intersection(Road *mRoads, int mRoadCount); //Array of Road
         ~Intersection();
         
         
         //Consting all getters so that they can be called by any const refs
         int GetID() const; //Get automatically-generated ID
         
-        int GetNumRoads() const;
-        void SetNumRoads(int num);
+        int GetRoadCount() const;
+        void SetRoadCount(int num);
         
-        int GetUsage();
-        void SetUsage(int num) const;
+        int GetUsage() const;
+        void SetUsage(int num);
         
+		int GetAccidents() const;
+		// no setter because its only supposed to be messed with by an accident
+		
         bool IsBlocked() const;
         void SetBlocked(bool isBlocked);
         
-        bool AddRoad(Road *mRoad);
-        bool AddRoad(unsigned long rID);
+        void AddRoad(Road *mRoad);
         
         bool RemoveRoad(Road *mRoad);
-        bool RemoveRoad(unsigned long rID);
         
+		bool operator==(const Intersection &other) const;
+		const Intersection & operator=(const Intersection &other);        
         
     private:
         const unsigned long maxID; //Auto-inc when creating a new Intersection. That way every Intersection has a UID
         
         unsigned long myID;
         unsigned int usage;
+		unsigned int accidents;
         bool blocked:1; //Using a bitfield to save space, since there could be millions of Intersection objects on a map
         Road *roads;
+		int arraySize;
+		int roadCount;
         
 	}    
 }

@@ -18,7 +18,6 @@ namespace tfg
         //Default constructor is not allowed due to needing beginning and end. Can be constructed w/ or w/o a name
         Road(Intersection *mBeginning, Intersection *mEnd); 
         Road(Intersection *mBeginning, Intersection *mEnd, string mName); 
-        ~Road();
         
         
         //Consting all getters so that they can be called by any const refs
@@ -30,9 +29,15 @@ namespace tfg
         int GetAverageTravel();
         void SetAverageTravel(int time) const;
         
-        int GetUsage() const;
-        void SetUsage(int num);
+        int GetCurrentUsage() const;
+        void SetCurrentUsage(int num);
+		
+		int GetAverageUsage() const;
+        void SetAverageUsage(int num);
         
+		int GetAccidents() const;
+		//no setter because its only supposed to be changed with accidents
+		
         bool IsBlocked() const;
         void SetBlocked(bool isBlocked);
         
@@ -48,19 +53,20 @@ namespace tfg
         
         bool SetEnd(Intersection *intersection);
 		
-		/* we can't do these bc we don't know where to look for their ID's
-        bool SetEnd(unsigned long iID);
-        bool SetBeginning(unsigned long iID); */
+		bool operator==(const Road &other) const;
+		const Road & operator=(const Road &other);
 		
     private:
-		Road(); //we don't want the class to ever not have a beginning and end, so we don't want ppl calling the default
+		//Road(); //we don't want the class to ever not have a beginning and end, so we don't want ppl calling the default
 		
         const unsigned long maxID; //Auto-inc when creating a new road. That way every road has a UID
         
         unsigned long myID;
         unsigned long currentTravel; //Unsigned gives more space, time can't be negative
         unsigned short averageTravel; //average time can be teeny
-        unsigned int usage;
+		unsigned int currentUsage; //for use with currentTravel
+        unsigned int overallUsage; //for use with averageTravel
+		unsigned int accidents;
         bool blocked:1; //Using a bitfield to save space, since there could be millions of road objects on a map
         bool oneWay:1;
         string name;

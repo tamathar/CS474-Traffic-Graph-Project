@@ -11,17 +11,13 @@ using namespace std;
 
 namespace tfg
 {
-	class Road	
-	{
-    public:
-        //=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-Constructors/Destructors=--=-=-=-=-=-=-=-=-=-=-=
-		
 		// We can't make a road without a beginning and end. Additionally, the default copy constructor will work. 
 		// By default roads start as two-way, but can be changed
 		
-        Road(Intersection *mBeginning, Intersection *mEnd) 
+        Road::Road(Intersection *mBeginning, Intersection *mEnd) 
 			: myID(maxID++), 
-			  usage(0), 
+			  currentUsage(0), 
+			  averageUsage(0),
 			  blocked(0), 
 			  oneWay(0)
 		{
@@ -29,9 +25,10 @@ namespace tfg
 			end = mEnd;
 		}
 
-        Road(Intersection *mBeginning, Intersection *mEnd, string mName) 
+        Road::Road(Intersection *mBeginning, Intersection *mEnd, string mName) 
 			: myID(maxID++), 
-			  usage(0), 
+			  currentUsage(0), 
+			  averageUsage(0),
 			  blocked(0), 
 			  oneWay(0),
 			  name(mName)
@@ -41,103 +38,146 @@ namespace tfg
 		}
 
 
-		
-        ~Road()
-		{
-			delete beginning;
-			delete end;
-		}
+		//We don't have destructor bc we don't actually own the addresses of the pointers
         
 		//=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-Getters/Setters=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 		// All getters are standard. All setters have explanation inline.
 		
-        int GetID() const
+        int Road::GetID() const
 		{
 			return myID;
 		}
         
-        int GetCurrentTravel() const
+        int Road::GetCurrentTravel() const
 		{
 			return currentTravel;
 		}
-       		
-		void SetCurrentTravel(int time)
+ 
+		//This setter averages it with our current value so that no one can 
+		//mess with the value to much. We assume that usage has already been incremented.
+		void Road::SetCurrentTravel(int time)
 		{
-			//for now basic
-			currentTravel = time;
+			currentTravel = (time + currentTravel*(currentUsage-1))/currentUsage;
 		}
         
-        int GetAverageTravel() const
+        int Road::GetAverageTravel() const
 		{
 			return averageTravel;
 		}
-        
-		void SetAverageTravel(int time)
+  
+
+		//This setter averages it with our current value so that no one can 
+		//mess with the value to much. We assume that usage has already been incremented.  
+		void Road::SetAverageTravel(int time)
 		{
-			//for now basic
-			averageTravel = time;
+			averageTravel = (time + averageTravel*(averageUsage-1))/averageUsage;
 		}
         
-        int GetUsage() const
+        int Road::GetCurrentUsage() const
 		{
-			return usage;
+			return currentUsage;
+		}
+		
+		//This will stay basic - car has the duty to be responsible        
+		void Road::SetCurrentUsage(int num)
+		{
+			currentUsage = num;
+		}
+
+        int Road::GetAverageUsage() const
+		{
+			return averageUsage;
+		}
+		
+		//This will stay basic - car has the duty to be responsible        
+		void Road::SetAverageUsage(int num)
+		{
+			averageUsage = num;
 		}
         
-		void SetUsage(int num)
+		int Road::GetAccidents() const
 		{
-			//This will stay basic - car has the duty to be responsible
-			usage = num;
+			return accidents;
 		}
-        
-        bool IsBlocked() const
+		
+        bool Road::IsBlocked() const
 		{
 			return blocked;
 		}
-        
-		void SetBlocked(bool isBlocked)
+
+		//For this setter, we change currentTravel and currentUsage.
+		void Road::SetBlocked(bool isBlocked)
 		{
-			//This is just your basic setter
 			if(isBlocked)
 				blocked = 1;
+			else
+				blocked = 0;
 			
-			blocked = 0;
+			//When we set or clear a wreck we have to reset our current travel info.
+			currentTravel = 0;
+			currentUsage = 0;
+			accidents++;
 		}
         
-        bool IsOneWay() const
+        bool Road::IsOneWay() const
 		{
 			return oneWay;
 		}
         
-		void SetOneWay(bool isOneWay)
+		void Road::SetOneWay(bool isOneWay)
 		{
 			//This is just your basic setter
 			if(isOneWay)
 				oneWay = 1;
-			
-			oneWay = 0;
+			else
+				oneWay = 0;
 		}
         
-        string GetName() const
+        string Road::GetName() const
 		{
 			return name;
 		}
         
-		void SetName(string mName)
+		void Road::SetName(string mName)
 		{
 			//basic setter
 			name = mName;
 		}
         
-        bool SetBeginning(Intersection *intersection)
+        bool Road::SetBeginning(Intersection *intersection)
 		{	
 			//copy pointer, not object
 			begginning = intersection;
 		}
          
-        bool SetEnd(Intersection *intersection)
+        bool Road::SetEnd(Intersection *intersection)
 		{
 			//copyt pointer, not object
 			end = intersection;
+		}
+		
+		
+		//=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-overloads=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-
+		bool operator==(const Road &other) const
+		{
+			if(myID == other.myID)
+				return true;
+				
+			return false;
+		}
+		
+		
+		const Road & operator=(const Road &other)
+		{
+			myID = other.myID;
+			currentTravel = other.currentTravel;
+			averageTravel = other.averageTravel;
+			usage = other.usage;
+			blocked = other.blocked;
+			oneWay = other.oneWay;
+			name = other.name;
+			beginning = other.beginning;
+			end = other.end;
 		}
         
 	}
