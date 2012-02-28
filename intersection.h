@@ -18,7 +18,7 @@ namespace tfg
         //Default constructors will not work because of dynamic arrays
         Intersection();
         Intersection(const Intersection & other);
-        Intersection(Road *mRoads, int mRoadCount); //Array of Road
+        Intersection(class Road *mRoads, int mRoadCount); //Array of Road
         ~Intersection();
         
         
