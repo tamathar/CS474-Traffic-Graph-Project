@@ -55,6 +55,6 @@ namespace tfg
 		int arraySize;
 		int roadCount;
         
-	}    
+	};    
 }
 #endif	

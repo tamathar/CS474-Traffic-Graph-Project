@@ -73,6 +73,6 @@ namespace tfg
         Intersection *beginning;
         Intersection *end;
         
-	}    
+	};    
 }
 #endif	
