@@ -8,9 +8,8 @@
 #include <iostream>
 #include "road.h"
 using namespace std;
+//using namespace tfg;
 
-namespace tfg
-{
         //=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-Constructors/Destructor=-=-=-=-=-=-=-=-=-=-=-
 		
         Intersection::Intersection()
@@ -18,7 +17,7 @@ namespace tfg
 			 usage(0),
 			 blocked(0),
 			 arraySize(1),
-			 numRoads(0)
+			 roadCount(0)
 		{	
 			*roads = new Road[arraySize];
 		}
@@ -154,7 +153,7 @@ namespace tfg
 			for(int i = 0; i < roadCount; i++)
 				roads[i] = other.roads[i];
 		}
-}
+
         /*const unsigned long maxID;
         unsigned long myID;
         unsigned int usage;

@@ -10,14 +10,15 @@
 #include "intersection.h"
 using namespace std;
 
-namespace tfg
-{
+//namespace tfg
+//{
 	class Road	
 	{
     public:
         //Default constructor is not allowed due to needing beginning and end. Can be constructed w/ or w/o a name
-        Road(Intersection *mBeginning, Intersection *mEnd); 
-        Road(Intersection *mBeginning, Intersection *mEnd, string mName); 
+		Road();
+        Road(const Intersection & mBeginning, const Intersection & mEnd); 
+        Road(const Intersection & mBeginning, const Intersection & mEnd, string mName); 
         
         
         //Consting all getters so that they can be called by any const refs
@@ -61,7 +62,7 @@ namespace tfg
 		
         const unsigned long maxID; //Auto-inc when creating a new road. That way every road has a UID
         
-        unsigned long myID;
+       static long myID;
         unsigned long currentTravel; //Unsigned gives more space, time can't be negative
         unsigned short averageTravel; //average time can be teeny
 		unsigned int currentUsage; //for use with currentTravel
@@ -74,5 +75,5 @@ namespace tfg
         Intersection *end;
         
 	};    
-}
+//}
 #endif	

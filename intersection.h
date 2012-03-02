@@ -10,8 +10,8 @@
 #include "road.h"
 using namespace std;
 
-namespace tfg
-{
+//namespace tfg
+//{
 	class Intersection	
 	{
     public:
@@ -45,7 +45,7 @@ namespace tfg
 		const Intersection & operator=(const Intersection &other);        
         
     private:
-        const unsigned long maxID; //Auto-inc when creating a new Intersection. That way every Intersection has a UID
+        static unsigned long maxID; //Auto-inc when creating a new Intersection. That way every Intersection has a UID
         
         unsigned long myID;
         unsigned int usage;
@@ -56,5 +56,5 @@ namespace tfg
 		int roadCount;
         
 	};    
-}
+//}
 #endif	
