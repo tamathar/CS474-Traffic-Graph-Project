@@ -17,8 +17,8 @@ namespace tfg
     	void SetID(int id);	// set id
     	bool GetAccident() const;	// return accident
     	void SetAccident(bool acc);	// set accident
-    	int GetTimestamp() const;	// return timestamp
-    	void SetTimestamp(int ts);	// set timestamp
+    	struct tm * GetTimestamp() const;	// return timestamp
+    	//void SetTimestamp(int ts);	// set timestamp
     	Position GetPosition() const;	// return position
     	void SetPosition(Position p);		// set position
     	int GetSpeed() const;		// return speed

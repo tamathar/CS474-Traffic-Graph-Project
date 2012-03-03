@@ -5,6 +5,7 @@
  * 				 for the Traffic Graph API
  *************************************************************************/
 #include <iostream>
+#include "time.h"
 #include "main.cpp"
 #include "car.h"
 using namespace std;
@@ -53,9 +54,15 @@ namespace tfg
     	    accident = acc;	// set accident
     	}
     	
-    	int Car::GetTimestamp() const
+    	struct tm * Car::GetTimestamp() const
     	{
-    	    ;	// return timestamp
+    	    time_t rawtime;
+            struct tm * ptm;
+
+            time ( &rawtime );
+
+            ptm = gmtime ( &rawtime );	// return timestamp
+            return ptm;
     	}
     	
     	Position Car::GetPosition() const
@@ -77,6 +84,11 @@ namespace tfg
     	{
     	    speed = sp;		// set speed
     	}
+    	
+    	void SpawnEvent(string type, Position pos);	// spawn an event, describing what event it was and where in the graph
+    	void UpdatePosition();	// update where in the graph the car is
+    	void StopTracking();	// stop updating position
+    	
 		/*
 		//=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-Overloaders=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 		bool operator==(const Intersection &other) const
