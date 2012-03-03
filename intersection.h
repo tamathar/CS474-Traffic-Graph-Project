@@ -12,6 +12,7 @@ using namespace std;
 
 //namespace tfg
 //{
+
 	class Intersection	
 	{
     public:
@@ -46,14 +47,13 @@ using namespace std;
         
     private:
         static unsigned long maxID; //Auto-inc when creating a new Intersection. That way every Intersection has a UID
-        
         unsigned long myID;
         unsigned int usage;
-		unsigned int accidents;
+		    unsigned int accidents;
         bool blocked:1; //Using a bitfield to save space, since there could be millions of Intersection objects on a map
         Road *roads;
-		int arraySize;
-		int roadCount;
+		    int arraySize;
+		    int roadCount;
         
 	};    
 //}

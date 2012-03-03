@@ -10,13 +10,26 @@
 using namespace std;
 //using namespace tgf;
 
+   
+
 		// We can't make a road without a beginning and end. Additionally, the default copy constructor will work. 
 		// By default roads start as two-way, but can be changed
-		
-        Road::Road(const Intersection & mBeginning, const Intersection & mEnd) 
+		   unsigned long Road::maxID = 0;
+		  
+      Road::Road()
+        :myID(),
+         currentUsage(),
+         overallUsage(),
+         blocked(),
+         oneWay(),
+         beginning(),
+         end()
+      {}
+       
+        Road::Road(Intersection * mBeginning,  Intersection * mEnd) 
 			: myID(maxID++), 
 			  currentUsage(0), 
-			  averageUsage(0),
+			  overallUsage(0),
 			  blocked(0), 
 			  oneWay(0)
 		{
@@ -24,10 +37,10 @@ using namespace std;
 			end = mEnd;
 		}
 
-        Road::Road(const Intersection & mBeginning, const Intersection  & mEnd, string mName) 
+        Road::Road( Intersection * mBeginning, Intersection  * mEnd, string mName) 
 			: myID(maxID++), 
 			  currentUsage(0), 
-			  averageUsage(0),
+			  overallUsage(0),
 			  blocked(0), 
 			  oneWay(0),
 			  name(mName)
@@ -57,9 +70,10 @@ using namespace std;
 		void Road::SetCurrentTravel(int time)
 		{
 			currentTravel = (time + currentTravel*(currentUsage-1))/currentUsage;
+			SetAverageTravel(time); //we want this to set the other as well   
 		}
         
-        int Road::GetAverageTravel() const
+    int Road::GetAverageTravel() const
 		{
 			return averageTravel;
 		}
@@ -68,8 +82,8 @@ using namespace std;
 		//This setter averages it with our current value so that no one can 
 		//mess with the value to much. We assume that usage has already been incremented.  
 		void Road::SetAverageTravel(int time)
-		{
-			averageTravel = (time + averageTravel*(averageUsage-1))/averageUsage;
+		{           cout << overallUsage;
+			averageTravel = (time + averageTravel*(overallUsage-1))/overallUsage;
 		}
         
         int Road::GetCurrentUsage() const
@@ -83,15 +97,15 @@ using namespace std;
 			currentUsage = num;
 		}
 
-        int Road::GetAverageUsage() const
+        int Road::GetOverallUsage() const
 		{
-			return averageUsage;
+			return overallUsage;
 		}
 		
 		//This will stay basic - car has the duty to be responsible        
-		void Road::SetAverageUsage(int num)
+		void Road::SetOverallUsage(int num)
 		{
-			averageUsage = num;
+			overallUsage = num;
 		}
         
 		int Road::GetAccidents() const
@@ -146,7 +160,7 @@ using namespace std;
         bool Road::SetBeginning(Intersection *intersection)
 		{	
 			//copy pointer, not object
-			begginning = intersection;
+			beginning = intersection;
 		}
          
         bool Road::SetEnd(Intersection *intersection)
@@ -157,7 +171,7 @@ using namespace std;
 		
 		
 		//=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-overloads=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-
-		bool operator==(const Road &other) const
+		bool Road::operator==(const Road &other) const
 		{
 			if(myID == other.myID)
 				return true;
@@ -166,12 +180,13 @@ using namespace std;
 		}
 		
 		
-		const Road & operator=(const Road &other)
+		const Road & Road::operator=(const Road &other)
 		{
 			myID = other.myID;
 			currentTravel = other.currentTravel;
 			averageTravel = other.averageTravel;
-			usage = other.usage;
+			currentUsage = other.currentUsage;
+			overallUsage = other.overallUsage;
 			blocked = other.blocked;
 			oneWay = other.oneWay;
 			name = other.name;

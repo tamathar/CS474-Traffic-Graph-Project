@@ -12,31 +12,32 @@ using namespace std;
 
 //namespace tfg
 //{
+  class Intersection;
+
 	class Road	
 	{
     public:
         //Default constructor is not allowed due to needing beginning and end. Can be constructed w/ or w/o a name
-		Road();
-        Road(const Intersection & mBeginning, const Intersection & mEnd); 
-        Road(const Intersection & mBeginning, const Intersection & mEnd, string mName); 
+		    Road();
+        Road(Intersection * mBeginning, Intersection * mEnd); 
+        Road(Intersection * mBeginning, Intersection * mEnd, string mName); 
         
         
         //Consting all getters so that they can be called by any const refs
         int GetID() const; //Get automatically-generated ID
         
-        int GetCurrentTravel() const;
-        void SetCurrentTravel(int time);
-        
-        int GetAverageTravel();
-        void SetAverageTravel(int time) const;
-        
+        int GetCurrentTravel() const; 
+        int GetAverageTravel() const;
+        void IncrementTravel();
+
+
+	     	int GetOverallUsage() const;        
         int GetCurrentUsage() const;
-        void SetCurrentUsage(int num);
+        void IncrementUsage();
 		
-		int GetAverageUsage() const;
-        void SetAverageUsage(int num);
-        
-		int GetAccidents() const;
+
+        void SetOverallUsage(int num);
+        int GetAccidents() const;
 		//no setter because its only supposed to be changed with accidents
 		
         bool IsBlocked() const;
@@ -58,16 +59,14 @@ using namespace std;
 		const Road & operator=(const Road &other);
 		
     private:
-		//Road(); //we don't want the class to ever not have a beginning and end, so we don't want ppl calling the default
-		
-        const unsigned long maxID; //Auto-inc when creating a new road. That way every road has a UID
-        
-       static long myID;
+
+        static unsigned long maxID; //Auto-inc when creating a new road. That way every road has a UID
+        unsigned long myID;
         unsigned long currentTravel; //Unsigned gives more space, time can't be negative
         unsigned short averageTravel; //average time can be teeny
-		unsigned int currentUsage; //for use with currentTravel
+	     	unsigned int currentUsage; //for use with currentTravel
         unsigned int overallUsage; //for use with averageTravel
-		unsigned int accidents;
+	      	unsigned int accidents;
         bool blocked:1; //Using a bitfield to save space, since there could be millions of road objects on a map
         bool oneWay:1;
         string name;

@@ -7,10 +7,13 @@
 
 #include <iostream>
 #include "road.h"
+#include "intersection.h"
 using namespace std;
 //using namespace tfg;
 
         //=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-Constructors/Destructor=-=-=-=-=-=-=-=-=-=-=-
+      unsigned long Intersection::maxID = 0;
+
 		
         Intersection::Intersection()
 			:myID(maxID++),
@@ -19,7 +22,7 @@ using namespace std;
 			 arraySize(1),
 			 roadCount(0)
 		{	
-			*roads = new Road[arraySize];
+			roads = new Road[arraySize];
 		}
 		
         Intersection::Intersection(const Intersection & other)
@@ -29,7 +32,7 @@ using namespace std;
 			 arraySize(other.arraySize),
 			 roadCount(other.roadCount)
 		{
-			*roads = new Road[arraySize];
+			roads = new Road[arraySize];
 			for(int i = 0; i < roadCount; i++)
 				roads[i] = other.roads[i];
 		}
@@ -39,14 +42,14 @@ using namespace std;
 			 usage(0),
 			 blocked(0),
 			 arraySize(mRoadCount),
-			 numRoads(mRoadCount)
+			 roadCount(mRoadCount)
 		{
-			*roads = new Road[arraySize];
+			roads = new Road[arraySize];
 			for(int i = 0; i < roadCount; i++)
-				roads[i] = other.roads[i];
+				roads[i] = mRoads[i];
 		}
 		
-        Intersection::~Intersection()
+    Intersection::~Intersection()
 		{
 			delete []roads;
 		}
@@ -134,15 +137,15 @@ using namespace std;
 		
 		
 		//=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-Overloaders=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-		bool operator==(const Intersection &other) const
+		bool Intersection::operator==(const Intersection &other) const
 		{
-			if(myID = other.myID)
+			if(myID == other.myID)
 				return true;
 				
 			return false;
 		}
 		
-		const Intersection & operator=(const Intersection &other)
+		const Intersection & Intersection::operator=(const Intersection &other)
 		{
 			myID = other.myID;
 			usage = other.usage;
