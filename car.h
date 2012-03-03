@@ -27,7 +27,7 @@ namespace tfg
     	void StopTracking();	// stop updating position
     
     private:
-        unsigned long maxID; //Auto-inc when creating a new Car. That way every Car has a UID
+        static unsigned long maxID; //Auto-inc when creating a new Car. That way every Car has a UID
     	int myID;		// unique id for each car in the graph
     	bool accident;	// true if it had an accident, false otherwise
     	int timestamp;	// current time
