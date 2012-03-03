@@ -3,3 +3,7 @@
 # --------------------- #
 *.1
 main.cpp
+
+.DS_STORE
+.DS_Store
+
