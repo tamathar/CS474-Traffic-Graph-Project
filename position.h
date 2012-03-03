@@ -16,7 +16,8 @@ namespace tfg {
     
         //this function will take both parameters, but only one will be set
         //because a car can only be either on a road or on an intersection
-        void setPosition(Road * road, Intersection * intersection);
+        void setRoad(Road * rd);
+        void setIntersection(Intersection * in);
     	Road getRoad();
     	Intersection getIntersection();
     

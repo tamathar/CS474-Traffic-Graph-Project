@@ -9,7 +9,6 @@
 #include "main.cpp"
 #include "car.h"
 using namespace std;
-using namespace tfg;
 
 namespace tfg
 {
