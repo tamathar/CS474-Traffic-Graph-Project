@@ -51,12 +51,12 @@ namespace tfg
                 setRoad(NULL);
         }
     	
-    	Road Position::getRoad()
+    	Road Position::getRoad() const
     	{
     	    return *road;
     	}
     	
-    	Intersection Position::getIntersection()
+    	Intersection Position::getIntersection() const
     	{
     	    return *intersection;
     	}

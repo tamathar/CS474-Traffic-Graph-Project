@@ -18,8 +18,8 @@ namespace tfg {
         //because a car can only be either on a road or on an intersection
         void setRoad(Road * rd);
         void setIntersection(Intersection * in);
-    	Road getRoad();
-    	Intersection getIntersection();
+    	Road getRoad() const;
+    	Intersection getIntersection() const;
     
     private:
     	Road * road;
