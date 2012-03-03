@@ -13,7 +13,7 @@ using namespace std;
 namespace tfg
 {
         //=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-Constructors/Destructor=-=-=-=-=-=-=-=-=-=-=-
-		
+		unsigned long Car::maxID = 0;
         Car::Car()
 			:myID(maxID++),
 			 accident(0),

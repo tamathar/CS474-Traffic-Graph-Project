@@ -17,9 +17,6 @@ namespace tfg
     public:
         //Default constructors will not work because of dynamic arrays
         Event();
-        Event(const Event & other);
-        Event(Position *mPos, string mType, unsigned long mTimeStamp);
-        Event(Position *mPos, string mType);
         ~Event();
         
         
