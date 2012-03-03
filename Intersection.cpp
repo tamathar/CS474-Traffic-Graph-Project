@@ -60,7 +60,7 @@ using namespace std;
 		
         int Intersection::GetID() const
 		{
-			return maxID;
+			return myID;
 		}
         
 		int Intersection::GetRoadCount() const
