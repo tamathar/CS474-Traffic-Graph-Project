@@ -9,6 +9,7 @@
 #include "main.cpp"
 #include "car.h"
 using namespace std;
+using namespace tfg;
 
 namespace tfg
 {
@@ -118,7 +119,7 @@ namespace tfg
 		}
 		*/
 }
-    /*const unsigned long maxID; 
+    /*static unsigned long maxID; 
     int myID;		
     bool accident;	
   	int timestamp;	

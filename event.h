@@ -32,7 +32,7 @@ namespace tfg
         void CreateEvent(Position *mPos, string mType);
         
     private:
-        const unsigned long maxID; //Auto-inc when creating a new Event. That way every Event has a UID
+        static unsigned long maxID; //Auto-inc when creating a new Event. That way every Event has a UID
         
         unsigned long myID;
         
