@@ -1,6 +1,6 @@
 /*************************************************************************
  * Author: German Irias
- * Program: Car.cpp
+ * Program: Event.cpp
  * Description: This is the implementation of the Car class for
  * 				 for the Traffic Graph API
  *************************************************************************/
