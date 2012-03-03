@@ -20,11 +20,10 @@ namespace tfg
     	struct tm * GetTimestamp() const;	// return timestamp
     	//void SetTimestamp(int ts);	// set timestamp
     	Position GetPosition() const;	// return position
-    	void SetPosition(Position p);		// set position
+    	void UpdatePosition(Position p);		// set position
     	int GetSpeed() const;		// return speed
     	void SetSpeed(int sp);		// set speed
     	void SpawnEvent(string type, Position pos);	// spawn an event, describing what event it was and where in the graph
-    	void UpdatePosition();	// update where in the graph the car is
     	void StopTracking();	// stop updating position
     
     private:

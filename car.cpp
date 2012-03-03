@@ -61,8 +61,8 @@ namespace tfg
 
             time ( &rawtime );
 
-            ptm = gmtime ( &rawtime );	// return timestamp
-            return ptm;
+            ptm = gmtime ( &rawtime );	
+            return ptm; // return timestamp
     	}
     	
     	Position Car::GetPosition() const
@@ -70,7 +70,7 @@ namespace tfg
     	    return *pos;	// return position
     	}
     	
-    	void Car::SetPosition(Position p)
+    	void Car::UpdatePosition(Position p)
     	{
     	    *pos = p;		// set position
     	}
@@ -85,9 +85,15 @@ namespace tfg
     	    speed = sp;		// set speed
     	}
     	
-    	void SpawnEvent(string type, Position pos);	// spawn an event, describing what event it was and where in the graph
-    	void UpdatePosition();	// update where in the graph the car is
-    	void StopTracking();	// stop updating position
+    	void SpawnEvent(string type, Position pos)
+    	{
+    	    ;	// spawn an event, describing what event it was and where in the graph
+    	}
+    	
+    	void StopTracking()
+    	{
+    	    ;	// stop updating position
+    	}
     	
 		/*
 		//=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-Overloaders=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
