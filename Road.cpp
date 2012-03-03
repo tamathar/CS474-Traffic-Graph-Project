@@ -55,57 +55,46 @@ using namespace std;
 		//=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-Getters/Setters=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 		// All getters are standard. All setters have explanation inline.
 		
-        int Road::GetID() const
+    int Road::GetID() const
 		{
 			return myID;
 		}
         
-        int Road::GetCurrentTravel() const
+    int Road::GetCurrentTravel() const
 		{
 			return currentTravel;
 		}
- 
-		//This setter averages it with our current value so that no one can 
-		//mess with the value to much. We assume that usage has already been incremented.
-		void Road::SetCurrentTravel(int time)
-		{
-			currentTravel = (time + currentTravel*(currentUsage-1))/currentUsage;
-			SetAverageTravel(time); //we want this to set the other as well   
-		}
-        
+       
     int Road::GetAverageTravel() const
 		{
 			return averageTravel;
 		}
-  
-
-		//This setter averages it with our current value so that no one can 
+    
+		//This setter sets both average and current, and it averages it with our current value so that no one can 
 		//mess with the value to much. We assume that usage has already been incremented.  
-		void Road::SetAverageTravel(int time)
-		{           cout << overallUsage;
-			averageTravel = (time + averageTravel*(overallUsage-1))/overallUsage;
+		void Road::UpdateTravel(int time)
+		{
+		  if(currentUsage!=0)
+		    currentTravel = (time + currentTravel*(currentUsage-1))/currentUsage;
+		  if(overallUsage !=0)
+		  	averageTravel = (time + averageTravel*(overallUsage-1))/overallUsage;
 		}
         
-        int Road::GetCurrentUsage() const
+    int Road::GetCurrentUsage() const
 		{
 			return currentUsage;
 		}
 		
-		//This will stay basic - car has the duty to be responsible        
-		void Road::SetCurrentUsage(int num)
-		{
-			currentUsage = num;
-		}
-
-        int Road::GetOverallUsage() const
+		int Road::GetOverallUsage() const
 		{
 			return overallUsage;
 		}
 		
-		//This will stay basic - car has the duty to be responsible        
-		void Road::SetOverallUsage(int num)
+		//This will increment currentUsage and Overallusage, no other choice       
+		void Road::IncrementUsage()
 		{
-			overallUsage = num;
+		  currentUsage++;
+			overallUsage++;			
 		}
         
 		int Road::GetAccidents() const

@@ -28,7 +28,7 @@ using namespace std;
         
         int GetCurrentTravel() const; 
         int GetAverageTravel() const;
-        void IncrementTravel();
+        void UpdateTravel(int data);
 
 
 	     	int GetOverallUsage() const;        
