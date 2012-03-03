@@ -8,13 +8,12 @@
 #include <iostream>
 #include "intersection.h"
 using namespace std;
+//using namespace tgf;
 
-namespace tfg
-{
 		// We can't make a road without a beginning and end. Additionally, the default copy constructor will work. 
 		// By default roads start as two-way, but can be changed
 		
-        Road::Road(Intersection *mBeginning, Intersection *mEnd) 
+        Road::Road(const Intersection & mBeginning, const Intersection & mEnd) 
 			: myID(maxID++), 
 			  currentUsage(0), 
 			  averageUsage(0),
@@ -25,7 +24,7 @@ namespace tfg
 			end = mEnd;
 		}
 
-        Road::Road(Intersection *mBeginning, Intersection *mEnd, string mName) 
+        Road::Road(const Intersection & mBeginning, const Intersection  & mEnd, string mName) 
 			: myID(maxID++), 
 			  currentUsage(0), 
 			  averageUsage(0),
@@ -180,7 +179,6 @@ namespace tfg
 			end = other.end;
 		}
         
-	}
         /* Private Vars
         const unsigned long maxID;         
         unsigned long myID;
