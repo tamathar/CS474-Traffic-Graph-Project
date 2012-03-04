@@ -6,7 +6,7 @@
 ************************************************************************/
 
 #include <iostream>
-#include "intersection.h"
+#include "road.h"
 using namespace std;
 //using namespace tgf;
 
@@ -26,7 +26,7 @@ using namespace std;
          end()
       {}
        
-        Road::Road(Intersection * mBeginning,  Intersection * mEnd) 
+        Road::Road(Road * mBeginning,  Road * mEnd) 
 			: myID(maxID++), 
 			  currentUsage(0), 
 			  overallUsage(0),
@@ -37,7 +37,7 @@ using namespace std;
 			end = mEnd;
 		}
 
-        Road::Road( Intersection * mBeginning, Intersection  * mEnd, string mName) 
+        Road::Road( Road * mBeginning, Road  * mEnd, string mName) 
 			: myID(maxID++), 
 			  currentUsage(0), 
 			  overallUsage(0),
@@ -146,17 +146,27 @@ using namespace std;
 			name = mName;
 		}
         
-        bool Road::SetBeginning(Intersection *intersection)
+        bool Road::SetBeginning(Road *intersection)
 		{	
 			//copy pointer, not object
 			beginning = intersection;
+            return true; //For now
 		}
+
+        Road *Road::GetBeginning() {
+            return beginning;
+        }
          
-        bool Road::SetEnd(Intersection *intersection)
+        bool Road::SetEnd(Road *intersection)
 		{
 			//copyt pointer, not object
 			end = intersection;
+            return true; //For now
 		}
+
+        Road *Road::GetEnd() {
+            return end;
+        }
 		
 		
 		//=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-overloads=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-
@@ -181,6 +191,8 @@ using namespace std;
 			name = other.name;
 			beginning = other.beginning;
 			end = other.end;
+            
+            //Fix me: Needs return value
 		}
         
         /* Private Vars

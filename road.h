@@ -17,10 +17,11 @@ using namespace std;
 	class Road	
 	{
     public:
-        //Default constructor is not allowed due to needing beginning and end. Can be constructed w/ or w/o a name
-		    Road();
-        Road(Intersection * mBeginning, Intersection * mEnd); 
-        Road(Intersection * mBeginning, Intersection * mEnd, string mName); 
+        Road();
+        
+        Road(Road * mBeginning, Road * mEnd); 
+        Road(Road * mBeginning, Road * mEnd, string mName); 
+        
         
         
         //Consting all getters so that they can be called by any const refs
@@ -31,7 +32,7 @@ using namespace std;
         void UpdateTravel(int data);
 
 
-	     	int GetOverallUsage() const;        
+        int GetOverallUsage() const;        
         int GetCurrentUsage() const;
         void IncrementUsage();
 		
@@ -50,10 +51,12 @@ using namespace std;
         void SetName(string mName);
         
         //Road objects are broken up into the segments between intersections/nodes
-        bool SetBeginning(Intersection *intersection);
+        bool SetBeginning(Road *intersection);
+        Road *GetBeginning();
 
         
-        bool SetEnd(Intersection *intersection);
+        bool SetEnd(Road *intersection);
+        Road *GetEnd();
 		
 		bool operator==(const Road &other) const;
 		const Road & operator=(const Road &other);
@@ -70,8 +73,8 @@ using namespace std;
         bool blocked:1; //Using a bitfield to save space, since there could be millions of road objects on a map
         bool oneWay:1;
         string name;
-        Intersection *beginning;
-        Intersection *end;
+        Road *beginning;
+        Road *end;
         
 	};    
 //}
