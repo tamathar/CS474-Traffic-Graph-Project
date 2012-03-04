@@ -24,7 +24,9 @@ using namespace std;
          oneWay(),
          beginning(),
          end()
-      {}
+      {
+          beginning = end = 0;
+      }
        
         Road::Road(Road * mBeginning,  Road * mEnd) 
 			: myID(maxID++), 
@@ -137,7 +139,10 @@ using namespace std;
         
         string Road::GetName() const
 		{
-			return name;
+            if (this != 0) {
+                return name;
+            }
+            return "Nothing";
 		}
         
 		void Road::SetName(string mName)
