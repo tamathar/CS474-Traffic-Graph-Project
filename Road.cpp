@@ -148,8 +148,10 @@ using namespace std;
         
         bool Road::SetBeginning(Road *intersection)
 		{	
-			//copy pointer, not object
-			beginning = intersection;
+            if (intersection != this)
+                beginning = intersection;
+            else
+                beginning = 0; //Set to null for dead end
             return true; //For now
 		}
 
@@ -159,8 +161,11 @@ using namespace std;
          
         bool Road::SetEnd(Road *intersection)
 		{
-			//copyt pointer, not object
-			end = intersection;
+            if (intersection != this)
+                end = intersection;
+            else
+                end = 0; //Set to null for dead end
+            
             return true; //For now
 		}
 
@@ -181,6 +186,10 @@ using namespace std;
 		
 		const Road & Road::operator=(const Road &other)
 		{
+            
+            if (&other == this)
+                return *this;
+            
 			myID = other.myID;
 			currentTravel = other.currentTravel;
 			averageTravel = other.averageTravel;
