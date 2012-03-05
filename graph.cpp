@@ -77,11 +77,12 @@ void Graph::TraverseGraph(ofstream &output, Road &road) {
             Road *end  = road.GetEnd();
             
             
-            string edgeType = road.IsOneWay() == true ? " -> " : " -- ";
-            string roadStatus = road.IsBlocked() == true ? " [color=red] " : "[color=green] ";
+            string isOneWay = road.IsOneWay() == true ? " [dir=forward] " : " ";
+            string roadStatus = road.IsBlocked() == true ? " [color=red] " : " [color=green] ";
             
             
             for (int i=0; i<2; i++) {
+                cout << road.IsBlocked() << endl;
                 Road *tmpRoad = beginning;
                 string name = road.GetName();
                 
@@ -90,11 +91,14 @@ void Graph::TraverseGraph(ofstream &output, Road &road) {
                     name = end->GetName();
                 }
                 
-                string label = " [label=\"" + name + "\"] ";
+                string label;
+                if (name.length() > 0) {
+                    label = " [label=\"" + name + "\"] ";
+                }
                 
                 if (tmpRoad != 0) {
                     if (!tmpRoad->GetTraversed() ) {
-                        output << road.GetID() << edgeType << tmpRoad->GetID() << roadStatus << label << ";\n";
+                        output << road.GetID() << " -- " << tmpRoad->GetID() << roadStatus << label << isOneWay << ";\n";
                     }
                 }
                 

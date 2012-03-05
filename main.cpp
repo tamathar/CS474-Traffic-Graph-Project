@@ -14,17 +14,19 @@ using namespace std;
 int main() {
     Road one, two, three, four;
     
-    one.SetBeginning(&one);
-    one.SetEnd(&two);
+    one.SetBeginning(&two);
+    one.SetEnd(&three);
     
     two.SetBeginning(&three);
-    two.SetEnd(&one);
+    two.SetEnd(&four);
     
     three.SetBeginning(&four);
     three.SetEnd(&one);
     
+    Road five(two);
+    
     four.SetBeginning(&one);
-    four.SetEnd(&two);
+    four.SetEnd(&five);
         
     one.SetName("Campus Ct");
     two.SetName("Ambler");
@@ -34,9 +36,7 @@ int main() {
     four.SetName("16th");
     
     
-    Road five(two);
-    five.SetBeginning(&three);
-    five.SetEnd(&four);
+    
     
     
     Graph newGraph(one);
