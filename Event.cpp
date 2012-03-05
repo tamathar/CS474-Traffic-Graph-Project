@@ -11,39 +11,37 @@ using namespace std;
 
 namespace tfg
 {
+        static unsigned long maxID = 0;
+        string type = "";
         //=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-Constructors/Destructor=-=-=-=-=-=-=-=-=-=-=-
-		
-		//Default constructors will not work because of dynamic arrays
-        Event::Event()
-              :myID(maxID++)
+		Event &Event::GetInstance()
         {
+            static Event instance;
+            return instance;
+        }
+    
+        int Event::GetID()
+        {
+            myID = maxID++; //Get automatically-generated ID
+            return myID;
         }
         
-        ~Event();
+        string Event::GetType() const
+        {
+            return type;
+        }
+
+        void Event::SetType(string mType)
+        {
+            type = mType;
+        }        
         
-        
-        //Consting all getters so that they can be called by any const refs
-        int GetID() const; //Get automatically-generated ID
-        
-        string GetType() const;
-        void SetType(string mType);
-        
-        void CreateEvent(Position *mPos, string mType);
+        void Event::CreateEvent(Position *mPos, string mType)
+        {
+            ;
+        }
 		
-		
-		
-        
-    	
 		/*
-		//=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-Overloaders=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-		bool operator==(const Intersection &other) const
-		{
-			if(myID = other.myID)
-				return true;
-				
-			return false;
-		}
-		
 		const unsigned long maxID; //Auto-inc when creating a new Event. That way every Event has a UID
         unsigned long myID;
    	    */
