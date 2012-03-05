@@ -7,7 +7,6 @@
 #ifndef Road_h
 #define Road_h
 #include <iostream>
-#include "intersection.h"
 using namespace std;
 
 //namespace tfg
@@ -18,7 +17,7 @@ using namespace std;
 	{
     public:
         Road();
-        
+        Road(const Road &other);
         Road(Road * mBeginning, Road * mEnd); 
         Road(Road * mBeginning, Road * mEnd, string mName); 
         
@@ -57,12 +56,14 @@ using namespace std;
         
         bool SetEnd(Road *intersection);
         Road *GetEnd();
+        
+        void SetTraversed(bool state);
+        bool GetTraversed();
 		
 		bool operator==(const Road &other) const;
 		const Road & operator=(const Road &other);
 		
-    private:
-
+    private:        
         static unsigned long maxID; //Auto-inc when creating a new road. That way every road has a UID
         unsigned long myID;
         unsigned long currentTravel; //Unsigned gives more space, time can't be negative
@@ -72,6 +73,7 @@ using namespace std;
 	      	unsigned int accidents;
         bool blocked:1; //Using a bitfield to save space, since there could be millions of road objects on a map
         bool oneWay:1;
+        bool wasTraversed:1; //For generating the graph from any starting road
         string name;
         Road *beginning;
         Road *end;
