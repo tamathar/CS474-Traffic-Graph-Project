@@ -15,22 +15,24 @@ namespace tfg
 	class Event	
 	{
     public:
-        //Default constructors will not work because of dynamic arrays
-        Event();
-        ~Event();
-        
-        
+        static Event &GetInstance();
         //Consting all getters so that they can be called by any const refs
-        int GetID() const; //Get automatically-generated ID
+        int GetID(); //Get automatically-generated ID
         
         string GetType() const;
         void SetType(string mType);
         
         void CreateEvent(Position *mPos, string mType);
-        
+                
     private:
+        //Default constructors will not work because of dynamic arrays
+        Event();
+        ~Event();
+        Event(const Event & others);
+        const Event &operator =(const Event & others);
+
         static unsigned long maxID; //Auto-inc when creating a new Event. That way every Event has a UID
-        
+        string type;
         unsigned long myID;
         
 	};    
