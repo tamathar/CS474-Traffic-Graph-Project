@@ -64,7 +64,7 @@ namespace tfg
         
 		int Intersection::GetElementCount() const
 		{
-			 return elementCount;
+			 return elementCount+1;
 		}
 		
         
