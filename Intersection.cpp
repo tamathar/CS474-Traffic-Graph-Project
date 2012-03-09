@@ -191,6 +191,17 @@ namespace tfg
 			}
 			return NULL;
 		}   
+
+		Road * Intersection::GetRoads()
+        {
+        	return roads;
+        }
+
+		Intersection * Intersection::GetIntersections()
+        {
+        	return intersections;
+        }
+
 }        
 
         /*const unsigned long maxID;
