@@ -10,36 +10,54 @@
 #include "graph.h"
 
 using namespace std;
+using namespace tfg;
 
 int main() {
-    Road one, two, three, four;
+    Intersection a, b, c, d, e, f, g,h,i;
     
-    one.SetBeginning(&two);
-    one.SetEnd(&three);
+    Road ambler("Ambler"), judgely("Judge Ely"), sixteenth("16th St"), campusct("Campus Ct"), judgely2("Judge Ely"), judgely3("Judge Ely"), en10("EN 10th"), en10_2("EN 10th"), en12("EN 16.5 st");
     
-    two.SetBeginning(&three);
-    two.SetEnd(&four);
+    ambler.SetOneWay(true);
+    judgely.SetBlocked(true);
     
-    three.SetBeginning(&four);
-    three.SetEnd(&one);
-    
-    Road five(two);
-    
-    four.SetBeginning(&one);
-    four.SetEnd(&five);
-        
-    one.SetName("Campus Ct");
-    two.SetName("Ambler");
-    three.SetName("Judge Ely");
-    three.SetOneWay(true);
-    
-    four.SetName("16th");
+
+    a.AddRoad(&ambler, &b);
+    b.AddRoad(&judgely, &c);
+    c.AddRoad(&sixteenth, &d);
+    d.AddRoad(&campusct, &a);
+    e.AddRoad(&judgely2, &b);
+    f.AddRoad(&judgely3, &c);
+    g.AddRoad(&en10, &f);
+    h.AddRoad(&en10_2, &f);
+    c.AddRoad(&en12, &i);
     
     
+    ambler.IncrementAccidents();
+    ambler.IncrementAccidents();
     
+    judgely.IncrementAccidents();
     
+    en10.IncrementUsage();
+    en10.IncrementUsage();
+    en10.IncrementUsage();
+    en10.IncrementUsage();
+    en10.SetBlocked(true);
+    en10.SetBlocked(false);
+    en10.IncrementUsage();
     
-    Graph newGraph(one);
+    en10.UpdateTravel(6);
+    en10.UpdateTravel(19);
+    
+    cout << en10.GetCurrentTravel();
+    
+    en12.SetOneWay(true);
+    
+    c.IncrementAccidents();
+    c.IncrementAccidents();
+
+    
+    Graph newGraph(a, 1.8);
+    
     
     cout << "Done\n";
 }

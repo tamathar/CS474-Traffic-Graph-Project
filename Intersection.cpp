@@ -159,7 +159,7 @@ namespace tfg
 				//intersections = itemp;
 			}
 			roads[elementCount].road = mRoad;
-            roads[elementCount].intersection = mIntersection;
+            roads[elementCount++].intersection = mIntersection;
 			//intersections[elementCount++] = mIntersection;			
 		}
 		
