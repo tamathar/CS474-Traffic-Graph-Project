@@ -160,15 +160,15 @@ namespace tfg
 		const Road & Road::operator=(const Road &other)
 		{
             
-            if (&other == this)
-                return *this;
-            
-			currentTravel = other.currentTravel;
-			averageTravel = other.averageTravel;
-			currentUsage = other.currentUsage;
-			overallUsage = other.overallUsage;
-			blocked = other.blocked;
-			oneWay = other.oneWay;
-			name = other.name;
+            if (&other != this) {
+                currentTravel = other.currentTravel;
+                averageTravel = other.averageTravel;
+                currentUsage = other.currentUsage;
+                overallUsage = other.overallUsage;
+                blocked = other.blocked;
+                oneWay = other.oneWay;
+                name = other.name;
+            }
+            return *this;
 		}
 }

@@ -25,7 +25,6 @@ namespace tfg
         int GetID() const; //Get automatically-generated ID
         
         int GetElementCount() const;
-        void SetElementCount(int num);
         
         int GetUsage() const;
         void SetUsage(int num);
@@ -40,13 +39,17 @@ namespace tfg
         bool GetTraversed();
                
         void AddRoad(Road *mRoad, Intersection *mIntersection);
-        void AddRoadWork(Road *mRoad, Intersection *mIntersection);
+        
         
 		bool operator==(const Intersection &other) const;
 		const Intersection & operator=(const Intersection &other);     
 		
 		// a getter for the event function to find things
 		Road * FindRoad(Intersection * end);
+        
+        Road ** GetRoads();
+        
+        Intersection ** GetIntersections();
         
     private:
         static unsigned long maxID; //Auto-inc when creating a new Intersection. That way every Intersection has a UID
@@ -59,6 +62,8 @@ namespace tfg
 		int elementCount;
         Road **roads;
 		Intersection **intersections;
+        
+        void AddRoadWork(Road *mRoad, Intersection *mIntersection);
 
         
 	};    

@@ -57,21 +57,12 @@ namespace tfg
         //All getters are standard. Setters are explained individually.
 		
 		
-        int Intersection::GetID() const
-		{
-			return myID;
-		}
         
 		int Intersection::GetElementCount() const
 		{
-			 return elementCount;
+			 return elementCount+1;
 		}
 		
-		//This is a standard setter
-		void Intersection::SetElementCount(int num)
-		{
-			elementCount = num;
-		}
         
         int Intersection::GetUsage() const
 		{
@@ -180,6 +171,8 @@ namespace tfg
 				roads[i] = other.roads[i];
 				intersections[i] = other.intersections[i];
 			}
+            
+            return *this;
 		}
 
 		Road * Intersection::FindRoad( Intersection * end)
@@ -191,6 +184,17 @@ namespace tfg
 			}
 			return NULL;
 		}   
+
+		Road ** Intersection::GetRoads()
+        {
+        	return roads;
+        }
+
+		Intersection ** Intersection::GetIntersections()
+        {
+        	return intersections;
+        }
+
 }        
 
         /*const unsigned long maxID;
