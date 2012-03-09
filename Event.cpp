@@ -11,39 +11,62 @@ using namespace std;
 
 namespace tfg
 {
-        static unsigned long maxID = 0;
-        string type = "";
         //=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-Constructors/Destructor=-=-=-=-=-=-=-=-=-=-=-
-		Event &Event::GetInstance()
+		Event *Event::Get()
         {
-            static Event instance;
-            return instance;
-        }
-    
-        int Event::GetID()
-        {
-            myID = maxID++; //Get automatically-generated ID
-            return myID;
-        }
-        
-        string Event::GetType() const
-        {
-            return type;
-        }
-
-        void Event::SetType(string mType)
-        {
-            type = mType;
+            if (!m_pInstance) {
+            	m_pInstance = new Event;
+            }
+            
+            return m_pInstance;
         }        
         
-        void Event::CreateEvent(Position *mPos, string mType)
+        void Event::CreateEvent(Position *position, bool accident)
         {
-            ;
+        	if(position->end != 0)
+        	{
+        		Road * road = position->beginning->FindRoad(position->end);
+        		Road->SetBlocked(true);
+        		if(accident)
+        			Road->IncrementAccident();
+        	}
+        	else
+        	{
+        		Position->beginning->SetBlocked(true);
+        		Position->beginning->IncrementAccident();
+        	}
+        		
         }
-		
-		/*
-		const unsigned long maxID; //Auto-inc when creating a new Event. That way every Event has a UID
-        unsigned long myID;
-   	    */
+        
+        void Event::RemoveEvent(Position *position, bool accident)
+        {
+        	if(position->end != 0)
+        	{
+        		Road * road = position->beginning->FindRoad(position->end);
+        		Road->SetBlocked(false);
+        	}
+        	else
+        		Position->beginning->SetBlocked(false);
+        }
+        
+        void Event::CreateAccident(Position *position)
+        {
+        	CreateEvent(position, true);
+        }
+        
+        void Event::RemoveAccident(Position *position)
+        {
+        	RemoveEvent(position, true);
+        }
+        
+        void Event::CreateMaintenance(Position *position)
+        {
+        	CreateEvent(position);
+        }
+        
+        void Event::RemoveMaintenance(Position *position)
+        {
+        	RemoveEvent(position);
+        }
 }
 

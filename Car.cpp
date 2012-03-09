@@ -17,17 +17,15 @@ namespace tfg
         Car::Car()
 			:myID(maxID++),
 			 accident(0),
-			 speed(0)
+			 pos(0)
 		{	
-			pos = new Position;
 		}
 		
         Car::Car(const Car & other)
 			:myID(other.myID),
-			 accident(other.accident),
-			 speed(other.speed)
+			 accident(other.accident)
 		{
-			pos = new Position;
+			*pos = other.GetPosition();
 		}
 		
         Car::~Car()
@@ -70,19 +68,9 @@ namespace tfg
     	    return *pos;	// return position
     	}
     	
-    	void Car::UpdatePosition(Position p)
+    	void Car::UpdatePosition(Position * p)
     	{
-    	    *pos = p;		// set position
-    	}
-    	
-    	int Car::GetSpeed() const
-    	{
-    	    return speed;		// return speed
-    	}
-    	
-    	void Car::SetSpeed(int sp)
-    	{
-    	    speed = sp;		// set speed
+    	    pos = p;		// set position
     	}
     	
     	void SpawnEvent(Position pos)

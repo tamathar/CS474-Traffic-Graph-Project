@@ -13,11 +13,8 @@ namespace tfg {
     	Position(Intersection* b, Intersection* e);	
     	Position(Intersection* b);
     	Position(const Position & other);	
-    
-    private:
     	Intersection * beginning;
     	Intersection * end;
-    
     };
 }
 
