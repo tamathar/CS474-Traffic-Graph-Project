@@ -12,6 +12,7 @@ using namespace std;
 namespace tfg
 {
         //=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-Constructors/Destructor=-=-=-=-=-=-=-=-=-=-=-
+        // default constructor
 		unsigned long Car::maxID = 0;
         Car::Car()
 			:myID(maxID++),
@@ -20,6 +21,7 @@ namespace tfg
 		{	
 		}
 		
+		// copy constructor
         Car::Car(const Car & other)
 			:myID(other.myID),
 			 accident(other.accident)
@@ -27,14 +29,15 @@ namespace tfg
 			*pos = other.GetPosition();
 		}
 		
+		// default destructor
         Car::~Car()
 		{
 		}
         
         //=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-Getters/Setters=-=-=-=-==-=-=-=-=-=-=-=-=-
-        //All getters are standard. Setters are explained individually.
 		
-		
+		// each car has an ID (like a license plate), which is set when the
+		// object is constructed. this function returns that ID
         int Car::GetID() const 
         {
             return myID;	// return id
@@ -45,12 +48,14 @@ namespace tfg
     	    return accident;	// return accident
     	}
     	
+    	// create an accident. Event is a singleton
     	void Car::SetAccident(bool acc)
     	{
     		if(pos != NULL)
     	    	Event::Get()->CreateAccident(pos);
     	}
     	
+    	// return the clock time the car holds at time function is called
     	struct tm * Car::GetTimestamp() const
     	{
     	    time_t rawtime;
@@ -62,11 +67,13 @@ namespace tfg
             return ptm; // return timestamp
     	}
     	
+    	// return where in the graph where the car is
     	Position Car::GetPosition() const
     	{
     	    return *pos;	// return position
     	}
     	
+    	// change the position
     	void Car::UpdatePosition(Position * p)
     	{
     	    pos = p;		// set position
