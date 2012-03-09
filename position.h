@@ -8,7 +8,7 @@
 #include "intersection.h"
 
 using namespace std;
-class Intersection;
+
 namespace tfg {
 	class Position {
 

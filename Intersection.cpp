@@ -25,8 +25,13 @@ namespace tfg
 			 arraySize(1),
 			 elementCount(0)
 		{	
-			roads = new Road*[arraySize];
+			
+            roads = new RoadObj[arraySize];
+            
+            /*
+            roads = new Road*[arraySize];
 			intersections = new Intersection*[arraySize];
+            */
 		}
 		
         Intersection::Intersection(const Intersection & other)
@@ -38,24 +43,37 @@ namespace tfg
 			 arraySize(other.arraySize),
 			 elementCount(other.elementCount)			 
 		{
-			roads = new Road*[arraySize];
+			
+            
+            roads = new RoadObj[arraySize];
+            /*
+            roads = new Road*[arraySize];
 			intersections = new Intersection*[arraySize];
+            */
+            
+            
 			for(int i = 0; i < elementCount; i++)
 			{
-				roads[i] = other.roads[i];
+				/*roads[i] = other.roads[i];
 				intersections[i] = other.intersections[i];
+                */
+                
+                roads[i] = other.roads[i];
 			}
 		}
 		
    		Intersection::~Intersection()
 		{
 			delete []roads;
-			delete []intersections;
+			//delete []intersections;
 		}
         
         //=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-Getters/Setters=-=-=-=-==-=-=-=-=-=-=-=-=-
         //All getters are standard. Setters are explained individually.
-		
+        int Intersection::GetID() const
+        {
+            return (int)myID;
+        }
 		
         
 		int Intersection::GetElementCount() const
@@ -123,21 +141,26 @@ namespace tfg
 			if(elementCount == arraySize)
 			{
 				arraySize *= 2;
-				Road **rtemp = new Road*[arraySize];
-				Intersection **itemp = new Intersection*[arraySize];
+                RoadObj *rtemp = new RoadObj[arraySize];
+				//Road **rtemp = new Road*[arraySize];
+				//Intersection **itemp = new Intersection*[arraySize];
 
 				for(int i = 0; i < elementCount; i++)
 				{
-					rtemp[i] = roads[i];
+					/*rtemp[i] = roads[i];
 					itemp[i] = intersections[i];				
+                    */
+                    
+                    rtemp[i] = roads[i];
 				}
 				delete []roads;
-				delete []intersections;
+				//delete []intersections;
 				roads = rtemp;
-				intersections = itemp;
+				//intersections = itemp;
 			}
-			roads[elementCount] = mRoad;
-			intersections[elementCount++] = mIntersection;			
+			roads[elementCount].road = mRoad;
+            roads[elementCount].intersection = mIntersection;
+			//intersections[elementCount++] = mIntersection;			
 		}
 		
 		//=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-Overloaders=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
@@ -147,7 +170,8 @@ namespace tfg
 				return 0;
 			
 			for(int i = 0; i < elementCount; i++)
-				if(intersections[i] != other.intersections[i])
+				//if(intersections[i] != other.intersections[i])
+                if(roads[i].intersection != other.roads[i].intersection)
 					return 0;
 
 			return 1;
@@ -161,15 +185,17 @@ namespace tfg
 			arraySize = other.arraySize;
 			
 			delete []roads;
-			delete []intersections;
+			//delete []intersections;
 			
-			roads = new Road*[arraySize];
-			intersections = new Intersection*[arraySize];
+            
+            roads = new RoadObj[arraySize];
+			//roads = new Road*[arraySize];
+			//intersections = new Intersection*[arraySize];
 			
 			for(int i = 0; i < elementCount; i++)
 			{
 				roads[i] = other.roads[i];
-				intersections[i] = other.intersections[i];
+				//intersections[i] = other.intersections[i];
 			}
             
             return *this;
@@ -179,21 +205,27 @@ namespace tfg
 		{
 			for(int i = 0; i < elementCount; i++)
 			{
-				if(end == intersections[i])
-					return roads[i];
+				//if(end == intersections[i])
+                if(end == roads[i].intersection)
+					return roads[i].road;
 			}
 			return NULL;
 		}   
 
-		Road ** Intersection::GetRoads()
+        Intersection::RoadObj *Intersection::GetRoads()
         {
-        	return roads;
+            return roads;
         }
-
-		Intersection ** Intersection::GetIntersections()
-        {
-        	return intersections;
-        }
+        
+//		Road ** Intersection::GetRoads()
+//        {
+//        	return roads;
+//        }
+//
+//		Intersection ** Intersection::GetIntersections()
+//        {
+//        	return intersections;
+//        }
 
 }        
 

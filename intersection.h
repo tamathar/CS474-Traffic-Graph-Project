@@ -15,6 +15,11 @@ namespace tfg
 	class Intersection	
 	{
     public:
+        struct RoadObj {
+            Road *road;
+            Intersection *intersection;
+        };
+        
         //Default constructors will not work because of dynamic arrays
         Intersection();
         Intersection(const Intersection & other);
@@ -47,9 +52,12 @@ namespace tfg
 		// a getter for the event function to find things
 		Road * FindRoad(Intersection * end);
         
-        Road ** GetRoads();
         
-        Intersection ** GetIntersections();
+        RoadObj *GetRoads();
+        
+        //Road ** GetRoads();
+        
+        //Intersection ** GetIntersections();
         
     private:
         static unsigned long maxID; //Auto-inc when creating a new Intersection. That way every Intersection has a UID
@@ -60,8 +68,11 @@ namespace tfg
 		bool wasTraversed:1; //For generating the graph from any starting road
 		int arraySize;
 		int elementCount;
-        Road **roads;
-		Intersection **intersections;
+        
+        RoadObj *roads;
+        
+//        Road **roads;
+//		Intersection **intersections;
         
         void AddRoadWork(Road *mRoad, Intersection *mIntersection);
 
