@@ -29,7 +29,6 @@ namespace tfg
 		
         Car::~Car()
 		{
-			delete pos;
 		}
         
         //=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-Getters/Setters=-=-=-=-==-=-=-=-=-=-=-=-=-
@@ -48,7 +47,8 @@ namespace tfg
     	
     	void Car::SetAccident(bool acc)
     	{
-    	    accident = acc;	// set accident
+    		if(pos != NULL)
+    	    	Event::Get()->CreateAccident(pos);
     	}
     	
     	struct tm * Car::GetTimestamp() const
