@@ -78,7 +78,7 @@ namespace tfg
         
 		int Intersection::GetElementCount() const
 		{
-			 return elementCount+1;
+			 return elementCount;
 		}
 		
         
@@ -159,7 +159,7 @@ namespace tfg
 				//intersections = itemp;
 			}
 			roads[elementCount].road = mRoad;
-            roads[elementCount].intersection = mIntersection;
+            roads[elementCount++].intersection = mIntersection;
 			//intersections[elementCount++] = mIntersection;			
 		}
 		

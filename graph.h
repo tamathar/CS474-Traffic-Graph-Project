@@ -6,6 +6,7 @@
 #include "intersection.h"
 #include "event.h"
 #include "car.h"
+#include <sstream>
 using namespace std;
 
 namespace tfg {
@@ -22,12 +23,13 @@ namespace tfg {
                 All					//show ALL the data  XD
             };
                     
-            Graph(Intersection &sourceIntersection);
+            Graph(Intersection &sourceIntersection, double spacing);
             Graph(const Graph & other);
             
         private:
             Graph();
             void TraverseGraph(ofstream &output, Intersection &intersection);
+            double edgeSpacing;
 
     };
 }	
