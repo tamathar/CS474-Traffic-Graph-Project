@@ -1,6 +1,5 @@
 #ifndef Position_h
 #define Position_h
-#include "road.h"
 #include "intersection.h"
 
 using namespace std;
@@ -13,11 +12,8 @@ namespace tfg {
     	Position(Intersection* b, Intersection* e);	
     	Position(Intersection* b);
     	Position(const Position & other);	
-    
-    private:
     	Intersection * beginning;
     	Intersection * end;
-    
     };
 }
 

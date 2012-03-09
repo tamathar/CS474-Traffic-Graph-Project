@@ -7,35 +7,30 @@
 
 #ifndef Event_h
 #define Event_h
-#include <iostream>
 #include "position.h"
-using namespace std;
+#include "road.h"
 
 namespace tfg
 {
 	class Event	
 	{
     public:
-        static Event &GetInstance();
+        static Event *Get();
         //Consting all getters so that they can be called by any const refs
-        int GetID(); //Get automatically-generated ID
-        
-        string GetType() const;
-        void SetType(string mType);
-        
-        void CreateEvent(Position *mPos, string mType);
-                
+
+        void CreateEvent(Position *position, bool accident = false);
+        void RemoveEvent(Position *position, bool accident = false);
+        void CreateAccident(Position *position);
+        void RemoveAccident(Position *position);
+        void CreateMaintenance(Position *position);
+        void RemoveMaintenance(Position *position);                
     private:
         //Default constructors will not work because of dynamic arrays
-        Event();
+        Event(){};
+        Event& operator=(Event const&);
         ~Event();
         Event(const Event & others);
-        const Event &operator =(const Event & others);
-
-        static unsigned long maxID; //Auto-inc when creating a new Event. That way every Event has a UID
-        string type;
-        unsigned long myID;
-        
+        static Event *m_pInstance;
 	};    
 }
 #endif	

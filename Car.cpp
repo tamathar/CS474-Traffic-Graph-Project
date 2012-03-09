@@ -6,7 +6,6 @@
  *************************************************************************/
 #include <iostream>
 #include "time.h"
-#include "main.cpp"
 #include "car.h"
 using namespace std;
 
@@ -17,17 +16,15 @@ namespace tfg
         Car::Car()
 			:myID(maxID++),
 			 accident(0),
-			 speed(0)
+			 pos(0)
 		{	
-			pos = new Position;
 		}
 		
         Car::Car(const Car & other)
 			:myID(other.myID),
-			 accident(other.accident),
-			 speed(other.speed)
+			 accident(other.accident)
 		{
-			pos = new Position;
+			*pos = other.GetPosition();
 		}
 		
         Car::~Car()
@@ -70,53 +67,15 @@ namespace tfg
     	    return *pos;	// return position
     	}
     	
-    	void Car::UpdatePosition(Position p)
+    	void Car::UpdatePosition(Position * p)
     	{
-    	    *pos = p;		// set position
+    	    pos = p;		// set position
     	}
     	
-    	int Car::GetSpeed() const
-    	{
-    	    return speed;		// return speed
-    	}
-    	
-    	void Car::SetSpeed(int sp)
-    	{
-    	    speed = sp;		// set speed
-    	}
-    	
-    	void SpawnEvent(Position pos)
+    	void Car::SpawnEvent(Position * p)
     	{
     	    ;	// spawn an event, describing what event it was and where in the graph
     	}
-    	
-    	void StopTracking()
-    	{
-    	    ;	// stop updating position
-    	}
-    	
-		/*
-		//=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-Overloaders=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-		bool operator==(const Intersection &other) const
-		{
-			if(myID = other.myID)
-				return true;
-				
-			return false;
-		}
-		
-		const Intersection & operator=(const Intersection &other)
-		{
-			myID = other.myID;
-			usage = other.usage;
-			blocked = other.blocked;
-			roadCount = other.roadCount;
-			delete []roads;
-			roads = new Road[roadCount];
-			for(int i = 0; i < roadCount; i++)
-				roads[i] = other.roads[i];
-		}
-		*/
 }
     /*static unsigned long maxID; 
     int myID;		

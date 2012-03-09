@@ -5,45 +5,69 @@
  * 				 for the Traffic Graph API
  *************************************************************************/
 #include <iostream>
-#include "main.cpp"
 #include "event.h"
 using namespace std;
 
 namespace tfg
 {
-        static unsigned long maxID = 0;
-        string type = "";
         //=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-Constructors/Destructor=-=-=-=-=-=-=-=-=-=-=-
-		Event &Event::GetInstance()
-        {
-            static Event instance;
-            return instance;
-        }
-    
-        int Event::GetID()
-        {
-            myID = maxID++; //Get automatically-generated ID
-            return myID;
-        }
+        Event *Event::m_pInstance = NULL;
         
-        string Event::GetType() const
+		Event *Event::Get()
         {
-            return type;
-        }
-
-        void Event::SetType(string mType)
-        {
-            type = mType;
+            if (!m_pInstance) {
+            	m_pInstance = new Event;
+            }
+            
+            return m_pInstance;
         }        
         
-        void Event::CreateEvent(Position *mPos, string mType)
+        void Event::CreateEvent(Position *position, bool accident)
         {
-            ;
+        	if(position->end != 0)
+        	{
+        		Road * road = position->beginning->FindRoad(position->end);
+        		road->SetBlocked(true);
+        		if(accident)
+        			road->IncrementAccidents();
+        	}
+        	else
+        	{
+        		position->beginning->SetBlocked(true);
+        		position->beginning->IncrementAccidents();
+        	}
+        		
         }
-		
-		/*
-		const unsigned long maxID; //Auto-inc when creating a new Event. That way every Event has a UID
-        unsigned long myID;
-   	    */
+        
+        void Event::RemoveEvent(Position *position, bool accident)
+        {
+        	if(position->end != 0)
+        	{
+        		Road * road = position->beginning->FindRoad(position->end);
+        		road->SetBlocked(false);
+        	}
+        	else
+        		position->beginning->SetBlocked(false);
+        }
+        
+        void Event::CreateAccident(Position *position)
+        {
+        	CreateEvent(position, true);
+        }
+        
+        void Event::RemoveAccident(Position *position)
+        {
+        	RemoveEvent(position, true);
+        }
+        
+        void Event::CreateMaintenance(Position *position)
+        {
+        	CreateEvent(position);
+        }
+        
+        void Event::RemoveMaintenance(Position *position)
+        {
+        	RemoveEvent(position);
+        }
 }
 

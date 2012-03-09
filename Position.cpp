@@ -4,9 +4,7 @@
  * Description: This is the implementation of the Car class for
  * 				 for the Traffic Graph API
  *************************************************************************/
-#include <iostream>
 #include "position.h"
-using namespace std;
 
 namespace tfg
 {
