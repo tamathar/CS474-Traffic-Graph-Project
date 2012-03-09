@@ -7,9 +7,8 @@
 
 #ifndef Event_h
 #define Event_h
-#include <iostream>
 #include "position.h"
-using namespace std;
+#include "road.h"
 
 namespace tfg
 {
@@ -27,7 +26,7 @@ namespace tfg
         void RemoveMaintenance(Position *position);                
     private:
         //Default constructors will not work because of dynamic arrays
-        Event();
+        Event(){};
         Event& operator=(Event const&);
         ~Event();
         Event(const Event & others);

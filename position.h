@@ -1,6 +1,5 @@
 #ifndef Position_h
 #define Position_h
-#include "road.h"
 #include "intersection.h"
 
 using namespace std;

@@ -3,8 +3,6 @@
 #include "position.h"
 #include "event.h"
 
-using namespace std;
-
 namespace tfg
 {
 	class Car {
@@ -21,8 +19,7 @@ namespace tfg
     	//void SetTimestamp(int ts);	// set timestamp
     	Position GetPosition() const;	// return position
     	void UpdatePosition(Position * p);		// set position
-    	void SpawnEvent(string type, Position pos);	// spawn an event, describing what event it was and where in the graph
-    	void StopTracking();	// stop updating position
+    	void SpawnEvent(Position * pos);	// spawn an event, describing what event it was and where in the graph
     
     private:
         static unsigned long maxID; //Auto-inc when creating a new Car. That way every Car has a UID

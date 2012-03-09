@@ -6,7 +6,6 @@
  *************************************************************************/
 #include <iostream>
 #include "time.h"
-#include "main.cpp"
 #include "car.h"
 using namespace std;
 
@@ -73,38 +72,10 @@ namespace tfg
     	    pos = p;		// set position
     	}
     	
-    	void SpawnEvent(Position pos)
+    	void Car::SpawnEvent(Position * p)
     	{
     	    ;	// spawn an event, describing what event it was and where in the graph
     	}
-    	
-    	void StopTracking()
-    	{
-    	    ;	// stop updating position
-    	}
-    	
-		/*
-		//=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-Overloaders=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-		bool operator==(const Intersection &other) const
-		{
-			if(myID = other.myID)
-				return true;
-				
-			return false;
-		}
-		
-		const Intersection & operator=(const Intersection &other)
-		{
-			myID = other.myID;
-			usage = other.usage;
-			blocked = other.blocked;
-			roadCount = other.roadCount;
-			delete []roads;
-			roads = new Road[roadCount];
-			for(int i = 0; i < roadCount; i++)
-				roads[i] = other.roads[i];
-		}
-		*/
 }
     /*static unsigned long maxID; 
     int myID;		

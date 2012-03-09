@@ -5,13 +5,14 @@
  * 				 for the Traffic Graph API
  *************************************************************************/
 #include <iostream>
-#include "main.cpp"
 #include "event.h"
 using namespace std;
 
 namespace tfg
 {
         //=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-Constructors/Destructor=-=-=-=-=-=-=-=-=-=-=-
+        Event *Event::m_pInstance = NULL;
+        
 		Event *Event::Get()
         {
             if (!m_pInstance) {
@@ -26,14 +27,14 @@ namespace tfg
         	if(position->end != 0)
         	{
         		Road * road = position->beginning->FindRoad(position->end);
-        		Road->SetBlocked(true);
+        		road->SetBlocked(true);
         		if(accident)
-        			Road->IncrementAccident();
+        			road->IncrementAccidents();
         	}
         	else
         	{
-        		Position->beginning->SetBlocked(true);
-        		Position->beginning->IncrementAccident();
+        		position->beginning->SetBlocked(true);
+        		position->beginning->IncrementAccidents();
         	}
         		
         }
@@ -43,10 +44,10 @@ namespace tfg
         	if(position->end != 0)
         	{
         		Road * road = position->beginning->FindRoad(position->end);
-        		Road->SetBlocked(false);
+        		road->SetBlocked(false);
         	}
         	else
-        		Position->beginning->SetBlocked(false);
+        		position->beginning->SetBlocked(false);
         }
         
         void Event::CreateAccident(Position *position)
