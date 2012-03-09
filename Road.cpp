@@ -170,5 +170,7 @@ namespace tfg
 			blocked = other.blocked;
 			oneWay = other.oneWay;
 			name = other.name;
+			
+			return *this;
 		}
 }
