@@ -22,6 +22,7 @@ namespace tfg
 			currentUsage(0),
 			overallUsage(0),
 			accidents(0),
+            lifeTimeAccidents(0),
 			blocked(0),
 			oneWay(0),
 			name("")
@@ -34,6 +35,7 @@ namespace tfg
 			currentUsage(0),
 			overallUsage(0),
 			accidents(0),
+            lifeTimeAccidents(0),
 			blocked(0),
 			oneWay(0),
 			name(mName)
@@ -46,6 +48,7 @@ namespace tfg
         	currentUsage(other.currentUsage),
         	overallUsage(other.overallUsage),
         	accidents(other.accidents),
+            lifeTimeAccidents(other.lifeTimeAccidents),
         	blocked(other.blocked),
         	oneWay(other.oneWay),
         	name(other.name)
@@ -93,13 +96,17 @@ namespace tfg
 		void Road::IncrementUsage()
 		{
 		  currentUsage++;
-			overallUsage++;			
+          overallUsage++;
 		}
         
 		int Road::GetAccidents() const
 		{
 			return accidents;
 		}
+    
+        int Road::GetLifeTimeAccidents() const {
+            return lifeTimeAccidents;
+        }
 		
         bool Road::IsBlocked() const
 		{
@@ -120,6 +127,7 @@ namespace tfg
         void Road::IncrementAccidents()
         {
         	accidents++;
+            lifeTimeAccidents++;
         }
         
         bool Road::IsOneWay() const

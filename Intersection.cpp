@@ -20,6 +20,7 @@ namespace tfg
 			:myID(maxID++),
 			 usage(0),
 			 accidents(0),
+             lifeTimeAccidents(0),
 			 blocked(0),
 			 wasTraversed(0),
 			 arraySize(1),
@@ -27,17 +28,14 @@ namespace tfg
 		{	
 			
             roads = new RoadObj[arraySize];
-            
-            /*
-            roads = new Road*[arraySize];
-			intersections = new Intersection*[arraySize];
-            */
+
 		}
 		
         Intersection::Intersection(const Intersection & other)
 			:myID(maxID++),
 			 usage(other.usage),
 			 accidents(other.accidents),
+             lifeTimeAccidents(other.lifeTimeAccidents),
 			 blocked(other.blocked),
 			 wasTraversed(0),
 			 arraySize(other.arraySize),
@@ -46,18 +44,10 @@ namespace tfg
 			
             
             roads = new RoadObj[arraySize];
-            /*
-            roads = new Road*[arraySize];
-			intersections = new Intersection*[arraySize];
-            */
             
             
 			for(int i = 0; i < elementCount; i++)
 			{
-				/*roads[i] = other.roads[i];
-				intersections[i] = other.intersections[i];
-                */
-                
                 roads[i] = other.roads[i];
 			}
 		}
@@ -97,11 +87,16 @@ namespace tfg
 		{
 			return accidents;
 		}
+    
+        int Intersection::GetLifeTimeAccidents() const {
+            return lifeTimeAccidents;
+        }
 		
 		//Standard setter
 		void Intersection::IncrementAccidents()
 		{
 			accidents++;
+            lifeTimeAccidents++;
 		}
 		
         bool Intersection::IsBlocked() const

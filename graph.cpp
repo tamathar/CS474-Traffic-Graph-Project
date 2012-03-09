@@ -44,7 +44,7 @@ namespace tfg {
                 FILE * file = popen(command.c_str(), "w");
                 pclose(file);
                 
-                #if __APPLE__ //Open Preview on the Mac for the image just rendered
+                #if __APPLE__ && DEBUG //Open Preview on the Mac for the image just rendered
                 command = "open " + renderedGraphFileName;
                 file = popen(command.c_str(), "w");
                 pclose(file);
@@ -65,14 +65,17 @@ namespace tfg {
             
             if (!intersection.GetTraversed() ) {
                 int accidents = intersection.GetAccidents();
+                int lifeTimeAccidents = intersection.GetLifeTimeAccidents();
                 if (accidents > 0) {
-                    stringstream ss;
+                    stringstream ss, ss2;
                     ss << accidents;
+                    ss2 << lifeTimeAccidents; 
                     
-                    string sAccidents;
-                    ss >> sAccidents;
+                    string sAccidents1, sAccidents2;
+                    ss >> sAccidents1;
+                    ss2 >> sAccidents2;
                     
-                    output << intersection.GetID() << " [label=\"" << sAccidents << "\"] [color=red];\n"; //Color the node border red if an accident happened at an intersection
+                    output << intersection.GetID() << " [label=\"" << sAccidents1 << " (" << sAccidents2 << ")\"] [color=red];\n"; //Color the node border red if an accident happened at an intersection
                 }
                 else {
                     output << intersection.GetID() << " [label=\"\"];\n";
@@ -105,6 +108,12 @@ namespace tfg {
                         int roadAccidents = roads[i].road->GetAccidents();
                         if (roadAccidents > 0) {
                             output << "\\nAccidents: " << roadAccidents;
+                            labelLen += 1;
+                        }
+                        
+                        int roadLifeTimeAccidents = roads[i].road->GetAccidents();
+                        if (roadLifeTimeAccidents > 0) {
+                            output << "\\nLifetime Accidents: " << roadLifeTimeAccidents;
                             labelLen += 1;
                         }
                         

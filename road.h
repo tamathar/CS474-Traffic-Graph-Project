@@ -48,9 +48,10 @@ namespace tfg
         //Brief: Adds one to both current and overall usage
         void IncrementUsage();
 		
-		//Brief: Gets the number of accidents on the road since it was created
+		//Brief: Gets the number of accidents on the road since it was created, unless blockage has been cleared (GetAccidents() only)
 		//Return: The value of accidents
         int GetAccidents() const;
+        int GetLifeTimeAccidents() const;
         
         //Brief: Adds 1 to accidents
 		void IncrementAccidents();
@@ -95,6 +96,7 @@ namespace tfg
 	    unsigned int currentUsage; //for use with currentTravel
         unsigned int overallUsage; //for use with averageTravel
 	    unsigned int accidents;
+        unsigned int lifeTimeAccidents;
         bool blocked:1; //Using a bitfield to save space, since there could be millions of road objects on a map
         bool oneWay:1;
         string name;

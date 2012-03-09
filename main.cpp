@@ -15,7 +15,7 @@ using namespace tfg;
 int main() {
     Intersection a, b, c, d, e, f, g,h,i;
     
-    Road ambler("Ambler"), judgely("Judge Ely"), sixteenth("16th St"), campusct("Campus Ct"), judgely2("Judge Ely"), judgely3("Judge Ely"), en10("EN 10th"), en10_2("EN 10th"), en12("EN 16.5 st");
+    Road ambler("Ambler"), judgely("Judge Ely"), sixteenth("16th St"), campusct("Campus Ct"), judgely2("Judge Ely"), judgely3("Judge Ely"), en10("EN 10th"), en10_2("EN 10th");
     
     ambler.SetOneWay(true);
     judgely.SetBlocked(true);
@@ -29,7 +29,6 @@ int main() {
     f.AddRoad(&judgely3, &c);
     g.AddRoad(&en10, &f);
     h.AddRoad(&en10_2, &f);
-    c.AddRoad(&en12, &i);
     
     
     ambler.IncrementAccidents();
@@ -48,9 +47,6 @@ int main() {
     en10.UpdateTravel(6);
     en10.UpdateTravel(19);
     
-    cout << en10.GetCurrentTravel();
-    
-    en12.SetOneWay(true);
     
     c.IncrementAccidents();
     c.IncrementAccidents();
