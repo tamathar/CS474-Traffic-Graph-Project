@@ -13,52 +13,22 @@ namespace tfg
         //=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-Constructors/Destructor=-=-=-=-=-=-=-=-=-=-=-
 		
         //defaults constructors will not work because of our dynamic arrays
-    	Position::Position()
+    	Position::Position(Intersection* b, Intersection* e)
+    		:beginning(b),
+    		 end(e)
     	{
-    	    road = new Road;
-    	    intersection = new Intersection;
-    	    road = NULL;
-    	    intersection = NULL;
-    	}	
+    	}
+    	
+    	Position::Position(Intersection* b)
+    		:beginning(b),
+    		 end(NULL)
+    	{
+    	}		
     	
     	Position::Position(const Position & other)
+    		:beginning(other.beginning),
+    		 end(other.end)
     	{
-    	    road = new Road;
-    	    intersection = new Intersection;
-    	    road = NULL;
-    	    intersection = NULL;
-    	}
-    	
-    	Position::~Position()
-    	{
-    	    delete road;
-    	    delete intersection;
-    	}	
-    
-        //this function will take both parameters, but only one will be set
-        //because a car can only be either on a road or on an intersection
-        void Position::setRoad(Road * rd)
-        {
-            road = rd;
-            if (rd != NULL)
-                setIntersection(NULL);
-        }
-        
-        void Position::setIntersection(Intersection * in)
-        {
-            intersection = in;
-            if (in != NULL)
-                setRoad(NULL);
-        }
-    	
-    	Road Position::getRoad() const
-    	{
-    	    return *road;
-    	}
-    	
-    	Intersection Position::getIntersection() const
-    	{
-    	    return *intersection;
     	}
         
 		/*

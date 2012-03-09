@@ -85,7 +85,7 @@ namespace tfg
     	    speed = sp;		// set speed
     	}
     	
-    	void SpawnEvent(string type, Position pos)
+    	void SpawnEvent(Position pos)
     	{
     	    ;	// spawn an event, describing what event it was and where in the graph
     	}

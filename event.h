@@ -1,7 +1,8 @@
 /*
  *
- * Created By Joseph Quigley 02/18/2011
- * 
+ * Created By German Irias & Joseph Quigley 02/18/2011
+ * This class implements the Singleton class pattern.
+ *
  */
 
 #ifndef Event_h
