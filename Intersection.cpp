@@ -5,11 +5,12 @@
  * 				 for the Traffic Graph API
  *************************************************************************/
 
-#include <iostream>
-#include "road.h"
 #include "intersection.h"
 using namespace std;
-//using namespace tfg;
+
+
+namespace tfg
+{
 
         //=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-Constructors/Destructor=-=-=-=-=-=-=-=-=-=-=-
       unsigned long Intersection::maxID = 0;
@@ -190,7 +191,7 @@ using namespace std;
 			}
 			return NULL;
 		}   
-        
+}        
 
         /*const unsigned long maxID;
         unsigned long myID;

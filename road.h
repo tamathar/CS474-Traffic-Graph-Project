@@ -9,8 +9,8 @@
 #include <iostream>
 using namespace std;
 
-//namespace tfg
-//{
+namespace tfg
+{
   class Intersection;
 
 	class Road	
@@ -66,5 +66,5 @@ using namespace std;
 
         
 	};    
-//}
+}
 #endif	

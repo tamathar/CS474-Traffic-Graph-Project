@@ -6,12 +6,11 @@
 
 #ifndef Intersection_h
 #define Intersection_h
-#include <iostream>
 #include "road.h"
 using namespace std;
 
-//namespace tfg
-//{
+namespace tfg
+{
 
 	class Intersection	
 	{
@@ -63,5 +62,5 @@ using namespace std;
 
         
 	};    
-//}
+}
 #endif	

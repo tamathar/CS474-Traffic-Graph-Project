@@ -5,11 +5,12 @@
 /             the tfg project API
 ************************************************************************/
 
-#include <iostream>
 #include "road.h"
 using namespace std;
-//using namespace tgf;
 
+
+namespace tfg
+{
    
 	// By default roads start as two-way, but can be changed
     unsigned long Road::maxID = 0;
@@ -170,3 +171,4 @@ using namespace std;
 			oneWay = other.oneWay;
 			name = other.name;
 		}
+}
