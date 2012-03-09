@@ -47,9 +47,9 @@ namespace tfg
 		// a getter for the event function to find things
 		Road * FindRoad(Intersection * end);
         
-        Road * GetRoads();
+        Road ** GetRoads();
         
-        Intersection * GetIntersections();
+        Intersection ** GetIntersections();
         
     private:
         static unsigned long maxID; //Auto-inc when creating a new Intersection. That way every Intersection has a UID
