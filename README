@@ -1,4 +1,24 @@
-Hey, do we want set <data info that should be average time or whatnot> for road/intersection to average automatically when set or for car to do that?
-If we let car do it it allows the programmer to totally screw up the object's values.
+== Installation ==
+Requires GraphViz to be installed in the system path.
 
-~T
+== Example Usage ==
+    Intersection a, b, c, d, e, f, g,h;
+    
+    Road ambler("Ambler"), judgely("Judge Ely"), sixteenth("16th St"), campusct("Campus Ct"), judgely2("Judge Ely"), judgely3("Judge Ely"), en10("EN 10th"), en10_2("EN 10th");
+    
+    ambler.SetOneWay(true);
+    judgely.SetBlocked(true);
+    
+
+    a.AddRoad(&ambler, &b);
+    b.AddRoad(&judgely, &c);
+    c.AddRoad(&sixteenth, &d);
+    d.AddRoad(&campusct, &a);
+    e.AddRoad(&judgely2, &b);
+    f.AddRoad(&judgely3, &c);
+    g.AddRoad(&en10, &f);
+    h.AddRoad(&en10_2, &f);
+
+    Graph newGraph(a, 1.8);
+  
+Creates a graph of the intersections around Abilene Christian University 
