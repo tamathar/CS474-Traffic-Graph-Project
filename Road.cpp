@@ -17,18 +17,26 @@ namespace tfg
 		  
 		Road::Road()
 			:myID(maxID++),
+			currentTravel(0),
+			averageTravel(0),
 			currentUsage(0),
 			overallUsage(0),
+			accidents(0),
 			blocked(0),
-			oneWay(0)
+			oneWay(0),
+			name("")
 		{}
        
-		Road::Road(string name) 
-			:myID(maxID++), 
-			currentUsage(0), 
+		Road::Road(string mName) 
+			:myID(maxID++),
+			currentTravel(0),
+			averageTravel(0),
+			currentUsage(0),
 			overallUsage(0),
-			blocked(0), 
-			oneWay(0)
+			accidents(0),
+			blocked(0),
+			oneWay(0),
+			name(mName)
 		{}
 
         Road::Road(const Road &other)
@@ -37,6 +45,7 @@ namespace tfg
         	averageTravel(other.averageTravel),
         	currentUsage(other.currentUsage),
         	overallUsage(other.overallUsage),
+        	accidents(other.accidents),
         	blocked(other.blocked),
         	oneWay(other.oneWay),
         	name(other.name)
@@ -132,10 +141,7 @@ namespace tfg
         
         string Road::GetName() const
 		{
-            if (this != 0) {
                 return name;
-            }
-            return "Nothing";
 		}
         
 		void Road::SetName(string mName)
