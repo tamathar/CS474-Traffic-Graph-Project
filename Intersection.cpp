@@ -18,40 +18,38 @@ using namespace std;
         Intersection::Intersection()
 			:myID(maxID++),
 			 usage(0),
+			 accidents(0),
 			 blocked(0),
+			 wasTraversed(0),
 			 arraySize(1),
-			 roadCount(0)
+			 elementCount(0)
 		{	
-			roads = new Road[arraySize];
+			roads = new Road*[arraySize];
+			intersections = new Intersection*[arraySize];
 		}
 		
         Intersection::Intersection(const Intersection & other)
 			:myID(other.myID),
 			 usage(other.usage),
+			 accidents(other.accidents),
 			 blocked(other.blocked),
+			 wasTraversed(0),
 			 arraySize(other.arraySize),
-			 roadCount(other.roadCount)
+			 elementCount(other.elementCount)			 
 		{
-			roads = new Road[arraySize];
-			for(int i = 0; i < roadCount; i++)
+			roads = new Road*[arraySize];
+			intersections = new Intersection*[arraySize];
+			for(int i = 0; i < elementCount; i++)
+			{
 				roads[i] = other.roads[i];
+				intersections[i] = other.intersections[i];
+			}
 		}
 		
-        Intersection::Intersection(Road *mRoads, int mRoadCount)
-			:myID(maxID++),
-			 usage(0),
-			 blocked(0),
-			 arraySize(mRoadCount),
-			 roadCount(mRoadCount)
-		{
-			roads = new Road[arraySize];
-			for(int i = 0; i < roadCount; i++)
-				roads[i] = mRoads[i];
-		}
-		
-    Intersection::~Intersection()
+   		Intersection::~Intersection()
 		{
 			delete []roads;
+			delete []intersections;
 		}
         
         //=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-Getters/Setters=-=-=-=-==-=-=-=-=-=-=-=-=-
@@ -63,15 +61,15 @@ using namespace std;
 			return myID;
 		}
         
-		int Intersection::GetRoadCount() const
+		int Intersection::GetElementCount() const
 		{
-			 return roadCount;
+			 return elementCount;
 		}
 		
 		//This is a standard setter
-		void Intersection::SetRoadCount(int num)
+		void Intersection::SetElementCount(int num)
 		{
-			roadCount = num;
+			elementCount = num;
 		}
         
         int Intersection::GetUsage() const
@@ -90,6 +88,12 @@ using namespace std;
 			return accidents;
 		}
 		
+		//Standard setter
+		void Intersection::IncrementAccidents()
+		{
+			accidents++;
+		}
+		
         bool Intersection::IsBlocked() const
 		{
 			return blocked;
@@ -104,37 +108,46 @@ using namespace std;
 				blocked = 0;
 		}
         
+	    void Intersection::SetTraversed(bool state) 
+	    {
+            wasTraversed = state;
+        }
+
+        bool Intersection::GetTraversed()
+        {
+            return wasTraversed;
+        }
 		
+		//=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-Add Roads=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 		
-		//=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-Add/Remove Roads=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-		
-        void Intersection::AddRoad(Road *mRoad)
+        void Intersection::AddRoad(Road *mRoad, Intersection *mIntersection)
 		{
-			if(roadCount == arraySize)
+			this->AddRoadWork(mRoad, mIntersection);
+			mIntersection->AddRoadWork(mRoad, this);
+		}
+
+		void Intersection::AddRoadWork(Road *mRoad, Intersection *mIntersection)
+		{
+			if(elementCount == arraySize)
 			{
 				arraySize *= 2;
-				Road *temp = new Road[arraySize];
-				for(int i = 0; i < roadCount; i++)
-					temp[i] = roads[i];
+				Road **rtemp = new Road*[arraySize];
+				Intersection **itemp = new Intersection*[arraySize];
+
+				for(int i = 0; i < elementCount; i++)
+				{
+					rtemp[i] = roads[i];
+					itemp[i] = intersections[i];				
+				}
 				delete []roads;
-				roads = temp;
+				delete []intersections;
+				roads = rtemp;
+				intersections = itemp;
 			}
 			
-			roads[roadCount++] = *mRoad;
+			roads[elementCount++] = mRoad;
+			intersections[elementCount] = mIntersection;			
 		}
-        
-        bool Intersection::RemoveRoad(Road *mRoad)
-		{
-			for( int i = 0; i < roadCount; i++)
-				if(roads[i] == *mRoad)
-				{
-					roads[i] = roads[--roadCount];
-					return true;
-				}
-				
-			return false;
-		}
-		
 		
 		//=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-Overloaders=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 		bool Intersection::operator==(const Intersection &other) const
@@ -150,12 +163,29 @@ using namespace std;
 			myID = other.myID;
 			usage = other.usage;
 			blocked = other.blocked;
-			roadCount = other.roadCount;
+			elementCount = other.elementCount;
+			arraySize = other.arraySize;
+			
 			delete []roads;
-			roads = new Road[roadCount];
-			for(int i = 0; i < roadCount; i++)
+			delete []intersections;
+			
+			roads = new Road*[arraySize];
+			intersections = new Intersection*[arraySize];
+			
+			for(int i = 0; i < elementCount; i++)
+			{
 				roads[i] = other.roads[i];
+				intersections[i] = other.intersections[i];
+			}
 		}
+
+		Road * Intersection::FindRoad(const Intersection * const end)
+		{
+			for(int i = 0; i < elementCount; i++)
+				if(end == intersections[i])
+					return roads[i];
+		}   
+        
 
         /*const unsigned long maxID;
         unsigned long myID;

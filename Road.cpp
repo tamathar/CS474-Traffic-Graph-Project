@@ -11,74 +11,50 @@ using namespace std;
 //using namespace tgf;
 
    
-		// By default roads start as two-way, but can be changed
+	// By default roads start as two-way, but can be changed
     unsigned long Road::maxID = 0;
 		  
-      Road::Road()
-        :myID(maxID++),
-         currentUsage(0),
-         overallUsage(0),
-         blocked(0),
-         oneWay(0),
-         beginning(0),
-         end(0),
-         wasTraversed(false)
-      {}
+		Road::Road()
+			:myID(maxID++),
+			currentUsage(0),
+			overallUsage(0),
+			blocked(0),
+			oneWay(0)
+		{}
        
-        Road::Road(Road * mBeginning,  Road * mEnd) 
-			: myID(maxID++), 
-			  currentUsage(0), 
-			  overallUsage(0),
-			  blocked(0), 
-			  oneWay(0),
-              wasTraversed(false),
-              beginning(mBeginning),
-              end(mEnd)
+		Road::Road(string name) 
+			:myID(maxID++), 
+			currentUsage(0), 
+			overallUsage(0),
+			blocked(0), 
+			oneWay(0)
 		{}
 
-        Road::Road(const Road &other) {
-            myID = maxID++;
-            currentTravel = other.currentTravel;
-            averageTravel = other.averageTravel;
-            currentUsage = other.currentUsage;
-            overallUsage = other.overallUsage;
-            blocked = other.blocked;
-            oneWay = other.oneWay;
-            name = other.name;
-            beginning = other.beginning;
-            end = other.end;
-            wasTraversed = other.wasTraversed;
-        }
-
-        Road::Road( Road * mBeginning, Road  * mEnd, string mName) 
-			: myID(maxID++), 
-			  currentUsage(0), 
-			  overallUsage(0),
-			  blocked(0), 
-			  oneWay(0),
-			  name(mName),
-              wasTraversed(false),
-              beginning(mBeginning),
-              end(mEnd)
+        Road::Road(const Road &other)
+        	: myID(maxID++),
+        	currentTravel(other.currentTravel),
+        	averageTravel(other.averageTravel),
+        	currentUsage(other.currentUsage),
+        	overallUsage(other.overallUsage),
+        	blocked(other.blocked),
+        	oneWay(other.oneWay),
+        	name(other.name)
         {}
 
-
-		//We don't have destructor bc we don't actually own the addresses of the pointers
-        
 		//=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-Getters/Setters=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 		// All getters are standard. All setters have explanation inline.
 		
-    int Road::GetID() const
+    	int Road::GetID() const
 		{
 			return (int)myID;
 		}
         
-    int Road::GetCurrentTravel() const
+    	int Road::GetCurrentTravel() const
 		{
 			return (int)currentTravel;
 		}
        
-    int Road::GetAverageTravel() const
+    	int Road::GetAverageTravel() const
 		{
 			return averageTravel;
 		}
@@ -93,7 +69,7 @@ using namespace std;
 		  	averageTravel = (time + averageTravel*(overallUsage-1))/overallUsage;
 		}
         
-    int Road::GetCurrentUsage() const
+    	int Road::GetCurrentUsage() const
 		{
 			return currentUsage;
 		}
@@ -131,8 +107,13 @@ using namespace std;
 			//When we set or clear a wreck we have to reset our current travel info.
 			currentTravel = 0;
 			currentUsage = 0;
-			accidents++;
+
 		}
+        
+        void Road::IncrementAccidents()
+        {
+        	accidents++;
+        }
         
         bool Road::IsOneWay() const
 		{
@@ -163,47 +144,12 @@ using namespace std;
                 name = mName;
             }
 		}
-        
-        bool Road::SetBeginning(Road *road)
-		{	
-            if (road != this)
-                beginning = road;
-            else
-                beginning = 0; //Set to null for dead end
-            return true; //For now
-		}
-
-        Road *Road::GetBeginning() {
-            return beginning;
-        }
-         
-        bool Road::SetEnd(Road *road)
-		{
-            if (road != this)
-                end = road;
-            else
-                end = 0; //Set to null for dead end
-            
-            return true; //For now
-		}
-
-        Road *Road::GetEnd() {
-            return end;
-        }
-
-        void Road::SetTraversed(bool state) {
-            wasTraversed = state;
-        }
-
-        bool Road::GetTraversed() {
-            return wasTraversed;
-        }
-		
+ 	
 		
 		//=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-overloads=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-
 		bool Road::operator==(const Road &other) const
 		{
-			if(beginning == other.beginning && end == other.end)
+			if(myID == other.myID)
 				return true;
 				
 			return false;
@@ -224,7 +170,4 @@ using namespace std;
 			blocked = other.blocked;
 			oneWay = other.oneWay;
 			name = other.name;
-			beginning = other.beginning;
-			end = other.end;
-            wasTraversed = other.wasTraversed;
 		}

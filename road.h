@@ -18,8 +18,7 @@ using namespace std;
     public:
         Road();
         Road(const Road &other);
-        Road(Road * mBeginning, Road * mEnd); 
-        Road(Road * mBeginning, Road * mEnd, string mName); 
+        Road(string mName); 
         
         
         
@@ -38,7 +37,7 @@ using namespace std;
 
         void SetOverallUsage(int num);
         int GetAccidents() const;
-		//no setter because its only supposed to be changed with accidents
+		void IncrementAccidents();
 		
         bool IsBlocked() const;
         void SetBlocked(bool isBlocked);
@@ -48,17 +47,7 @@ using namespace std;
         
         string GetName() const;
         void SetName(string mName);
-        
-        //Road objects are broken up into the segments between intersections/nodes
-        bool SetBeginning(Road *intersection);
-        Road *GetBeginning();
 
-        
-        bool SetEnd(Road *intersection);
-        Road *GetEnd();
-        
-        void SetTraversed(bool state);
-        bool GetTraversed();
 		
 		bool operator==(const Road &other) const;
 		const Road & operator=(const Road &other);
@@ -68,15 +57,13 @@ using namespace std;
         unsigned long myID;
         unsigned long currentTravel; //Unsigned gives more space, time can't be negative
         unsigned short averageTravel; //average time can be teeny
-	     	unsigned int currentUsage; //for use with currentTravel
+	    unsigned int currentUsage; //for use with currentTravel
         unsigned int overallUsage; //for use with averageTravel
-	      	unsigned int accidents;
+	    unsigned int accidents;
         bool blocked:1; //Using a bitfield to save space, since there could be millions of road objects on a map
         bool oneWay:1;
-        bool wasTraversed:1; //For generating the graph from any starting road
         string name;
-        Road *beginning;
-        Road *end;
+
         
 	};    
 //}
