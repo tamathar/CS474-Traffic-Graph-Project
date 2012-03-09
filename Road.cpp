@@ -109,10 +109,7 @@ namespace tfg
 		//For this setter, we change currentTravel and currentUsage.
 		void Road::SetBlocked(bool isBlocked)
 		{
-			if(isBlocked)
-				blocked = 1;
-			else
-				blocked = 0;
+			blocked = isBlocked;
 			
 			//When we set or clear a wreck we have to reset our current travel info.
 			currentTravel = 0;

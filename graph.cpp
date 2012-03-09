@@ -60,7 +60,7 @@ namespace tfg {
      * Private Member Functions
      *
      ============================================*/
-    void Graph::TraverseGraph(ofstream &output, Intersection &intersection) {
+    void Graph::TraverseGraph(ofstream &output, Intersection &intersection) { //Recursive function that generates DOT code
         if (&intersection != 0) {
             
             if (!intersection.GetTraversed() ) {
@@ -72,7 +72,7 @@ namespace tfg {
                     string sAccidents;
                     ss >> sAccidents;
                     
-                    output << intersection.GetID() << " [label=\"" << sAccidents << "\"] [color=red];\n";
+                    output << intersection.GetID() << " [label=\"" << sAccidents << "\"] [color=red];\n"; //Color the node border red if an accident happened at an intersection
                 }
                 else {
                     output << intersection.GetID() << " [label=\"\"];\n";
@@ -81,7 +81,7 @@ namespace tfg {
                 
                 
                 
-                intersection.SetTraversed(true);
+                intersection.SetTraversed(true); //Flag so that infinite recursion doesn't happen
                 
                 Intersection::RoadObj *roads = intersection.GetRoads();
                 
@@ -89,18 +89,19 @@ namespace tfg {
                     string name = roads[i].road->GetName();
                     
                     
-                    string isOneWay = roads[i].road->IsOneWay() == true ? " [dir=forward] " : " ";
-                    string roadStatus = roads[i].road->IsBlocked() == true ? " [color=red] " : " ";
+                    string isOneWay = roads[i].road->IsOneWay() == true ? " [dir=forward] " : " "; //convert bool to arrow edge in GV
+                    string roadStatus = roads[i].road->IsBlocked() == true ? " [color=red] " : " "; //Change edge color if blocked
                     
                     
                     
                     
                     
                     if (!roads[i].intersection->GetTraversed() ) {
-                        output << intersection.GetID() << " -- " << roads[i].intersection->GetID() << roadStatus << "[label=\"" << name;
+                        output << intersection.GetID() << " -- " << roads[i].intersection->GetID() << roadStatus << "[label=\"" << name; //Link this intersection to the other one defined in the Road
                         
                         double labelLen = edgeSpacing;
                         
+                        //Apply additional spacing for extra label info.
                         int roadAccidents = roads[i].road->GetAccidents();
                         if (roadAccidents > 0) {
                             output << "\\nAccidents: " << roadAccidents;
@@ -126,9 +127,8 @@ namespace tfg {
                             labelLen += 1;
                         }
                         
-                        
                         if (name.length() > 10) {
-                            labelLen += 3;
+                            labelLen += 2;
                         }
                         
                         output << "\"] " << isOneWay << "[len=" << labelLen << "]" << ";\n";
@@ -137,6 +137,7 @@ namespace tfg {
                     
                 }
                 
+                //After generating DOT code for all the roads connected to an intersection, recursively call the travesal on all those intersections for a flood-fill
                 for (int i=0; i<intersection.GetElementCount(); i++) {
                     TraverseGraph(output, *roads[i].intersection);
                 }

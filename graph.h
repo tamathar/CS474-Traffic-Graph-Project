@@ -23,7 +23,7 @@ namespace tfg {
                 All					//show ALL the data  XD
             };
                     
-            Graph(Intersection &sourceIntersection, double spacing);
+            Graph(Intersection &sourceIntersection, double spacing); //Spacing between intersections
             Graph(const Graph & other);
             
         private:
