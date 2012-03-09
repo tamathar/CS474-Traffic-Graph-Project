@@ -1,3 +1,9 @@
+/*
+ *
+ * Created By German Irias 02/18/2011
+ *
+ */
+
 #ifndef Car_h
 #define Car_h
 #include "position.h"
