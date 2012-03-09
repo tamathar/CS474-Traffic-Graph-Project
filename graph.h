@@ -1,11 +1,11 @@
 #ifndef Graph_h
 #define Graph_h
 #include <iostream>
-#include <iostream>
 #include <fstream>
 #include <stdlib.h>
-#include "Intersection.h"
+#include "intersection.h"
 #include "event.h"
+#include "car.h"
 using namespace std;
 
 namespace tfg {
