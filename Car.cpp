@@ -72,10 +72,6 @@ namespace tfg
     	    pos = p;		// set position
     	}
     	
-    	void Car::SpawnEvent(Position * p)
-    	{
-    	    ;	// spawn an event, describing what event it was and where in the graph
-    	}
 }
     /*static unsigned long maxID; 
     int myID;		
