@@ -22,8 +22,11 @@ namespace tfg
     	bool GetAccident() const;	// return accident
     	void SetAccident(bool acc);	// set accident
     	struct tm * GetTimestamp() const;	// return timestamp
-    	Position GetPosition() const;	// return position
+    	Position * GetPosition() const;	// return position
     	void UpdatePosition(Position * p);		// set position
+    	int GetStoredTime();	//return timestamp
+    	void SetTime(int time); //set time
+    
     
     private:
         static unsigned long maxID; //Auto-inc when creating a new Car. That way every Car has a UID

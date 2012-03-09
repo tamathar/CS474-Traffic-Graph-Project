@@ -17,16 +17,18 @@ namespace tfg
         Car::Car()
 			:myID(maxID++),
 			 accident(0),
+			 timestamp(0),
 			 pos(0)
 		{	
 		}
 		
 		// copy constructor
         Car::Car(const Car & other)
-			:myID(other.myID),
-			 accident(other.accident)
+			:myID(maxID++),
+			 accident(other.accident),
+			 timestamp(other.timestamp)
 		{
-			*pos = other.GetPosition();
+			pos = other.GetPosition();
 		}
 		
 		// default destructor
@@ -55,7 +57,7 @@ namespace tfg
     	    	Event::Get()->CreateAccident(pos);
     	}
     	
-    	// return the clock time the car holds at time function is called
+    	/*// return the clock time the car holds at time function is called
     	struct tm * Car::GetTimestamp() const
     	{
     	    time_t rawtime;
@@ -65,18 +67,30 @@ namespace tfg
 
             ptm = gmtime ( &rawtime );	
             return ptm; // return timestamp
-    	}
+    	}*/
     	
     	// return where in the graph where the car is
-    	Position Car::GetPosition() const
+    	Position * Car::GetPosition() const
     	{
-    	    return *pos;	// return position
+    	    return pos;	// return position
     	}
     	
     	// change the position
     	void Car::UpdatePosition(Position * p)
     	{
     	    pos = p;		// set position
+    	}
+  
+  		//return the current time
+      	int Car::GetStoredTime()
+      	{
+      		return timestamp;
+      	}
+      	
+      	//set a new time
+    	void Car::SetTime(int time)
+    	{
+    		timestamp = time;
     	}
     	
 }

@@ -19,10 +19,13 @@ namespace tfg {
     	Position(Intersection* b);
     	// Copy constructor
     	Position(const Position & other);	
+    	// Assignment constructor
+    	const Position & operator=(const Position & other);
     	// Pointer to the beginning of a road
     	Intersection * beginning;
     	// Pointer to the end of a road
     	Intersection * end;
+    	
     };
 }
 

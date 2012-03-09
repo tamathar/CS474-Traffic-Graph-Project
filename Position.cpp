@@ -30,5 +30,13 @@ namespace tfg
     		 end(other.end)
     	{
     	}
+    	
+    	// Assignment Operator
+    	const Position & Position::operator=(const Position & other)
+    	{
+    		beginning = other.beginning;
+    		end = other.end;
+    		return *this;
+    	}
 }
 
