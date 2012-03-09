@@ -47,7 +47,7 @@ using namespace std;
 		const Intersection & operator=(const Intersection &other);     
 		
 		// a getter for the event function to find things
-		Road * FindRoad(const Intersection * const end);
+		Road * FindRoad(Intersection * end);
         
     private:
         static unsigned long maxID; //Auto-inc when creating a new Intersection. That way every Intersection has a UID

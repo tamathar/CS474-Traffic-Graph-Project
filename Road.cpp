@@ -162,7 +162,6 @@ using namespace std;
             if (&other == this)
                 return *this;
             
-			myID = maxID++;
 			currentTravel = other.currentTravel;
 			averageTravel = other.averageTravel;
 			currentUsage = other.currentUsage;

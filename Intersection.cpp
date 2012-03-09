@@ -29,7 +29,7 @@ using namespace std;
 		}
 		
         Intersection::Intersection(const Intersection & other)
-			:myID(other.myID),
+			:myID(maxID++),
 			 usage(other.usage),
 			 accidents(other.accidents),
 			 blocked(other.blocked),
@@ -122,7 +122,7 @@ using namespace std;
 		
         void Intersection::AddRoad(Road *mRoad, Intersection *mIntersection)
 		{
-			this->AddRoadWork(mRoad, mIntersection);
+			AddRoadWork(mRoad, mIntersection);
 			mIntersection->AddRoadWork(mRoad, this);
 		}
 
@@ -144,23 +144,25 @@ using namespace std;
 				roads = rtemp;
 				intersections = itemp;
 			}
-			
-			roads[elementCount++] = mRoad;
-			intersections[elementCount] = mIntersection;			
+			roads[elementCount] = mRoad;
+			intersections[elementCount++] = mIntersection;			
 		}
 		
 		//=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-Overloaders=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 		bool Intersection::operator==(const Intersection &other) const
 		{
-			if(myID == other.myID)
-				return true;
-				
-			return false;
+			if(elementCount != other.elementCount)
+				return 0;
+			
+			for(int i = 0; i < elementCount; i++)
+				if(intersections[i] != other.intersections[i])
+					return 0;
+
+			return 1;
 		}
 		
 		const Intersection & Intersection::operator=(const Intersection &other)
 		{
-			myID = other.myID;
 			usage = other.usage;
 			blocked = other.blocked;
 			elementCount = other.elementCount;
@@ -179,11 +181,14 @@ using namespace std;
 			}
 		}
 
-		Road * Intersection::FindRoad(const Intersection * const end)
+		Road * Intersection::FindRoad( Intersection * end)
 		{
 			for(int i = 0; i < elementCount; i++)
+			{
 				if(end == intersections[i])
 					return roads[i];
+			}
+			return NULL;
 		}   
         
 
