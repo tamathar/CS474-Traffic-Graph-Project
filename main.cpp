@@ -37,8 +37,18 @@ int main() {
     
     judgely.IncrementAccidents();
     
+    en10.IncrementUsage();
+    en10.IncrementUsage();
+    en10.IncrementUsage();
+    en10.IncrementUsage();
+    en10.SetBlocked(true);
+    en10.SetBlocked(false);
+    en10.IncrementUsage();
+    
     en10.UpdateTravel(6);
     en10.UpdateTravel(19);
+    
+    cout << en10.GetCurrentTravel();
     
     en12.SetOneWay(true);
     
