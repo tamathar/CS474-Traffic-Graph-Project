@@ -64,14 +64,9 @@ namespace tfg
         
 		int Intersection::GetElementCount() const
 		{
-			 return elementCount;
+			 return elementCount+1;
 		}
 		
-		//This is a standard setter
-		void Intersection::SetElementCount(int num)
-		{
-			elementCount = num;
-		}
         
         int Intersection::GetUsage() const
 		{

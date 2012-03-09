@@ -25,7 +25,6 @@ namespace tfg
         int GetID() const; //Get automatically-generated ID
         
         int GetElementCount() const;
-        void SetElementCount(int num);
         
         int GetUsage() const;
         void SetUsage(int num);
@@ -40,7 +39,7 @@ namespace tfg
         bool GetTraversed();
                
         void AddRoad(Road *mRoad, Intersection *mIntersection);
-        void AddRoadWork(Road *mRoad, Intersection *mIntersection);
+        
         
 		bool operator==(const Intersection &other) const;
 		const Intersection & operator=(const Intersection &other);     
@@ -63,6 +62,8 @@ namespace tfg
 		int elementCount;
         Road **roads;
 		Intersection **intersections;
+        
+        void AddRoadWork(Road *mRoad, Intersection *mIntersection);
 
         
 	};    
