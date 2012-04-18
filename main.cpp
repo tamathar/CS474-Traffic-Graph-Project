@@ -2,58 +2,38 @@
 //  main.cpp
 //  Traffic-Graph-API
 //
-//  Created by Joseph Quigley on 3/3/12.
+//  Created by Joseph Quigley on 4/18/12.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
 #include <iostream>
-#include "graph.h"
+#include <string>
+#include "libs/tinyxml2.h"
+#include <curl/curl.h>
 
 using namespace std;
-using namespace tfg;
 
-int main() {
-    Intersection a, b, c, d, e, f, g,h,i;
-    
-    Road ambler("Ambler"), judgely("Judge Ely"), sixteenth("16th St"), campusct("Campus Ct"), judgely2("Judge Ely"), judgely3("Judge Ely"), en10("EN 10th"), en10_2("EN 10th");
-    
-    ambler.SetOneWay(true);
-    judgely.SetBlocked(true);
-    
+string version = "2.0.0.1";
 
-    a.AddRoad(&ambler, &b);
-    b.AddRoad(&judgely, &c);
-    c.AddRoad(&sixteenth, &d);
-    d.AddRoad(&campusct, &a);
-    e.AddRoad(&judgely2, &b);
-    f.AddRoad(&judgely3, &c);
-    g.AddRoad(&en10, &f);
-    h.AddRoad(&en10_2, &f);
-    
-    
-    ambler.IncrementAccidents();
-    ambler.IncrementAccidents();
-    
-    judgely.IncrementAccidents();
-    
-    en10.IncrementUsage();
-    en10.IncrementUsage();
-    en10.IncrementUsage();
-    en10.IncrementUsage();
-    en10.SetBlocked(true);
-    en10.SetBlocked(false);
-    en10.IncrementUsage();
-    
-    en10.UpdateTravel(6);
-    en10.UpdateTravel(19);
-    
-    
-    c.IncrementAccidents();
-    c.IncrementAccidents();
+void usage();
+void usage() {
+    cout << " Traffic Graph API client version " << version << "\n\
+ Usage:\n\t\
+trafic-graph <data-url> <png-output-path>\n";
+}
 
+int main(int argc, char *argv[]) {
+    for (int i=1; i<argc; i++) {
+        if (strncmp(argv[i], "-v", 2) == 0 || strncmp(argv[i], "-h", 2) == 0 ) {
+            usage();
+            exit(0);
+        }
+    }
     
-    Graph newGraph(a, 1.8);
-    
-    
-    cout << "Done\n";
+    if (argc > 1) { //has input file param
+        
+    }
+    if (argc > 2) { //Has output file param
+        
+    }
 }
