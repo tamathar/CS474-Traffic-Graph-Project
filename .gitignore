@@ -3,6 +3,10 @@
 # --------------------- #
 *.1
 main.cpp
+Release/
+Debug/
+*.zargo
+.project
 
 .DS_STORE
 .DS_Store
