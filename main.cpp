@@ -9,31 +9,36 @@
 #include <iostream>
 #include <string>
 #include "libs/tinyxml2.h"
-#include <curl/curl.h>
 
 using namespace std;
 
 string version = "2.0.0.1";
 
-void usage();
-void usage() {
+void usage(string name);
+void usage(string name) {
+    
+    //Get the actual executable name, trim all chars before the last / (directory)
+    long int fileNameBegins = name.find_last_of("/");
+    
+    name = name.substr(fileNameBegins+1, name.length());
+    
+    
     cout << " Traffic Graph API client version " << version << "\n\
- Usage:\n\t\
-trafic-graph <data-url> <png-output-path>\n";
+ Usage:\n\t" << name << " <data-url> <png-output-path>\n";
 }
 
 int main(int argc, char *argv[]) {
-    for (int i=1; i<argc; i++) {
-        if (strncmp(argv[i], "-v", 2) == 0 || strncmp(argv[i], "-h", 2) == 0 ) {
-            usage();
+    for (int i=0; i<argc; i++) {
+        if (strncmp(argv[i], "-v", 2) == 0 || strncmp(argv[i], "-h", 2) == 0 || argc == 1 ) {
+            usage(string(argv[0]));
             exit(0);
         }
     }
     
-    if (argc > 1) { //has input file param
+    if (argc > 2) { //Has output file param
         
     }
-    if (argc > 2) { //Has output file param
+    else { //Just input file param
         
     }
 }

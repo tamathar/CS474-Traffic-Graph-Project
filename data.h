@@ -6,7 +6,9 @@
 
 #ifndef Data_h
 #define Data_h
-#include <iostream>
+
+#include <vector>
+#include "road.h"
 #include "position.h"
 using namespace std;
 
@@ -15,14 +17,25 @@ namespace tfg
 	class Data
 	{
     public:
-        Data();
+        static Data* Instance();
 
-        void ParseRoads();
-        void ParseEvents();
+        vector<Road> *ParseRoads();
         void GetRoads();
-        void GetEvents();
+        
+        void ParseClosures();
+        void GetClosures();
+        
+        void ParseAccidents();
+        void GetAccidents();
 
     private:
+        Data() {}
+        Data(Data const&){};             // copy constructor is private
+        Data& operator=(Data const&){ return *this; };  // assignment operator is private
+        static Data* m_pInstance;
+
+        
+        
         Position **positions;
 
 
