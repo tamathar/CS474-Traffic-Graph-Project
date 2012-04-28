@@ -4,8 +4,9 @@
 #include <fcntl.h>
 #include <stdlib.h>
 #include <curl/curl.h>
+#include "cURL.h"
 
-int main() {
+void retrieveXML(string URL) {
   CURL *curl;
   CURLcode curl_res;
   CURLINFO info;
@@ -22,7 +23,8 @@ int main() {
   printf("init curl session\n");
   curl = curl_easy_init();
   printf("set url to download\n");
-  curl_easy_setopt(curl, CURLOPT_URL, "http://www.daltrans.org/daltrans/roads.xml");
+  //curl_easy_setopt(curl, CURLOPT_URL, "http://www.daltrans.org/daltrans/roads.xml");
+  curl_easy_setopt(curl, CURLOPT_URL, URL);
 
   printf("set file handler to write\n");
   curl_easy_setopt(curl, CURLOPT_WRITEDATA,  tmp);
@@ -49,5 +51,4 @@ int main() {
   fclose(tmp);
   curl_easy_cleanup(curl);
 
-  return 0;
 }
