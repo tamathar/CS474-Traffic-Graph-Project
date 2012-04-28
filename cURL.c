@@ -9,7 +9,7 @@
 void retrieveXML(string URL) {
   CURL *curl;
   CURLcode curl_res;
-  CURLINFO info;
+
   long http_code;
   double c_length;  
   FILE *tmp;
