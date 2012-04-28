@@ -1,6 +1,6 @@
 #ifndef Data_h
 #define Data_h
 
-void retrieveXML();
+void retrieveXML(string URL);
 
 #endif
