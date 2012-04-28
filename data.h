@@ -25,7 +25,6 @@ namespace tfg
     private:
         Position **positions;
 
-
 	};
 }
 #endif
