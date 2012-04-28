@@ -38,7 +38,6 @@ namespace tfg
         
         Position **positions;
 
-
 	};
 }
 #endif

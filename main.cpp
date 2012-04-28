@@ -8,6 +8,7 @@
 
 #include <iostream>
 #include <string>
+#include <cstdlib>
 #include "libs/tinyxml2.h"
 
 using namespace std;
