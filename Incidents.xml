@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Incidents NetworkId="01" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <NetworkId>01</NetworkId>
+  <Items>
+    <Incident>
+      <NetworkId>01</NetworkId>
+      <Id>179e8ca2d2ca4da0b621bcd07e5071eb</Id>
+      <Description />
+      <RoadName>US 75</RoadName>
+      <CrossStreetName>Royal Ln</CrossStreetName>
+      <Location Latitude="32.89851" Longitude="-96.769002" />
+      <Latitude>32.89851</Latitude>
+      <Longitude>-96.769002</Longitude>
+      <LinkId>DEEE312A47BD4FFEB330A087038886D7</LinkId>
+      <Direction>South</Direction>
+      <Status>Verified</Status>
+      <UpdateType>New</UpdateType>
+      <AffectedLanes>RightShoulder</AffectedLanes>
+      <Classification>1</Classification>
+      <Severity>Unknown</Severity>
+      <Type>StalledVehicle</Type>
+      <TypeDescription />
+      <RoadConditions>Unknown</RoadConditions>
+      <Weather>Unknown</Weather>
+      <ConfirmedDateTime>2012-04-28T13:12:49</ConfirmedDateTime>
+      <ClearedDateTime>0001-01-01T00:00:00</ClearedDateTime>
+      <NearestCameraId>43</NearestCameraId>
+      <NearestCameraName>US75 @ Royal</NearestCameraName>
+    </Incident>
+  </Items>
+</Incidents>

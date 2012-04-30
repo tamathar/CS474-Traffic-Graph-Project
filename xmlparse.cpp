@@ -106,8 +106,23 @@ void parseRoads(string fname)
 
 int main()
 {
-	//parseRoads("hllj");
+	retrieveXML("http://www.daltrans.org/daltrans/roads.xml");
+	
+	string nothing;
+	cout << "input anything to parse roads.";
+	cin >> nothing;
+	
+	parseRoads("hllj");
+	
+	cout <<  "input anything to parse accidents.";
+	cin >> nothing;
+	
 	parseAccidents("hllls");
+	
+	cout <<  "input anything to parse closures.";
+	cin >> nothing;
+	
+	parseClosures("hlls");
 }
 /*<TrafficDetector xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Id="10043 2176" Name="EB SH183 @ Wingren EBL3of3" DataSourceId="10043" TmcId="DalTrans" Type="MainLane">
 <Datum Id="2176" Status="NoData" Speed="30" Volume="9" Occupancy="5" LastUpdated="2012-04-28T12:44:54.390625-05:00"/>
