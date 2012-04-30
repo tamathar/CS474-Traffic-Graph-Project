@@ -20,21 +20,16 @@ namespace tfg
         static Data* Instance();
 
         vector<Road> *ParseRoads();
-        void GetRoads();
         
         void ParseClosures();
-        void GetClosures();
         
         void ParseAccidents();
-        void GetAccidents();
 
     private:
         Data() {}
         Data(Data const&){};             // copy constructor is private
         Data& operator=(Data const&){ return *this; };  // assignment operator is private
         static Data* m_pInstance;
-
-        
         
         Position **positions;
 

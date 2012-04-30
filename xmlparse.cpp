@@ -1,5 +1,6 @@
 #include <iostream>
 #include "./libs/tinyxml2.h"
+#include "cURL.h"
 using namespace tinyxml2;
 using namespace std;
 
@@ -106,7 +107,9 @@ void parseRoads(string fname)
 
 int main()
 {
-	retrieveXML("http://www.daltrans.org/daltrans/roads.xml");
+    string url = "http://www.daltrans.org/daltrans/roads.xml";
+    
+	retrieveXML(url.c_str());
 	
 	string nothing;
 	cout << "input anything to parse roads.";

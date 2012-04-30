@@ -6,7 +6,7 @@
 #include <curl/curl.h>
 #include "cURL.h"
 
-void retrieveXML(string URL) {
+void retrieveXML(const char *URL) {
   CURL *curl;
   CURLcode curl_res;
 
