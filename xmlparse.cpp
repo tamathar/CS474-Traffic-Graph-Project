@@ -8,6 +8,7 @@ void parseClosures(string fname)
 {	
 	XMLDocument doc;
 	doc.LoadFile( "LaneClosures.xml" );
+	
 	XMLElement * root = doc.RootElement();
 	XMLElement * parent = root->FirstChildElement()->NextSiblingElement()->FirstChildElement();
 

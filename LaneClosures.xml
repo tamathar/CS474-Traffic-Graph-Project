@@ -1,0 +1,2368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LaneClosures NetworkId="01" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <NetworkId>01</NetworkId>
+  <Items>
+    <LaneClosure>
+      <NetworkId>01</NetworkId>
+      <Id>1132b07df29d4ffd9cd14bbd5224a7aa</Id>
+      <Description>Alternating lanes closed.</Description>
+      <RoadStartName>US 75</RoadStartName>
+      <CrossStreetStartName>SH 121 (Sam Rayburn Tollway)</CrossStreetStartName>
+      <StartLocation Latitude="33.157624" Longitude="-96.64555" />
+      <StartLatitude>33.157624</StartLatitude>
+      <StartLongitude>-96.64555</StartLongitude>
+      <RoadEndName>US 75</RoadEndName>
+      <CrossStreetEndName>Virginia Pkwy</CrossStreetEndName>
+      <EndLocation Latitude="33.198246" Longitude="-96.638683" />
+      <EndLatitude>33.198246</EndLatitude>
+      <EndLongitude>-96.638683</EndLongitude>
+      <Direction>North</Direction>
+      <LinkId>Bogus Link 3</LinkId>
+      <UpdateType>Update</UpdateType>
+      <CurrentStatus>Opened</CurrentStatus>
+      <AffectedLanes>Unknown</AffectedLanes>
+      <HighwayConditions />
+      <Source />
+      <DaysClosed>Monday Tuesday Wednesday Thursday Friday Saturday Sunday</DaysClosed>
+      <StartTime>2012-04-28T20:30:00</StartTime>
+      <EndTime>2012-04-28T05:30:00</EndTime>
+      <StartDate>2012-04-27T00:00:00</StartDate>
+      <EndDate>2012-06-18T00:00:00</EndDate>
+      <Extent>
+        <Location Latitude="33.157624" Longitude="-96.64555" />
+        <Location Latitude="33.198246" Longitude="-96.638683" />
+      </Extent>
+      <NearestCameraId>621</NearestCameraId>
+      <NearestCameraName>US75 @ SH121 North</NearestCameraName>
+    </LaneClosure>
+    <LaneClosure>
+      <NetworkId>01</NetworkId>
+      <Id>8c6cc0528b0741bb8712dc62b5bb5073</Id>
+      <Description>Alternating main lanes closed nightly for deck park work.  </Description>
+      <RoadStartName>Spur 366</RoadStartName>
+      <CrossStreetStartName>St. Paul St</CrossStreetStartName>
+      <StartLocation Latitude="32.788277" Longitude="-96.802685" />
+      <StartLatitude>32.788277</StartLatitude>
+      <StartLongitude>-96.802685</StartLongitude>
+      <RoadEndName>Spur 366</RoadEndName>
+      <CrossStreetEndName>Pearl St</CrossStreetEndName>
+      <EndLocation Latitude="32.790372" Longitude="-96.800169" />
+      <EndLatitude>32.790372</EndLatitude>
+      <EndLongitude>-96.800169</EndLongitude>
+      <Direction>East</Direction>
+      <LinkId>446ACCA664D046B987C05042BA43CCE5</LinkId>
+      <UpdateType>Update</UpdateType>
+      <CurrentStatus>Opened</CurrentStatus>
+      <AffectedLanes>Lane1 Lane2 Lane3 Lane4</AffectedLanes>
+      <HighwayConditions />
+      <Source />
+      <DaysClosed>Monday Tuesday Friday Saturday Sunday</DaysClosed>
+      <StartTime>2012-04-28T21:00:00</StartTime>
+      <EndTime>2012-04-28T06:00:00</EndTime>
+      <StartDate>2012-04-27T00:00:00</StartDate>
+      <EndDate>2012-05-01T00:00:00</EndDate>
+      <Extent>
+        <Location Latitude="32.790372" Longitude="-96.800169" />
+      </Extent>
+      <NearestCameraId>478</NearestCameraId>
+      <NearestCameraName>Spur 366 @ IH35E North</NearestCameraName>
+    </LaneClosure>
+    <LaneClosure>
+      <NetworkId>01</NetworkId>
+      <Id>6fe34720e3f64efc8e445863fff35144</Id>
+      <Description>Alternating main lanes closed nightly for deck park work.  </Description>
+      <RoadStartName>Spur 366</RoadStartName>
+      <CrossStreetStartName>Pearl St</CrossStreetStartName>
+      <StartLocation Latitude="32.790571" Longitude="-96.800341" />
+      <StartLatitude>32.790571</StartLatitude>
+      <StartLongitude>-96.800341</StartLongitude>
+      <RoadEndName>Spur 366</RoadEndName>
+      <CrossStreetEndName>St. Paul St</CrossStreetEndName>
+      <EndLocation Latitude="32.788366" Longitude="-96.80284" />
+      <EndLatitude>32.788366</EndLatitude>
+      <EndLongitude>-96.80284</EndLongitude>
+      <Direction>West</Direction>
+      <LinkId>BE17E485A9834371A2E1DADE57A4BD35</LinkId>
+      <UpdateType>Update</UpdateType>
+      <CurrentStatus>Opened</CurrentStatus>
+      <AffectedLanes>Lane1 Lane2 Lane3 Lane4</AffectedLanes>
+      <HighwayConditions />
+      <Source />
+      <DaysClosed>Monday Tuesday Friday Saturday Sunday</DaysClosed>
+      <StartTime>2012-04-28T21:00:00</StartTime>
+      <EndTime>2012-04-28T06:00:00</EndTime>
+      <StartDate>2012-04-27T00:00:00</StartDate>
+      <EndDate>2012-05-01T00:00:00</EndDate>
+      <Extent>
+        <Location Latitude="32.788366" Longitude="-96.80284" />
+      </Extent>
+      <NearestCameraId>471</NearestCameraId>
+      <NearestCameraName>Spur 366 @ US75 West</NearestCameraName>
+    </LaneClosure>
+    <LaneClosure>
+      <NetworkId>01</NetworkId>
+      <Id>a5e7b6c546d549c8b57692e40afd0895</Id>
+      <Description>Closing the exit ramp, weekdays only.</Description>
+      <RoadStartName>Spur 366</RoadStartName>
+      <CrossStreetStartName>St. Paul St</CrossStreetStartName>
+      <StartLocation Latitude="32.788366" Longitude="-96.80284" />
+      <StartLatitude>32.788366</StartLatitude>
+      <StartLongitude>-96.80284</StartLongitude>
+      <RoadEndName>Spur 366</RoadEndName>
+      <CrossStreetEndName>St. Paul St</CrossStreetEndName>
+      <EndLocation Latitude="32.788366" Longitude="-96.80284" />
+      <EndLatitude>32.788366</EndLatitude>
+      <EndLongitude>-96.80284</EndLongitude>
+      <Direction>West</Direction>
+      <LinkId>BE17E485A9834371A2E1DADE57A4BD35</LinkId>
+      <UpdateType>Update</UpdateType>
+      <CurrentStatus>Opened</CurrentStatus>
+      <AffectedLanes>ExitRamp</AffectedLanes>
+      <HighwayConditions />
+      <Source />
+      <DaysClosed>Monday Tuesday</DaysClosed>
+      <StartTime>2012-04-28T09:00:00</StartTime>
+      <EndTime>2012-04-28T15:30:00</EndTime>
+      <StartDate>2012-04-30T00:00:00</StartDate>
+      <EndDate>2012-05-01T00:00:00</EndDate>
+      <Extent />
+      <NearestCameraId>478</NearestCameraId>
+      <NearestCameraName>Spur 366 @ IH35E North</NearestCameraName>
+    </LaneClosure>
+    <LaneClosure>
+      <NetworkId>01</NetworkId>
+      <Id>685215a0a70445d1a35b6785bc6726b7</Id>
+      <Description>Closing the right lane and the exit ramp to Royal.</Description>
+      <RoadStartName>IH 35E</RoadStartName>
+      <CrossStreetStartName>IH 635</CrossStreetStartName>
+      <StartLocation Latitude="32.90821" Longitude="-96.898175" />
+      <StartLatitude>32.90821</StartLatitude>
+      <StartLongitude>-96.898175</StartLongitude>
+      <RoadEndName>IH 35E</RoadEndName>
+      <CrossStreetEndName>Royal Ln</CrossStreetEndName>
+      <EndLocation Latitude="32.8961" Longitude="-96.898052" />
+      <EndLatitude>32.8961</EndLatitude>
+      <EndLongitude>-96.898052</EndLongitude>
+      <Direction>South</Direction>
+      <LinkId>2992E12BB28143FFBCD66A318DEDAA58</LinkId>
+      <UpdateType>New</UpdateType>
+      <CurrentStatus>Opened</CurrentStatus>
+      <AffectedLanes>Lane5 ExitRamp</AffectedLanes>
+      <HighwayConditions />
+      <Source />
+      <DaysClosed>Tuesday Wednesday Thursday</DaysClosed>
+      <StartTime>2012-04-28T21:00:00</StartTime>
+      <EndTime>2012-04-28T06:00:00</EndTime>
+      <StartDate>2012-05-01T00:00:00</StartDate>
+      <EndDate>2012-05-03T00:00:00</EndDate>
+      <Extent>
+        <Location Latitude="32.90821" Longitude="-96.898175" />
+        <Location Latitude="32.907028" Longitude="-96.898957" />
+        <Location Latitude="32.896281" Longitude="-96.898909" />
+        <Location Latitude="32.8961" Longitude="-96.898052" />
+      </Extent>
+      <NearestCameraId>637</NearestCameraId>
+      <NearestCameraName>IH635 @ IH35E South</NearestCameraName>
+    </LaneClosure>
+    <LaneClosure>
+      <NetworkId>01</NetworkId>
+      <Id>85e90006763c4417b8e65dab8593ce74</Id>
+      <Description>Lanes will be reduced from 4 lanes to 1 lane to hang beams at Welch Bridge.</Description>
+      <RoadStartName>IH 635</RoadStartName>
+      <CrossStreetStartName>Rosser Rd</CrossStreetStartName>
+      <StartLocation Latitude="32.92128" Longitude="-96.848043" />
+      <StartLatitude>32.92128</StartLatitude>
+      <StartLongitude>-96.848043</StartLongitude>
+      <RoadEndName>IH 635</RoadEndName>
+      <CrossStreetEndName>Dallas North Tollway</CrossStreetEndName>
+      <EndLocation Latitude="32.925729" Longitude="-96.820642" />
+      <EndLatitude>32.925729</EndLatitude>
+      <EndLongitude>-96.820642</EndLongitude>
+      <Direction>East</Direction>
+      <LinkId>Bogus Link 4</LinkId>
+      <UpdateType>Update</UpdateType>
+      <CurrentStatus>Opened</CurrentStatus>
+      <AffectedLanes>Unknown</AffectedLanes>
+      <HighwayConditions />
+      <Source />
+      <DaysClosed>Saturday Sunday</DaysClosed>
+      <StartTime>2012-04-28T20:00:00</StartTime>
+      <EndTime>2012-04-28T12:00:00</EndTime>
+      <StartDate>2012-04-28T00:00:00</StartDate>
+      <EndDate>2012-04-29T00:00:00</EndDate>
+      <Extent>
+        <Location Latitude="32.92128" Longitude="-96.848043" />
+        <Location Latitude="32.925729" Longitude="-96.820642" />
+      </Extent>
+      <NearestCameraId>127</NearestCameraId>
+      <NearestCameraName>IH635 @ Rosser</NearestCameraName>
+    </LaneClosure>
+    <LaneClosure>
+      <NetworkId>01</NetworkId>
+      <Id>3c8b2ad2350743b8b4f9b5022bbb6beb</Id>
+      <Description>Traffic will be reduced to 1 lane.</Description>
+      <RoadStartName>IH 635</RoadStartName>
+      <CrossStreetStartName>Preston Rd</CrossStreetStartName>
+      <StartLocation Latitude="32.9255" Longitude="-96.803374" />
+      <StartLatitude>32.9255</StartLatitude>
+      <StartLongitude>-96.803374</StartLongitude>
+      <RoadEndName>IH 635</RoadEndName>
+      <CrossStreetEndName>Midway Rd</CrossStreetEndName>
+      <EndLocation Latitude="32.925241" Longitude="-96.838589" />
+      <EndLatitude>32.925241</EndLatitude>
+      <EndLongitude>-96.838589</EndLongitude>
+      <Direction>West</Direction>
+      <LinkId>Bogus Link 4</LinkId>
+      <UpdateType>Update</UpdateType>
+      <CurrentStatus>Closed</CurrentStatus>
+      <AffectedLanes>Unknown</AffectedLanes>
+      <HighwayConditions />
+      <Source />
+      <DaysClosed>Friday Saturday</DaysClosed>
+      <StartTime>2012-04-28T20:00:00</StartTime>
+      <EndTime>2012-04-28T12:00:00</EndTime>
+      <StartDate>2012-04-27T00:00:00</StartDate>
+      <EndDate>2012-04-28T00:00:00</EndDate>
+      <Extent>
+        <Location Latitude="32.9255" Longitude="-96.803374" />
+        <Location Latitude="32.925241" Longitude="-96.838589" />
+      </Extent>
+      <NearestCameraId>638</NearestCameraId>
+      <NearestCameraName>IH635 @ Preston</NearestCameraName>
+    </LaneClosure>
+    <LaneClosure>
+      <NetworkId>01</NetworkId>
+      <Id>74c24cb377fb4df79bfc269f913d3ea6</Id>
+      <Description>2 right lanes will be closed continuously.</Description>
+      <RoadStartName>SH 121</RoadStartName>
+      <CrossStreetStartName>FM 2499</CrossStreetStartName>
+      <StartLocation Latitude="32.96498" Longitude="-97.036796" />
+      <StartLatitude>32.96498</StartLatitude>
+      <StartLongitude>-97.036796</StartLongitude>
+      <RoadEndName>SH 121</RoadEndName>
+      <CrossStreetEndName>FM 2499</CrossStreetEndName>
+      <EndLocation Latitude="32.964979" Longitude="-97.036796" />
+      <EndLatitude>32.964979</EndLatitude>
+      <EndLongitude>-97.036796</EndLongitude>
+      <Direction>South</Direction>
+      <LinkId>Bogus Link 3</LinkId>
+      <UpdateType>New</UpdateType>
+      <CurrentStatus>Opened</CurrentStatus>
+      <AffectedLanes>Lane2 Lane3</AffectedLanes>
+      <HighwayConditions />
+      <Source />
+      <DaysClosed>Monday Friday Saturday Sunday</DaysClosed>
+      <StartTime>2012-04-28T20:00:00</StartTime>
+      <EndTime>2012-04-28T06:00:00</EndTime>
+      <StartDate>2012-05-04T00:00:00</StartDate>
+      <EndDate>2012-05-07T00:00:00</EndDate>
+      <Extent>
+        <Location Latitude="32.964979" Longitude="-97.036796" />
+      </Extent>
+      <NearestCameraId>489</NearestCameraId>
+      <NearestCameraName>SH114 @ Dallas/Tarrant CL</NearestCameraName>
+    </LaneClosure>
+    <LaneClosure>
+      <NetworkId>01</NetworkId>
+      <Id>023e421c6dd445b6a426597ab628dc3c</Id>
+      <Description>All lanes will be closed continuously for bridge demolition.</Description>
+      <RoadStartName>SH 114</RoadStartName>
+      <CrossStreetStartName>International Pkwy</CrossStreetStartName>
+      <StartLocation Latitude="32.932173" Longitude="-97.041163" />
+      <StartLatitude>32.932173</StartLatitude>
+      <StartLongitude>-97.041163</StartLongitude>
+      <RoadEndName>SH 114</RoadEndName>
+      <CrossStreetEndName>International Pkwy</CrossStreetEndName>
+      <EndLocation Latitude="32.932173" Longitude="-97.041163" />
+      <EndLatitude>32.932173</EndLatitude>
+      <EndLongitude>-97.041163</EndLongitude>
+      <Direction>East</Direction>
+      <LinkId>Bogus Link 3</LinkId>
+      <UpdateType>New</UpdateType>
+      <CurrentStatus>Opened</CurrentStatus>
+      <AffectedLanes>Lane1 Lane2 Lane3</AffectedLanes>
+      <HighwayConditions />
+      <Source />
+      <DaysClosed>Monday Friday Saturday Sunday</DaysClosed>
+      <StartTime>2012-04-28T20:00:00</StartTime>
+      <EndTime>2012-04-28T06:00:00</EndTime>
+      <StartDate>2012-05-04T00:00:00</StartDate>
+      <EndDate>2012-05-07T00:00:00</EndDate>
+      <Extent />
+      <NearestCameraId>489</NearestCameraId>
+      <NearestCameraName>SH114 @ Dallas/Tarrant CL</NearestCameraName>
+    </LaneClosure>
+    <LaneClosure>
+      <NetworkId>01</NetworkId>
+      <Id>8dba2794d91f43858f27c411c5269191</Id>
+      <Description>All lanes will be closed continuously for bridge demolition.</Description>
+      <RoadStartName>SH 114</RoadStartName>
+      <CrossStreetStartName>International Pkwy</CrossStreetStartName>
+      <StartLocation Latitude="32.932551" Longitude="-97.039425" />
+      <StartLatitude>32.932551</StartLatitude>
+      <StartLongitude>-97.039425</StartLongitude>
+      <RoadEndName>SH 114</RoadEndName>
+      <CrossStreetEndName>International Pkwy</CrossStreetEndName>
+      <EndLocation Latitude="32.93255" Longitude="-97.039425" />
+      <EndLatitude>32.93255</EndLatitude>
+      <EndLongitude>-97.039425</EndLongitude>
+      <Direction>West</Direction>
+      <LinkId>Bogus Link 3</LinkId>
+      <UpdateType>New</UpdateType>
+      <CurrentStatus>Opened</CurrentStatus>
+      <AffectedLanes>Lane1 Lane2 Lane3</AffectedLanes>
+      <HighwayConditions />
+      <Source />
+      <DaysClosed>Monday Friday Saturday Sunday</DaysClosed>
+      <StartTime>2012-04-28T20:00:00</StartTime>
+      <EndTime>2012-04-28T06:00:00</EndTime>
+      <StartDate>2012-05-04T00:00:00</StartDate>
+      <EndDate>2012-05-07T00:00:00</EndDate>
+      <Extent>
+        <Location Latitude="32.932551" Longitude="-97.039425" />
+        <Location Latitude="32.93255" Longitude="-97.039425" />
+      </Extent>
+      <NearestCameraId>489</NearestCameraId>
+      <NearestCameraName>SH114 @ Dallas/Tarrant CL</NearestCameraName>
+    </LaneClosure>
+    <LaneClosure>
+      <NetworkId>01</NetworkId>
+      <Id>dd95644a288a421fad6a0fb89d61cd7d</Id>
+      <Description>Closing the right lane.</Description>
+      <RoadStartName>IH 635</RoadStartName>
+      <CrossStreetStartName>Marsh Ln</CrossStreetStartName>
+      <StartLocation Latitude="32.91783" Longitude="-96.85606" />
+      <StartLatitude>32.91783</StartLatitude>
+      <StartLongitude>-96.85606</StartLongitude>
+      <RoadEndName>IH 635</RoadEndName>
+      <CrossStreetEndName>Welch Rd</CrossStreetEndName>
+      <EndLocation Latitude="32.925816" Longitude="-96.828547" />
+      <EndLatitude>32.925816</EndLatitude>
+      <EndLongitude>-96.828547</EndLongitude>
+      <Direction>East</Direction>
+      <LinkId>Bogus Link 4</LinkId>
+      <UpdateType>New</UpdateType>
+      <CurrentStatus>Opened</CurrentStatus>
+      <AffectedLanes>Lane4</AffectedLanes>
+      <HighwayConditions />
+      <Source />
+      <DaysClosed>Saturday Sunday</DaysClosed>
+      <StartTime>2012-04-28T20:00:00</StartTime>
+      <EndTime>2012-04-28T12:00:00</EndTime>
+      <StartDate>2012-04-28T00:00:00</StartDate>
+      <EndDate>2012-04-29T00:00:00</EndDate>
+      <Extent>
+        <Location Latitude="32.91783" Longitude="-96.85606" />
+        <Location Latitude="32.925816" Longitude="-96.828547" />
+      </Extent>
+      <NearestCameraId>127</NearestCameraId>
+      <NearestCameraName>IH635 @ Rosser</NearestCameraName>
+    </LaneClosure>
+    <LaneClosure>
+      <NetworkId>01</NetworkId>
+      <Id>979375b07f7f4a789e801ea6064149a0</Id>
+      <Description>Closing the right lane.</Description>
+      <RoadStartName>IH 635</RoadStartName>
+      <CrossStreetStartName>Welch Rd</CrossStreetStartName>
+      <StartLocation Latitude="32.926023" Longitude="-96.828585" />
+      <StartLatitude>32.926023</StartLatitude>
+      <StartLongitude>-96.828585</StartLongitude>
+      <RoadEndName>IH 635</RoadEndName>
+      <CrossStreetEndName>Marsh Ln</CrossStreetEndName>
+      <EndLocation Latitude="32.918244" Longitude="-96.855809" />
+      <EndLatitude>32.918244</EndLatitude>
+      <EndLongitude>-96.855809</EndLongitude>
+      <Direction>West</Direction>
+      <LinkId>Bogus Link 4</LinkId>
+      <UpdateType>New</UpdateType>
+      <CurrentStatus>Opened</CurrentStatus>
+      <AffectedLanes>Lane4</AffectedLanes>
+      <HighwayConditions />
+      <Source />
+      <DaysClosed>Saturday Sunday</DaysClosed>
+      <StartTime>2012-04-28T20:00:00</StartTime>
+      <EndTime>2012-04-28T12:00:00</EndTime>
+      <StartDate>2012-04-28T00:00:00</StartDate>
+      <EndDate>2012-04-29T00:00:00</EndDate>
+      <Extent>
+        <Location Latitude="32.926023" Longitude="-96.828585" />
+        <Location Latitude="32.918244" Longitude="-96.855809" />
+      </Extent>
+      <NearestCameraId>136</NearestCameraId>
+      <NearestCameraName>IH635 @ Welch</NearestCameraName>
+    </LaneClosure>
+    <LaneClosure>
+      <NetworkId>01</NetworkId>
+      <Id>0b6734db895c4996ab20c578890af788</Id>
+      <Description>Closing the right lane.</Description>
+      <RoadStartName>IH 635</RoadStartName>
+      <CrossStreetStartName>Welch Rd</CrossStreetStartName>
+      <StartLocation Latitude="32.926023" Longitude="-96.828585" />
+      <StartLatitude>32.926023</StartLatitude>
+      <StartLongitude>-96.828585</StartLongitude>
+      <RoadEndName>IH 635</RoadEndName>
+      <CrossStreetEndName>Marsh Ln</CrossStreetEndName>
+      <EndLocation Latitude="32.918244" Longitude="-96.855809" />
+      <EndLatitude>32.918244</EndLatitude>
+      <EndLongitude>-96.855809</EndLongitude>
+      <Direction>West</Direction>
+      <LinkId>Bogus Link 4</LinkId>
+      <UpdateType>New</UpdateType>
+      <CurrentStatus>Opened</CurrentStatus>
+      <AffectedLanes>Lane4</AffectedLanes>
+      <HighwayConditions />
+      <Source />
+      <DaysClosed>Monday Tuesday Wednesday Thursday Friday Sunday</DaysClosed>
+      <StartTime>2012-04-28T20:00:00</StartTime>
+      <EndTime>2012-04-28T06:00:00</EndTime>
+      <StartDate>2012-04-30T00:00:00</StartDate>
+      <EndDate>2012-05-03T00:00:00</EndDate>
+      <Extent>
+        <Location Latitude="32.926023" Longitude="-96.828585" />
+        <Location Latitude="32.918244" Longitude="-96.855809" />
+      </Extent>
+      <NearestCameraId>136</NearestCameraId>
+      <NearestCameraName>IH635 @ Welch</NearestCameraName>
+    </LaneClosure>
+    <LaneClosure>
+      <NetworkId>01</NetworkId>
+      <Id>67581f9811ac4a2baa6bcd1b6b00607d</Id>
+      <Description>Closing the right lane.</Description>
+      <RoadStartName>IH 635</RoadStartName>
+      <CrossStreetStartName>Welch Rd</CrossStreetStartName>
+      <StartLocation Latitude="32.926023" Longitude="-96.828585" />
+      <StartLatitude>32.926023</StartLatitude>
+      <StartLongitude>-96.828585</StartLongitude>
+      <RoadEndName>IH 635</RoadEndName>
+      <CrossStreetEndName>Marsh Ln</CrossStreetEndName>
+      <EndLocation Latitude="32.918244" Longitude="-96.855809" />
+      <EndLatitude>32.918244</EndLatitude>
+      <EndLongitude>-96.855809</EndLongitude>
+      <Direction>West</Direction>
+      <LinkId>Bogus Link 4</LinkId>
+      <UpdateType>New</UpdateType>
+      <CurrentStatus>Opened</CurrentStatus>
+      <AffectedLanes>Lane4</AffectedLanes>
+      <HighwayConditions />
+      <Source />
+      <DaysClosed>Friday Saturday</DaysClosed>
+      <StartTime>2012-04-28T21:00:00</StartTime>
+      <EndTime>2012-04-28T10:00:00</EndTime>
+      <StartDate>2012-05-04T00:00:00</StartDate>
+      <EndDate>2012-05-05T00:00:00</EndDate>
+      <Extent>
+        <Location Latitude="32.926023" Longitude="-96.828585" />
+        <Location Latitude="32.918244" Longitude="-96.855809" />
+      </Extent>
+      <NearestCameraId>136</NearestCameraId>
+      <NearestCameraName>IH635 @ Welch</NearestCameraName>
+    </LaneClosure>
+    <LaneClosure>
+      <NetworkId>01</NetworkId>
+      <Id>dd464600667d488490c2082afc2915f7</Id>
+      <Description>Closing the right lane.</Description>
+      <RoadStartName>IH 635</RoadStartName>
+      <CrossStreetStartName>Welch Rd</CrossStreetStartName>
+      <StartLocation Latitude="32.926023" Longitude="-96.828585" />
+      <StartLatitude>32.926023</StartLatitude>
+      <StartLongitude>-96.828585</StartLongitude>
+      <RoadEndName>IH 635</RoadEndName>
+      <CrossStreetEndName>Marsh Ln</CrossStreetEndName>
+      <EndLocation Latitude="32.918244" Longitude="-96.855809" />
+      <EndLatitude>32.918244</EndLatitude>
+      <EndLongitude>-96.855809</EndLongitude>
+      <Direction>West</Direction>
+      <LinkId>Bogus Link 4</LinkId>
+      <UpdateType>New</UpdateType>
+      <CurrentStatus>Opened</CurrentStatus>
+      <AffectedLanes>Lane4</AffectedLanes>
+      <HighwayConditions />
+      <Source />
+      <DaysClosed>Saturday Sunday</DaysClosed>
+      <StartTime>2012-04-28T20:00:00</StartTime>
+      <EndTime>2012-04-28T12:00:00</EndTime>
+      <StartDate>2012-05-05T00:00:00</StartDate>
+      <EndDate>2012-05-06T00:00:00</EndDate>
+      <Extent>
+        <Location Latitude="32.926023" Longitude="-96.828585" />
+        <Location Latitude="32.918244" Longitude="-96.855809" />
+      </Extent>
+      <NearestCameraId>136</NearestCameraId>
+      <NearestCameraName>IH635 @ Welch</NearestCameraName>
+    </LaneClosure>
+    <LaneClosure>
+      <NetworkId>01</NetworkId>
+      <Id>262b927fd3714c2f95ae3aa7a43be59b</Id>
+      <Description>Closing the right lane.</Description>
+      <RoadStartName>IH 635</RoadStartName>
+      <CrossStreetStartName>Marsh Ln</CrossStreetStartName>
+      <StartLocation Latitude="32.91783" Longitude="-96.85606" />
+      <StartLatitude>32.91783</StartLatitude>
+      <StartLongitude>-96.85606</StartLongitude>
+      <RoadEndName>IH 635</RoadEndName>
+      <CrossStreetEndName>Welch Rd</CrossStreetEndName>
+      <EndLocation Latitude="32.925816" Longitude="-96.828547" />
+      <EndLatitude>32.925816</EndLatitude>
+      <EndLongitude>-96.828547</EndLongitude>
+      <Direction>East</Direction>
+      <LinkId>Bogus Link 4</LinkId>
+      <UpdateType>New</UpdateType>
+      <CurrentStatus>Opened</CurrentStatus>
+      <AffectedLanes>Lane4</AffectedLanes>
+      <HighwayConditions />
+      <Source />
+      <DaysClosed>Monday Tuesday Wednesday Thursday Friday Sunday</DaysClosed>
+      <StartTime>2012-04-28T20:00:00</StartTime>
+      <EndTime>2012-04-28T06:00:00</EndTime>
+      <StartDate>2012-04-30T00:00:00</StartDate>
+      <EndDate>2012-05-03T00:00:00</EndDate>
+      <Extent>
+        <Location Latitude="32.91783" Longitude="-96.85606" />
+        <Location Latitude="32.925816" Longitude="-96.828547" />
+      </Extent>
+      <NearestCameraId>127</NearestCameraId>
+      <NearestCameraName>IH635 @ Rosser</NearestCameraName>
+    </LaneClosure>
+    <LaneClosure>
+      <NetworkId>01</NetworkId>
+      <Id>da38a4b114a94baebda7583b3edfb10a</Id>
+      <Description>Closing the right lane.</Description>
+      <RoadStartName>IH 635</RoadStartName>
+      <CrossStreetStartName>Marsh Ln</CrossStreetStartName>
+      <StartLocation Latitude="32.91783" Longitude="-96.85606" />
+      <StartLatitude>32.91783</StartLatitude>
+      <StartLongitude>-96.85606</StartLongitude>
+      <RoadEndName>IH 635</RoadEndName>
+      <CrossStreetEndName>Welch Rd</CrossStreetEndName>
+      <EndLocation Latitude="32.925816" Longitude="-96.828547" />
+      <EndLatitude>32.925816</EndLatitude>
+      <EndLongitude>-96.828547</EndLongitude>
+      <Direction>East</Direction>
+      <LinkId>Bogus Link 4</LinkId>
+      <UpdateType>New</UpdateType>
+      <CurrentStatus>Opened</CurrentStatus>
+      <AffectedLanes>Lane4</AffectedLanes>
+      <HighwayConditions />
+      <Source />
+      <DaysClosed>Friday Saturday</DaysClosed>
+      <StartTime>2012-04-28T21:00:00</StartTime>
+      <EndTime>2012-04-28T10:00:00</EndTime>
+      <StartDate>2012-05-04T00:00:00</StartDate>
+      <EndDate>2012-05-05T00:00:00</EndDate>
+      <Extent>
+        <Location Latitude="32.91783" Longitude="-96.85606" />
+        <Location Latitude="32.925816" Longitude="-96.828547" />
+      </Extent>
+      <NearestCameraId>127</NearestCameraId>
+      <NearestCameraName>IH635 @ Rosser</NearestCameraName>
+    </LaneClosure>
+    <LaneClosure>
+      <NetworkId>01</NetworkId>
+      <Id>d5869a4ce80843108e2ada526b056d26</Id>
+      <Description>Closing the right lane.</Description>
+      <RoadStartName>IH 635</RoadStartName>
+      <CrossStreetStartName>Marsh Ln</CrossStreetStartName>
+      <StartLocation Latitude="32.91783" Longitude="-96.85606" />
+      <StartLatitude>32.91783</StartLatitude>
+      <StartLongitude>-96.85606</StartLongitude>
+      <RoadEndName>IH 635</RoadEndName>
+      <CrossStreetEndName>Welch Rd</CrossStreetEndName>
+      <EndLocation Latitude="32.925816" Longitude="-96.828547" />
+      <EndLatitude>32.925816</EndLatitude>
+      <EndLongitude>-96.828547</EndLongitude>
+      <Direction>East</Direction>
+      <LinkId>Bogus Link 4</LinkId>
+      <UpdateType>New</UpdateType>
+      <CurrentStatus>Opened</CurrentStatus>
+      <AffectedLanes>Lane4</AffectedLanes>
+      <HighwayConditions />
+      <Source />
+      <DaysClosed>Saturday Sunday</DaysClosed>
+      <StartTime>2012-04-28T20:00:00</StartTime>
+      <EndTime>2012-04-28T12:00:00</EndTime>
+      <StartDate>2012-05-05T00:00:00</StartDate>
+      <EndDate>2012-05-06T00:00:00</EndDate>
+      <Extent>
+        <Location Latitude="32.91783" Longitude="-96.85606" />
+        <Location Latitude="32.925816" Longitude="-96.828547" />
+      </Extent>
+      <NearestCameraId>127</NearestCameraId>
+      <NearestCameraName>IH635 @ Rosser</NearestCameraName>
+    </LaneClosure>
+    <LaneClosure>
+      <NetworkId>01</NetworkId>
+      <Id>1e2976a484c74a529eae6b3dc092ffc0</Id>
+      <Description>Closing the right lane.</Description>
+      <RoadStartName>IH 635</RoadStartName>
+      <CrossStreetStartName>Dallas North Tollway</CrossStreetStartName>
+      <StartLocation Latitude="32.925729" Longitude="-96.820642" />
+      <StartLatitude>32.925729</StartLatitude>
+      <StartLongitude>-96.820642</StartLongitude>
+      <RoadEndName>IH 635</RoadEndName>
+      <CrossStreetEndName>Montfort Dr</CrossStreetEndName>
+      <EndLocation Latitude="32.925646" Longitude="-96.811218" />
+      <EndLatitude>32.925646</EndLatitude>
+      <EndLongitude>-96.811218</EndLongitude>
+      <Direction>East</Direction>
+      <LinkId>Bogus Link 4</LinkId>
+      <UpdateType>New</UpdateType>
+      <CurrentStatus>Opened</CurrentStatus>
+      <AffectedLanes>Lane4</AffectedLanes>
+      <HighwayConditions />
+      <Source />
+      <DaysClosed>Monday Tuesday Wednesday Thursday Friday</DaysClosed>
+      <StartTime>2012-04-28T20:00:00</StartTime>
+      <EndTime>2012-04-28T06:00:00</EndTime>
+      <StartDate>2012-04-30T00:00:00</StartDate>
+      <EndDate>2012-05-03T00:00:00</EndDate>
+      <Extent>
+        <Location Latitude="32.925729" Longitude="-96.820642" />
+        <Location Latitude="32.925646" Longitude="-96.811218" />
+      </Extent>
+      <NearestCameraId>135</NearestCameraId>
+      <NearestCameraName>IH635 @ Montfort</NearestCameraName>
+    </LaneClosure>
+    <LaneClosure>
+      <NetworkId>01</NetworkId>
+      <Id>2e4e2bd6d042471b8815b05134aeddff</Id>
+      <Description>Closing the right lane.</Description>
+      <RoadStartName>IH 635</RoadStartName>
+      <CrossStreetStartName>Dallas North Tollway</CrossStreetStartName>
+      <StartLocation Latitude="32.925729" Longitude="-96.820642" />
+      <StartLatitude>32.925729</StartLatitude>
+      <StartLongitude>-96.820642</StartLongitude>
+      <RoadEndName>IH 635</RoadEndName>
+      <CrossStreetEndName>Montfort Dr</CrossStreetEndName>
+      <EndLocation Latitude="32.925646" Longitude="-96.811218" />
+      <EndLatitude>32.925646</EndLatitude>
+      <EndLongitude>-96.811218</EndLongitude>
+      <Direction>East</Direction>
+      <LinkId>Bogus Link 4</LinkId>
+      <UpdateType>New</UpdateType>
+      <CurrentStatus>Opened</CurrentStatus>
+      <AffectedLanes>Lane4</AffectedLanes>
+      <HighwayConditions />
+      <Source />
+      <DaysClosed>Friday</DaysClosed>
+      <StartTime>2012-04-28T20:00:00</StartTime>
+      <EndTime>2012-04-28T10:00:00</EndTime>
+      <StartDate>2012-05-04T00:00:00</StartDate>
+      <EndDate>2012-05-04T00:00:00</EndDate>
+      <Extent>
+        <Location Latitude="32.925729" Longitude="-96.820642" />
+        <Location Latitude="32.925646" Longitude="-96.811218" />
+      </Extent>
+      <NearestCameraId>135</NearestCameraId>
+      <NearestCameraName>IH635 @ Montfort</NearestCameraName>
+    </LaneClosure>
+    <LaneClosure>
+      <NetworkId>01</NetworkId>
+      <Id>a46f9e6495554d38865233a322202bda</Id>
+      <Description>Closing the right lane</Description>
+      <RoadStartName>IH 635</RoadStartName>
+      <CrossStreetStartName>Preston Rd</CrossStreetStartName>
+      <StartLocation Latitude="32.9255" Longitude="-96.803374" />
+      <StartLatitude>32.9255</StartLatitude>
+      <StartLongitude>-96.803374</StartLongitude>
+      <RoadEndName>IH 635</RoadEndName>
+      <CrossStreetEndName>Marsh Ln</CrossStreetEndName>
+      <EndLocation Latitude="32.918244" Longitude="-96.855809" />
+      <EndLatitude>32.918244</EndLatitude>
+      <EndLongitude>-96.855809</EndLongitude>
+      <Direction>West</Direction>
+      <LinkId>Bogus Link 4</LinkId>
+      <UpdateType>New</UpdateType>
+      <CurrentStatus>Opened</CurrentStatus>
+      <AffectedLanes>Lane4</AffectedLanes>
+      <HighwayConditions />
+      <Source />
+      <DaysClosed>Friday Saturday</DaysClosed>
+      <StartTime>2012-04-28T21:00:00</StartTime>
+      <EndTime>2012-04-28T10:00:00</EndTime>
+      <StartDate>2012-05-04T00:00:00</StartDate>
+      <EndDate>2012-05-05T00:00:00</EndDate>
+      <Extent>
+        <Location Latitude="32.9255" Longitude="-96.803374" />
+        <Location Latitude="32.918244" Longitude="-96.855809" />
+      </Extent>
+      <NearestCameraId>638</NearestCameraId>
+      <NearestCameraName>IH635 @ Preston</NearestCameraName>
+    </LaneClosure>
+    <LaneClosure>
+      <NetworkId>01</NetworkId>
+      <Id>94463329b14940f1b546c812d8d3a6c9</Id>
+      <Description>Exit ramp closed overnight.</Description>
+      <RoadStartName>IH 35E</RoadStartName>
+      <CrossStreetStartName>Royal Ln</CrossStreetStartName>
+      <StartLocation Latitude="32.8961" Longitude="-96.898052" />
+      <StartLatitude>32.8961</StartLatitude>
+      <StartLongitude>-96.898052</StartLongitude>
+      <RoadEndName>IH 35E</RoadEndName>
+      <CrossStreetEndName>Royal Ln</CrossStreetEndName>
+      <EndLocation Latitude="32.896099" Longitude="-96.898052" />
+      <EndLatitude>32.896099</EndLatitude>
+      <EndLongitude>-96.898052</EndLongitude>
+      <Direction>South</Direction>
+      <LinkId>64270d9b56aa48b792a52e1f8c3ea417</LinkId>
+      <UpdateType>New</UpdateType>
+      <CurrentStatus>Opened</CurrentStatus>
+      <AffectedLanes>ExitRamp</AffectedLanes>
+      <HighwayConditions />
+      <Source />
+      <DaysClosed>Tuesday Wednesday Thursday</DaysClosed>
+      <StartTime>2012-04-28T22:00:00</StartTime>
+      <EndTime>2012-04-28T06:00:00</EndTime>
+      <StartDate>2012-05-01T00:00:00</StartDate>
+      <EndDate>2012-05-03T00:00:00</EndDate>
+      <Extent>
+        <Location Latitude="32.8961" Longitude="-96.898052" />
+        <Location Latitude="32.896099" Longitude="-96.898052" />
+      </Extent>
+      <NearestCameraId>123</NearestCameraId>
+      <NearestCameraName>IH35E @ Royal</NearestCameraName>
+    </LaneClosure>
+    <LaneClosure>
+      <NetworkId>01</NetworkId>
+      <Id>f21de6494ed1447bb80d5c486d845d2b</Id>
+      <Description>2 right lanes closed</Description>
+      <RoadStartName>IH 30</RoadStartName>
+      <CrossStreetStartName>2nd Ave</CrossStreetStartName>
+      <StartLocation Latitude="32.781483" Longitude="-96.771118" />
+      <StartLatitude>32.781483</StartLatitude>
+      <StartLongitude>-96.771118</StartLongitude>
+      <RoadEndName>IH 30</RoadEndName>
+      <CrossStreetEndName>Malcolm X Blvd</CrossStreetEndName>
+      <EndLocation Latitude="32.779842" Longitude="-96.780495" />
+      <EndLatitude>32.779842</EndLatitude>
+      <EndLongitude>-96.780495</EndLongitude>
+      <Direction>West</Direction>
+      <LinkId>9F0629D29BF64EFF8AB73DF875DA1827</LinkId>
+      <UpdateType>New</UpdateType>
+      <CurrentStatus>Opened</CurrentStatus>
+      <AffectedLanes>Lane3 Lane4</AffectedLanes>
+      <HighwayConditions />
+      <Source />
+      <DaysClosed>Monday Sunday</DaysClosed>
+      <StartTime>2012-04-28T21:00:00</StartTime>
+      <EndTime>2012-04-28T05:00:00</EndTime>
+      <StartDate>2012-04-29T00:00:00</StartDate>
+      <EndDate>2012-04-30T00:00:00</EndDate>
+      <Extent>
+        <Location Latitude="32.781483" Longitude="-96.771118" />
+        <Location Latitude="32.782081" Longitude="-96.771525" />
+        <Location Latitude="32.782049" Longitude="-96.771565" />
+        <Location Latitude="32.779842" Longitude="-96.780495" />
+      </Extent>
+      <NearestCameraId>368</NearestCameraId>
+      <NearestCameraName>IH30 @ 2nd Ave</NearestCameraName>
+    </LaneClosure>
+    <LaneClosure>
+      <NetworkId>01</NetworkId>
+      <Id>4685ae2dccb342ea86300bc81990cbc8</Id>
+      <Description>various lanes closed.</Description>
+      <RoadStartName>IH 635</RoadStartName>
+      <CrossStreetStartName>Midway Rd</CrossStreetStartName>
+      <StartLocation Latitude="32.925071" Longitude="-96.838541" />
+      <StartLatitude>32.925071</StartLatitude>
+      <StartLongitude>-96.838541</StartLongitude>
+      <RoadEndName>IH 635</RoadEndName>
+      <CrossStreetEndName>Dallas North Tollway</CrossStreetEndName>
+      <EndLocation Latitude="32.925729" Longitude="-96.820642" />
+      <EndLatitude>32.925729</EndLatitude>
+      <EndLongitude>-96.820642</EndLongitude>
+      <Direction>East</Direction>
+      <LinkId>Bogus Link 4</LinkId>
+      <UpdateType>New</UpdateType>
+      <CurrentStatus>Opened</CurrentStatus>
+      <AffectedLanes>Lane1 Lane2 Lane3 Lane4</AffectedLanes>
+      <HighwayConditions />
+      <Source />
+      <DaysClosed>Wednesday Thursday</DaysClosed>
+      <StartTime>2012-04-28T20:00:00</StartTime>
+      <EndTime>2012-04-28T06:00:00</EndTime>
+      <StartDate>2012-05-02T00:00:00</StartDate>
+      <EndDate>2012-05-03T00:00:00</EndDate>
+      <Extent>
+        <Location Latitude="32.925071" Longitude="-96.838541" />
+        <Location Latitude="32.925729" Longitude="-96.820642" />
+      </Extent>
+      <NearestCameraId>136</NearestCameraId>
+      <NearestCameraName>IH635 @ Welch</NearestCameraName>
+    </LaneClosure>
+    <LaneClosure>
+      <NetworkId>01</NetworkId>
+      <Id>dc4906891e644127b701f2745c1b1aef</Id>
+      <Description>various lanes closed</Description>
+      <RoadStartName>IH 635</RoadStartName>
+      <CrossStreetStartName>Dallas North Tollway</CrossStreetStartName>
+      <StartLocation Latitude="32.925999" Longitude="-96.820513" />
+      <StartLatitude>32.925999</StartLatitude>
+      <StartLongitude>-96.820513</StartLongitude>
+      <RoadEndName>IH 635</RoadEndName>
+      <CrossStreetEndName>Midway Rd</CrossStreetEndName>
+      <EndLocation Latitude="32.925241" Longitude="-96.838589" />
+      <EndLatitude>32.925241</EndLatitude>
+      <EndLongitude>-96.838589</EndLongitude>
+      <Direction>West</Direction>
+      <LinkId>Bogus Link 4</LinkId>
+      <UpdateType>New</UpdateType>
+      <CurrentStatus>Opened</CurrentStatus>
+      <AffectedLanes>Lane1 Lane2 Lane3 Lane4</AffectedLanes>
+      <HighwayConditions />
+      <Source />
+      <DaysClosed>Monday Tuesday Wednesday Thursday Friday Saturday</DaysClosed>
+      <StartTime>2012-04-28T20:00:00</StartTime>
+      <EndTime>2012-04-28T06:00:00</EndTime>
+      <StartDate>2012-04-30T00:00:00</StartDate>
+      <EndDate>2012-05-04T00:00:00</EndDate>
+      <Extent>
+        <Location Latitude="32.925999" Longitude="-96.820513" />
+        <Location Latitude="32.925241" Longitude="-96.838589" />
+      </Extent>
+      <NearestCameraId>135</NearestCameraId>
+      <NearestCameraName>IH635 @ Montfort</NearestCameraName>
+    </LaneClosure>
+    <LaneClosure>
+      <NetworkId>01</NetworkId>
+      <Id>82a5808729e045df991b9d0fc4d2ba52</Id>
+      <Description>Alternating main lanes closed nightly for deck park work.  </Description>
+      <RoadStartName>Spur 366</RoadStartName>
+      <CrossStreetStartName>St. Paul St</CrossStreetStartName>
+      <StartLocation Latitude="32.788277" Longitude="-96.802685" />
+      <StartLatitude>32.788277</StartLatitude>
+      <StartLongitude>-96.802685</StartLongitude>
+      <RoadEndName>Spur 366</RoadEndName>
+      <CrossStreetEndName>Pearl St</CrossStreetEndName>
+      <EndLocation Latitude="32.790372" Longitude="-96.800169" />
+      <EndLatitude>32.790372</EndLatitude>
+      <EndLongitude>-96.800169</EndLongitude>
+      <Direction>East</Direction>
+      <LinkId>446ACCA664D046B987C05042BA43CCE5</LinkId>
+      <UpdateType>New</UpdateType>
+      <CurrentStatus>Opened</CurrentStatus>
+      <AffectedLanes>Lane1 Lane2 Lane3 Lane4</AffectedLanes>
+      <HighwayConditions />
+      <Source />
+      <DaysClosed>Monday Tuesday Wednesday Thursday Friday Saturday Sunday</DaysClosed>
+      <StartTime>2012-04-28T21:00:00</StartTime>
+      <EndTime>2012-04-28T06:00:00</EndTime>
+      <StartDate>2012-05-01T00:00:00</StartDate>
+      <EndDate>2012-06-01T00:00:00</EndDate>
+      <Extent>
+        <Location Latitude="32.790372" Longitude="-96.800169" />
+      </Extent>
+      <NearestCameraId>478</NearestCameraId>
+      <NearestCameraName>Spur 366 @ IH35E North</NearestCameraName>
+    </LaneClosure>
+    <LaneClosure>
+      <NetworkId>01</NetworkId>
+      <Id>d4015a321ff740538054901b66419ccd</Id>
+      <Description>Alternating main lanes closed nightly for deck park work.  </Description>
+      <RoadStartName>Spur 366</RoadStartName>
+      <CrossStreetStartName>Pearl St</CrossStreetStartName>
+      <StartLocation Latitude="32.790571" Longitude="-96.800341" />
+      <StartLatitude>32.790571</StartLatitude>
+      <StartLongitude>-96.800341</StartLongitude>
+      <RoadEndName>Spur 366</RoadEndName>
+      <CrossStreetEndName>St. Paul St</CrossStreetEndName>
+      <EndLocation Latitude="32.788366" Longitude="-96.80284" />
+      <EndLatitude>32.788366</EndLatitude>
+      <EndLongitude>-96.80284</EndLongitude>
+      <Direction>West</Direction>
+      <LinkId>BE17E485A9834371A2E1DADE57A4BD35</LinkId>
+      <UpdateType>New</UpdateType>
+      <CurrentStatus>Opened</CurrentStatus>
+      <AffectedLanes>Lane1 Lane2 Lane3 Lane4</AffectedLanes>
+      <HighwayConditions />
+      <Source />
+      <DaysClosed>Monday Tuesday Wednesday Thursday Friday Saturday Sunday</DaysClosed>
+      <StartTime>2012-04-28T21:00:00</StartTime>
+      <EndTime>2012-04-28T06:00:00</EndTime>
+      <StartDate>2012-05-01T00:00:00</StartDate>
+      <EndDate>2012-06-01T00:00:00</EndDate>
+      <Extent>
+        <Location Latitude="32.788366" Longitude="-96.80284" />
+      </Extent>
+      <NearestCameraId>471</NearestCameraId>
+      <NearestCameraName>Spur 366 @ US75 West</NearestCameraName>
+    </LaneClosure>
+    <LaneClosure>
+      <NetworkId>01</NetworkId>
+      <Id>9be355aa3c274b3aa7d1d327387963f1</Id>
+      <Description>All lanes will be closed nightly for fan testing.</Description>
+      <RoadStartName>Spur 366</RoadStartName>
+      <CrossStreetStartName>IH 35E</CrossStreetStartName>
+      <StartLocation Latitude="32.782429" Longitude="-96.811571" />
+      <StartLatitude>32.782429</StartLatitude>
+      <StartLongitude>-96.811571</StartLongitude>
+      <RoadEndName>Spur 366</RoadEndName>
+      <CrossStreetEndName>US 75</CrossStreetEndName>
+      <EndLocation Latitude="32.795256" Longitude="-96.793075" />
+      <EndLatitude>32.795256</EndLatitude>
+      <EndLongitude>-96.793075</EndLongitude>
+      <Direction>East</Direction>
+      <LinkId>Bogus Link 4</LinkId>
+      <UpdateType>New</UpdateType>
+      <CurrentStatus>Opened</CurrentStatus>
+      <AffectedLanes>Lane1 Lane2 Lane3 Lane4</AffectedLanes>
+      <HighwayConditions />
+      <Source />
+      <DaysClosed>Monday Tuesday Wednesday</DaysClosed>
+      <StartTime>2012-04-28T21:00:00</StartTime>
+      <EndTime>2012-04-28T06:00:00</EndTime>
+      <StartDate>2012-04-30T00:00:00</StartDate>
+      <EndDate>2012-05-02T00:00:00</EndDate>
+      <Extent>
+        <Location Latitude="32.795256" Longitude="-96.793075" />
+      </Extent>
+      <NearestCameraId>274</NearestCameraId>
+      <NearestCameraName>IH35E @ Spur 366</NearestCameraName>
+    </LaneClosure>
+    <LaneClosure>
+      <NetworkId>01</NetworkId>
+      <Id>0d55727fb1334ce686254a2aa4ac9859</Id>
+      <Description>The left lane will be closed for detour work.</Description>
+      <RoadStartName>IH 45</RoadStartName>
+      <CrossStreetStartName>Dowdy Ferry Rd</CrossStreetStartName>
+      <StartLocation Latitude="32.648916" Longitude="-96.707406" />
+      <StartLatitude>32.648916</StartLatitude>
+      <StartLongitude>-96.707406</StartLongitude>
+      <RoadEndName>IH 45</RoadEndName>
+      <CrossStreetEndName>Simpson Stuart Rd</CrossStreetEndName>
+      <EndLocation Latitude="32.681737" Longitude="-96.744119" />
+      <EndLatitude>32.681737</EndLatitude>
+      <EndLongitude>-96.744119</EndLongitude>
+      <Direction>North</Direction>
+      <LinkId>ae4c8ce5d5454809bcd7d8541e861d21</LinkId>
+      <UpdateType>New</UpdateType>
+      <CurrentStatus>Opened</CurrentStatus>
+      <AffectedLanes>Lane1</AffectedLanes>
+      <HighwayConditions />
+      <Source />
+      <DaysClosed>Thursday Friday</DaysClosed>
+      <StartTime>2012-04-28T09:00:00</StartTime>
+      <EndTime>2012-04-28T15:30:00</EndTime>
+      <StartDate>2012-05-03T00:00:00</StartDate>
+      <EndDate>2012-05-04T00:00:00</EndDate>
+      <Extent>
+        <Location Latitude="32.648916" Longitude="-96.707406" />
+        <Location Latitude="32.663185" Longitude="-96.726179" />
+        <Location Latitude="32.663237" Longitude="-96.726287" />
+        <Location Latitude="32.681737" Longitude="-96.744119" />
+      </Extent>
+      <NearestCameraId>629</NearestCameraId>
+      <NearestCameraName>IH45 @ Wintergreen North</NearestCameraName>
+    </LaneClosure>
+    <LaneClosure>
+      <NetworkId>01</NetworkId>
+      <Id>f3e35fce47c947dd8cb859f42411adfb</Id>
+      <Description>The left lane will be closed for excavation work.</Description>
+      <RoadStartName>IH 45</RoadStartName>
+      <CrossStreetStartName>Dowdy Ferry Rd</CrossStreetStartName>
+      <StartLocation Latitude="32.648916" Longitude="-96.707406" />
+      <StartLatitude>32.648916</StartLatitude>
+      <StartLongitude>-96.707406</StartLongitude>
+      <RoadEndName>IH 45</RoadEndName>
+      <CrossStreetEndName>Simpson Stuart Rd</CrossStreetEndName>
+      <EndLocation Latitude="32.681737" Longitude="-96.744119" />
+      <EndLatitude>32.681737</EndLatitude>
+      <EndLongitude>-96.744119</EndLongitude>
+      <Direction>North</Direction>
+      <LinkId>ae4c8ce5d5454809bcd7d8541e861d21</LinkId>
+      <UpdateType>New</UpdateType>
+      <CurrentStatus>Opened</CurrentStatus>
+      <AffectedLanes>Lane1</AffectedLanes>
+      <HighwayConditions />
+      <Source />
+      <DaysClosed>Monday</DaysClosed>
+      <StartTime>2012-04-28T09:00:00</StartTime>
+      <EndTime>2012-04-28T15:30:00</EndTime>
+      <StartDate>2012-04-30T00:00:00</StartDate>
+      <EndDate>2012-04-30T00:00:00</EndDate>
+      <Extent>
+        <Location Latitude="32.648916" Longitude="-96.707406" />
+        <Location Latitude="32.663185" Longitude="-96.726179" />
+        <Location Latitude="32.663237" Longitude="-96.726287" />
+        <Location Latitude="32.681737" Longitude="-96.744119" />
+      </Extent>
+      <NearestCameraId>629</NearestCameraId>
+      <NearestCameraName>IH45 @ Wintergreen North</NearestCameraName>
+    </LaneClosure>
+    <LaneClosure>
+      <NetworkId>01</NetworkId>
+      <Id>546ba5ba4bd945e780744eefe8b9b727</Id>
+      <Description>The left lane will be closed for detour work.</Description>
+      <RoadStartName>IH 45</RoadStartName>
+      <CrossStreetStartName>Dowdy Ferry Rd</CrossStreetStartName>
+      <StartLocation Latitude="32.648916" Longitude="-96.707406" />
+      <StartLatitude>32.648916</StartLatitude>
+      <StartLongitude>-96.707406</StartLongitude>
+      <RoadEndName>IH 45</RoadEndName>
+      <CrossStreetEndName>Simpson Stuart Rd</CrossStreetEndName>
+      <EndLocation Latitude="32.681737" Longitude="-96.744119" />
+      <EndLatitude>32.681737</EndLatitude>
+      <EndLongitude>-96.744119</EndLongitude>
+      <Direction>North</Direction>
+      <LinkId>ae4c8ce5d5454809bcd7d8541e861d21</LinkId>
+      <UpdateType>New</UpdateType>
+      <CurrentStatus>Opened</CurrentStatus>
+      <AffectedLanes>Lane1</AffectedLanes>
+      <HighwayConditions />
+      <Source />
+      <DaysClosed>Tuesday</DaysClosed>
+      <StartTime>2012-04-28T09:00:00</StartTime>
+      <EndTime>2012-04-28T15:30:00</EndTime>
+      <StartDate>2012-05-01T00:00:00</StartDate>
+      <EndDate>2012-05-01T00:00:00</EndDate>
+      <Extent>
+        <Location Latitude="32.648916" Longitude="-96.707406" />
+        <Location Latitude="32.663185" Longitude="-96.726179" />
+        <Location Latitude="32.663237" Longitude="-96.726287" />
+        <Location Latitude="32.681737" Longitude="-96.744119" />
+      </Extent>
+      <NearestCameraId>629</NearestCameraId>
+      <NearestCameraName>IH45 @ Wintergreen North</NearestCameraName>
+    </LaneClosure>
+    <LaneClosure>
+      <NetworkId>01</NetworkId>
+      <Id>bfac76ca4b874fe5a009e94e3081241f</Id>
+      <Description>Closing the right lane.</Description>
+      <RoadStartName>IH 635</RoadStartName>
+      <CrossStreetStartName>Dallas North Tollway</CrossStreetStartName>
+      <StartLocation Latitude="32.925729" Longitude="-96.820642" />
+      <StartLatitude>32.925729</StartLatitude>
+      <StartLongitude>-96.820642</StartLongitude>
+      <RoadEndName>IH 635</RoadEndName>
+      <CrossStreetEndName>Montfort Dr</CrossStreetEndName>
+      <EndLocation Latitude="32.925646" Longitude="-96.811218" />
+      <EndLatitude>32.925646</EndLatitude>
+      <EndLongitude>-96.811218</EndLongitude>
+      <Direction>East</Direction>
+      <LinkId>Bogus Link 4</LinkId>
+      <UpdateType>New</UpdateType>
+      <CurrentStatus>Opened</CurrentStatus>
+      <AffectedLanes>Lane4</AffectedLanes>
+      <HighwayConditions />
+      <Source />
+      <DaysClosed>Monday Tuesday Wednesday Thursday Friday</DaysClosed>
+      <StartTime>2012-04-28T20:00:00</StartTime>
+      <EndTime>2012-04-28T06:00:00</EndTime>
+      <StartDate>2012-05-07T00:00:00</StartDate>
+      <EndDate>2012-05-10T00:00:00</EndDate>
+      <Extent>
+        <Location Latitude="32.925729" Longitude="-96.820642" />
+        <Location Latitude="32.925646" Longitude="-96.811218" />
+      </Extent>
+      <NearestCameraId>135</NearestCameraId>
+      <NearestCameraName>IH635 @ Montfort</NearestCameraName>
+    </LaneClosure>
+    <LaneClosure>
+      <NetworkId>01</NetworkId>
+      <Id>fe8d485029c1454792d7f549afb069fb</Id>
+      <Description>Closing the right lane.</Description>
+      <RoadStartName>IH 635</RoadStartName>
+      <CrossStreetStartName>Dallas North Tollway</CrossStreetStartName>
+      <StartLocation Latitude="32.925729" Longitude="-96.820642" />
+      <StartLatitude>32.925729</StartLatitude>
+      <StartLongitude>-96.820642</StartLongitude>
+      <RoadEndName>IH 635</RoadEndName>
+      <CrossStreetEndName>Montfort Dr</CrossStreetEndName>
+      <EndLocation Latitude="32.925646" Longitude="-96.811218" />
+      <EndLatitude>32.925646</EndLatitude>
+      <EndLongitude>-96.811218</EndLongitude>
+      <Direction>East</Direction>
+      <LinkId>Bogus Link 4</LinkId>
+      <UpdateType>New</UpdateType>
+      <CurrentStatus>Opened</CurrentStatus>
+      <AffectedLanes>Lane4</AffectedLanes>
+      <HighwayConditions />
+      <Source />
+      <DaysClosed>Friday Saturday</DaysClosed>
+      <StartTime>2012-04-28T20:00:00</StartTime>
+      <EndTime>2012-04-28T10:00:00</EndTime>
+      <StartDate>2012-05-11T00:00:00</StartDate>
+      <EndDate>2012-05-12T00:00:00</EndDate>
+      <Extent>
+        <Location Latitude="32.925729" Longitude="-96.820642" />
+        <Location Latitude="32.925646" Longitude="-96.811218" />
+      </Extent>
+      <NearestCameraId>135</NearestCameraId>
+      <NearestCameraName>IH635 @ Montfort</NearestCameraName>
+    </LaneClosure>
+    <LaneClosure>
+      <NetworkId>01</NetworkId>
+      <Id>08a1e92761c84a54869347c031dbd52d</Id>
+      <Description>The right lane will be closed.</Description>
+      <RoadStartName>IH 635</RoadStartName>
+      <CrossStreetStartName>Josey Ln</CrossStreetStartName>
+      <StartLocation Latitude="32.910883" Longitude="-96.881904" />
+      <StartLatitude>32.910883</StartLatitude>
+      <StartLongitude>-96.881904</StartLongitude>
+      <RoadEndName>IH 635</RoadEndName>
+      <CrossStreetEndName>Marsh Ln</CrossStreetEndName>
+      <EndLocation Latitude="32.91783" Longitude="-96.85606" />
+      <EndLatitude>32.91783</EndLatitude>
+      <EndLongitude>-96.85606</EndLongitude>
+      <Direction>East</Direction>
+      <LinkId>Bogus Link 4</LinkId>
+      <UpdateType>New</UpdateType>
+      <CurrentStatus>Opened</CurrentStatus>
+      <AffectedLanes>Lane4</AffectedLanes>
+      <HighwayConditions />
+      <Source />
+      <DaysClosed>Tuesday Wednesday Thursday Friday</DaysClosed>
+      <StartTime>2012-04-28T20:00:00</StartTime>
+      <EndTime>2012-04-28T06:00:00</EndTime>
+      <StartDate>2012-05-01T00:00:00</StartDate>
+      <EndDate>2012-05-04T00:00:00</EndDate>
+      <Extent>
+        <Location Latitude="32.910883" Longitude="-96.881904" />
+        <Location Latitude="32.91783" Longitude="-96.85606" />
+      </Extent>
+      <NearestCameraId>128</NearestCameraId>
+      <NearestCameraName>IH635 @ Webb Chapel</NearestCameraName>
+    </LaneClosure>
+    <LaneClosure>
+      <NetworkId>01</NetworkId>
+      <Id>0bc83e469dd147d4b7991253731d86be</Id>
+      <Description>The right lane will be closed.</Description>
+      <RoadStartName>IH 635</RoadStartName>
+      <CrossStreetStartName>Josey Ln</CrossStreetStartName>
+      <StartLocation Latitude="32.910883" Longitude="-96.881904" />
+      <StartLatitude>32.910883</StartLatitude>
+      <StartLongitude>-96.881904</StartLongitude>
+      <RoadEndName>IH 635</RoadEndName>
+      <CrossStreetEndName>Midway Rd</CrossStreetEndName>
+      <EndLocation Latitude="32.925071" Longitude="-96.838541" />
+      <EndLatitude>32.925071</EndLatitude>
+      <EndLongitude>-96.838541</EndLongitude>
+      <Direction>East</Direction>
+      <LinkId>Bogus Link 4</LinkId>
+      <UpdateType>New</UpdateType>
+      <CurrentStatus>Opened</CurrentStatus>
+      <AffectedLanes>Lane4</AffectedLanes>
+      <HighwayConditions />
+      <Source />
+      <DaysClosed>Monday Tuesday</DaysClosed>
+      <StartTime>2012-04-28T20:00:00</StartTime>
+      <EndTime>2012-04-28T06:00:00</EndTime>
+      <StartDate>2012-04-30T00:00:00</StartDate>
+      <EndDate>2012-05-01T00:00:00</EndDate>
+      <Extent>
+        <Location Latitude="32.910883" Longitude="-96.881904" />
+        <Location Latitude="32.925071" Longitude="-96.838541" />
+      </Extent>
+      <NearestCameraId>128</NearestCameraId>
+      <NearestCameraName>IH635 @ Webb Chapel</NearestCameraName>
+    </LaneClosure>
+    <LaneClosure>
+      <NetworkId>01</NetworkId>
+      <Id>d0c1fb64840b4a31b4d2c9552fd9e897</Id>
+      <Description>various lanes closed.</Description>
+      <RoadStartName>IH 635</RoadStartName>
+      <CrossStreetStartName>Midway Rd</CrossStreetStartName>
+      <StartLocation Latitude="32.925071" Longitude="-96.838541" />
+      <StartLatitude>32.925071</StartLatitude>
+      <StartLongitude>-96.838541</StartLongitude>
+      <RoadEndName>IH 635</RoadEndName>
+      <CrossStreetEndName>Dallas North Tollway</CrossStreetEndName>
+      <EndLocation Latitude="32.925729" Longitude="-96.820642" />
+      <EndLatitude>32.925729</EndLatitude>
+      <EndLongitude>-96.820642</EndLongitude>
+      <Direction>East</Direction>
+      <LinkId>Bogus Link 4</LinkId>
+      <UpdateType>New</UpdateType>
+      <CurrentStatus>Opened</CurrentStatus>
+      <AffectedLanes>Lane1 Lane2 Lane3 Lane4</AffectedLanes>
+      <HighwayConditions />
+      <Source />
+      <DaysClosed>Friday Saturday</DaysClosed>
+      <StartTime>2012-04-28T20:00:00</StartTime>
+      <EndTime>2012-04-28T10:00:00</EndTime>
+      <StartDate>2012-05-04T00:00:00</StartDate>
+      <EndDate>2012-05-05T00:00:00</EndDate>
+      <Extent>
+        <Location Latitude="32.925071" Longitude="-96.838541" />
+        <Location Latitude="32.925729" Longitude="-96.820642" />
+      </Extent>
+      <NearestCameraId>136</NearestCameraId>
+      <NearestCameraName>IH635 @ Welch</NearestCameraName>
+    </LaneClosure>
+    <LaneClosure>
+      <NetworkId>01</NetworkId>
+      <Id>735f015734f34457bca0fab80c200ec4</Id>
+      <Description>various lanes closed.</Description>
+      <RoadStartName>IH 635</RoadStartName>
+      <CrossStreetStartName>Midway Rd</CrossStreetStartName>
+      <StartLocation Latitude="32.925071" Longitude="-96.838541" />
+      <StartLatitude>32.925071</StartLatitude>
+      <StartLongitude>-96.838541</StartLongitude>
+      <RoadEndName>IH 635</RoadEndName>
+      <CrossStreetEndName>Dallas North Tollway</CrossStreetEndName>
+      <EndLocation Latitude="32.925729" Longitude="-96.820642" />
+      <EndLatitude>32.925729</EndLatitude>
+      <EndLongitude>-96.820642</EndLongitude>
+      <Direction>East</Direction>
+      <LinkId>Bogus Link 4</LinkId>
+      <UpdateType>New</UpdateType>
+      <CurrentStatus>Opened</CurrentStatus>
+      <AffectedLanes>Lane1 Lane2 Lane3 Lane4</AffectedLanes>
+      <HighwayConditions />
+      <Source />
+      <DaysClosed>Saturday Sunday</DaysClosed>
+      <StartTime>2012-04-28T19:00:00</StartTime>
+      <EndTime>2012-04-28T12:00:00</EndTime>
+      <StartDate>2012-05-05T00:00:00</StartDate>
+      <EndDate>2012-05-06T00:00:00</EndDate>
+      <Extent>
+        <Location Latitude="32.925071" Longitude="-96.838541" />
+        <Location Latitude="32.925729" Longitude="-96.820642" />
+      </Extent>
+      <NearestCameraId>136</NearestCameraId>
+      <NearestCameraName>IH635 @ Welch</NearestCameraName>
+    </LaneClosure>
+    <LaneClosure>
+      <NetworkId>01</NetworkId>
+      <Id>110816310cb640fbb138f0a4bb513eb4</Id>
+      <Description>various lanes closed.</Description>
+      <RoadStartName>IH 635</RoadStartName>
+      <CrossStreetStartName>Midway Rd</CrossStreetStartName>
+      <StartLocation Latitude="32.925071" Longitude="-96.838541" />
+      <StartLatitude>32.925071</StartLatitude>
+      <StartLongitude>-96.838541</StartLongitude>
+      <RoadEndName>IH 635</RoadEndName>
+      <CrossStreetEndName>Dallas North Tollway</CrossStreetEndName>
+      <EndLocation Latitude="32.925729" Longitude="-96.820642" />
+      <EndLatitude>32.925729</EndLatitude>
+      <EndLongitude>-96.820642</EndLongitude>
+      <Direction>East</Direction>
+      <LinkId>Bogus Link 4</LinkId>
+      <UpdateType>New</UpdateType>
+      <CurrentStatus>Opened</CurrentStatus>
+      <AffectedLanes>Lane1 Lane2 Lane3 Lane4</AffectedLanes>
+      <HighwayConditions />
+      <Source />
+      <DaysClosed>Monday Sunday</DaysClosed>
+      <StartTime>2012-04-28T20:00:00</StartTime>
+      <EndTime>2012-04-28T06:00:00</EndTime>
+      <StartDate>2012-05-06T00:00:00</StartDate>
+      <EndDate>2012-05-07T00:00:00</EndDate>
+      <Extent>
+        <Location Latitude="32.925071" Longitude="-96.838541" />
+        <Location Latitude="32.925729" Longitude="-96.820642" />
+      </Extent>
+      <NearestCameraId>136</NearestCameraId>
+      <NearestCameraName>IH635 @ Welch</NearestCameraName>
+    </LaneClosure>
+    <LaneClosure>
+      <NetworkId>01</NetworkId>
+      <Id>1a9d13600ac240e3807d1f24082970ff</Id>
+      <Description>The exit ramp will be closed.</Description>
+      <RoadStartName>IH 635</RoadStartName>
+      <CrossStreetStartName>Midway Rd</CrossStreetStartName>
+      <StartLocation Latitude="32.925071" Longitude="-96.838541" />
+      <StartLatitude>32.925071</StartLatitude>
+      <StartLongitude>-96.838541</StartLongitude>
+      <RoadEndName>IH 635</RoadEndName>
+      <CrossStreetEndName>Midway Rd</CrossStreetEndName>
+      <EndLocation Latitude="32.925071" Longitude="-96.838541" />
+      <EndLatitude>32.925071</EndLatitude>
+      <EndLongitude>-96.838541</EndLongitude>
+      <Direction>East</Direction>
+      <LinkId>Bogus Link 4</LinkId>
+      <UpdateType>New</UpdateType>
+      <CurrentStatus>Opened</CurrentStatus>
+      <AffectedLanes>ExitRamp</AffectedLanes>
+      <HighwayConditions />
+      <Source />
+      <DaysClosed>Wednesday Thursday</DaysClosed>
+      <StartTime>2012-04-28T22:00:00</StartTime>
+      <EndTime>2012-04-28T06:00:00</EndTime>
+      <StartDate>2012-05-02T00:00:00</StartDate>
+      <EndDate>2012-05-03T00:00:00</EndDate>
+      <Extent />
+      <NearestCameraId>136</NearestCameraId>
+      <NearestCameraName>IH635 @ Welch</NearestCameraName>
+    </LaneClosure>
+    <LaneClosure>
+      <NetworkId>01</NetworkId>
+      <Id>fe89c47670e34af7ab30b088094bcfdb</Id>
+      <Description>The right lane will be closed.</Description>
+      <RoadStartName>IH 635</RoadStartName>
+      <CrossStreetStartName>Rosser Rd</CrossStreetStartName>
+      <StartLocation Latitude="32.92128" Longitude="-96.848043" />
+      <StartLatitude>32.92128</StartLatitude>
+      <StartLongitude>-96.848043</StartLongitude>
+      <RoadEndName>IH 635</RoadEndName>
+      <CrossStreetEndName>Midway Rd</CrossStreetEndName>
+      <EndLocation Latitude="32.925071" Longitude="-96.838541" />
+      <EndLatitude>32.925071</EndLatitude>
+      <EndLongitude>-96.838541</EndLongitude>
+      <Direction>East</Direction>
+      <LinkId>Bogus Link 4</LinkId>
+      <UpdateType>New</UpdateType>
+      <CurrentStatus>Opened</CurrentStatus>
+      <AffectedLanes>Lane4</AffectedLanes>
+      <HighwayConditions />
+      <Source />
+      <DaysClosed>Wednesday Thursday</DaysClosed>
+      <StartTime>2012-04-28T20:00:00</StartTime>
+      <EndTime>2012-04-28T06:00:00</EndTime>
+      <StartDate>2012-05-02T00:00:00</StartDate>
+      <EndDate>2012-05-03T00:00:00</EndDate>
+      <Extent>
+        <Location Latitude="32.92128" Longitude="-96.848043" />
+        <Location Latitude="32.925071" Longitude="-96.838541" />
+      </Extent>
+      <NearestCameraId>127</NearestCameraId>
+      <NearestCameraName>IH635 @ Rosser</NearestCameraName>
+    </LaneClosure>
+    <LaneClosure>
+      <NetworkId>01</NetworkId>
+      <Id>54c52158e60e47e5862f1a31a2f8870f</Id>
+      <Description>The right lane will be closed for partial demolition of the overpass at Valley View.</Description>
+      <RoadStartName>IH 635</RoadStartName>
+      <CrossStreetStartName>Rosser Rd</CrossStreetStartName>
+      <StartLocation Latitude="32.92128" Longitude="-96.848043" />
+      <StartLatitude>32.92128</StartLatitude>
+      <StartLongitude>-96.848043</StartLongitude>
+      <RoadEndName>IH 635</RoadEndName>
+      <CrossStreetEndName>Midway Rd</CrossStreetEndName>
+      <EndLocation Latitude="32.925071" Longitude="-96.838541" />
+      <EndLatitude>32.925071</EndLatitude>
+      <EndLongitude>-96.838541</EndLongitude>
+      <Direction>East</Direction>
+      <LinkId>Bogus Link 4</LinkId>
+      <UpdateType>New</UpdateType>
+      <CurrentStatus>Opened</CurrentStatus>
+      <AffectedLanes>Lane4</AffectedLanes>
+      <HighwayConditions />
+      <Source />
+      <DaysClosed>Friday Saturday Sunday</DaysClosed>
+      <StartTime>2012-04-28T20:00:00</StartTime>
+      <EndTime>2012-04-28T12:00:00</EndTime>
+      <StartDate>2012-05-04T00:00:00</StartDate>
+      <EndDate>2012-05-06T00:00:00</EndDate>
+      <Extent>
+        <Location Latitude="32.92128" Longitude="-96.848043" />
+        <Location Latitude="32.925071" Longitude="-96.838541" />
+      </Extent>
+      <NearestCameraId>127</NearestCameraId>
+      <NearestCameraName>IH635 @ Rosser</NearestCameraName>
+    </LaneClosure>
+    <LaneClosure>
+      <NetworkId>01</NetworkId>
+      <Id>232bde18d42840e2804218a12efc5a35</Id>
+      <Description>The exit ramp will be closed.</Description>
+      <RoadStartName>IH 635</RoadStartName>
+      <CrossStreetStartName>Midway Rd</CrossStreetStartName>
+      <StartLocation Latitude="32.925241" Longitude="-96.838589" />
+      <StartLatitude>32.925241</StartLatitude>
+      <StartLongitude>-96.838589</StartLongitude>
+      <RoadEndName>IH 635</RoadEndName>
+      <CrossStreetEndName>Midway Rd</CrossStreetEndName>
+      <EndLocation Latitude="32.925241" Longitude="-96.838589" />
+      <EndLatitude>32.925241</EndLatitude>
+      <EndLongitude>-96.838589</EndLongitude>
+      <Direction>West</Direction>
+      <LinkId>Bogus Link 4</LinkId>
+      <UpdateType>New</UpdateType>
+      <CurrentStatus>Opened</CurrentStatus>
+      <AffectedLanes>ExitRamp</AffectedLanes>
+      <HighwayConditions />
+      <Source />
+      <DaysClosed>Tuesday Wednesday</DaysClosed>
+      <StartTime>2012-04-28T22:00:00</StartTime>
+      <EndTime>2012-04-28T06:00:00</EndTime>
+      <StartDate>2012-05-01T00:00:00</StartDate>
+      <EndDate>2012-05-02T00:00:00</EndDate>
+      <Extent />
+      <NearestCameraId>136</NearestCameraId>
+      <NearestCameraName>IH635 @ Welch</NearestCameraName>
+    </LaneClosure>
+    <LaneClosure>
+      <NetworkId>01</NetworkId>
+      <Id>b4603d65a01d49c1969f95c3e911f176</Id>
+      <Description>Closing the right lane.</Description>
+      <RoadStartName>IH 635</RoadStartName>
+      <CrossStreetStartName>Preston Rd</CrossStreetStartName>
+      <StartLocation Latitude="32.9255" Longitude="-96.803374" />
+      <StartLatitude>32.9255</StartLatitude>
+      <StartLongitude>-96.803374</StartLongitude>
+      <RoadEndName>IH 635</RoadEndName>
+      <CrossStreetEndName>Montfort Dr</CrossStreetEndName>
+      <EndLocation Latitude="32.925933" Longitude="-96.811228" />
+      <EndLatitude>32.925933</EndLatitude>
+      <EndLongitude>-96.811228</EndLongitude>
+      <Direction>West</Direction>
+      <LinkId>Bogus Link 4</LinkId>
+      <UpdateType>New</UpdateType>
+      <CurrentStatus>Opened</CurrentStatus>
+      <AffectedLanes>Lane4</AffectedLanes>
+      <HighwayConditions />
+      <Source />
+      <DaysClosed>Monday Tuesday Wednesday Thursday</DaysClosed>
+      <StartTime>2012-04-28T20:00:00</StartTime>
+      <EndTime>2012-04-28T06:00:00</EndTime>
+      <StartDate>2012-04-30T00:00:00</StartDate>
+      <EndDate>2012-05-03T00:00:00</EndDate>
+      <Extent>
+        <Location Latitude="32.9255" Longitude="-96.803374" />
+        <Location Latitude="32.925933" Longitude="-96.811228" />
+      </Extent>
+      <NearestCameraId>638</NearestCameraId>
+      <NearestCameraName>IH635 @ Preston</NearestCameraName>
+    </LaneClosure>
+    <LaneClosure>
+      <NetworkId>01</NetworkId>
+      <Id>0a6036d344c4486ba8588d32f99224ef</Id>
+      <Description>Closing the right lane.</Description>
+      <RoadStartName>IH 635</RoadStartName>
+      <CrossStreetStartName>Preston Rd</CrossStreetStartName>
+      <StartLocation Latitude="32.9255" Longitude="-96.803374" />
+      <StartLatitude>32.9255</StartLatitude>
+      <StartLongitude>-96.803374</StartLongitude>
+      <RoadEndName>IH 635</RoadEndName>
+      <CrossStreetEndName>Montfort Dr</CrossStreetEndName>
+      <EndLocation Latitude="32.925933" Longitude="-96.811228" />
+      <EndLatitude>32.925933</EndLatitude>
+      <EndLongitude>-96.811228</EndLongitude>
+      <Direction>West</Direction>
+      <LinkId>Bogus Link 4</LinkId>
+      <UpdateType>New</UpdateType>
+      <CurrentStatus>Opened</CurrentStatus>
+      <AffectedLanes>Lane4</AffectedLanes>
+      <HighwayConditions />
+      <Source />
+      <DaysClosed>Monday Tuesday Wednesday Thursday</DaysClosed>
+      <StartTime>2012-04-28T20:00:00</StartTime>
+      <EndTime>2012-04-28T06:00:00</EndTime>
+      <StartDate>2012-05-07T00:00:00</StartDate>
+      <EndDate>2012-05-10T00:00:00</EndDate>
+      <Extent>
+        <Location Latitude="32.9255" Longitude="-96.803374" />
+        <Location Latitude="32.925933" Longitude="-96.811228" />
+      </Extent>
+      <NearestCameraId>638</NearestCameraId>
+      <NearestCameraName>IH635 @ Preston</NearestCameraName>
+    </LaneClosure>
+    <LaneClosure>
+      <NetworkId>01</NetworkId>
+      <Id>45d8fe3cc2864dada77a21d6cdb0a575</Id>
+      <Description>Closing the right lane.</Description>
+      <RoadStartName>IH 635</RoadStartName>
+      <CrossStreetStartName>Preston Rd</CrossStreetStartName>
+      <StartLocation Latitude="32.9255" Longitude="-96.803374" />
+      <StartLatitude>32.9255</StartLatitude>
+      <StartLongitude>-96.803374</StartLongitude>
+      <RoadEndName>IH 635</RoadEndName>
+      <CrossStreetEndName>Montfort Dr</CrossStreetEndName>
+      <EndLocation Latitude="32.925933" Longitude="-96.811228" />
+      <EndLatitude>32.925933</EndLatitude>
+      <EndLongitude>-96.811228</EndLongitude>
+      <Direction>West</Direction>
+      <LinkId>Bogus Link 4</LinkId>
+      <UpdateType>New</UpdateType>
+      <CurrentStatus>Opened</CurrentStatus>
+      <AffectedLanes>Lane4</AffectedLanes>
+      <HighwayConditions />
+      <Source />
+      <DaysClosed>Friday</DaysClosed>
+      <StartTime>2012-04-28T20:00:00</StartTime>
+      <EndTime>2012-04-28T10:00:00</EndTime>
+      <StartDate>2012-05-04T00:00:00</StartDate>
+      <EndDate>2012-05-04T00:00:00</EndDate>
+      <Extent>
+        <Location Latitude="32.9255" Longitude="-96.803374" />
+        <Location Latitude="32.925933" Longitude="-96.811228" />
+      </Extent>
+      <NearestCameraId>638</NearestCameraId>
+      <NearestCameraName>IH635 @ Preston</NearestCameraName>
+    </LaneClosure>
+    <LaneClosure>
+      <NetworkId>01</NetworkId>
+      <Id>12da5be8c98d45c8b9a309cbd72acf18</Id>
+      <Description>Closing the right lane.</Description>
+      <RoadStartName>IH 635</RoadStartName>
+      <CrossStreetStartName>Preston Rd</CrossStreetStartName>
+      <StartLocation Latitude="32.9255" Longitude="-96.803374" />
+      <StartLatitude>32.9255</StartLatitude>
+      <StartLongitude>-96.803374</StartLongitude>
+      <RoadEndName>IH 635</RoadEndName>
+      <CrossStreetEndName>Montfort Dr</CrossStreetEndName>
+      <EndLocation Latitude="32.925933" Longitude="-96.811228" />
+      <EndLatitude>32.925933</EndLatitude>
+      <EndLongitude>-96.811228</EndLongitude>
+      <Direction>West</Direction>
+      <LinkId>Bogus Link 4</LinkId>
+      <UpdateType>New</UpdateType>
+      <CurrentStatus>Opened</CurrentStatus>
+      <AffectedLanes>Lane4</AffectedLanes>
+      <HighwayConditions />
+      <Source />
+      <DaysClosed>Friday</DaysClosed>
+      <StartTime>2012-04-28T20:00:00</StartTime>
+      <EndTime>2012-04-28T10:00:00</EndTime>
+      <StartDate>2012-05-11T00:00:00</StartDate>
+      <EndDate>2012-05-11T00:00:00</EndDate>
+      <Extent>
+        <Location Latitude="32.9255" Longitude="-96.803374" />
+        <Location Latitude="32.925933" Longitude="-96.811228" />
+      </Extent>
+      <NearestCameraId>638</NearestCameraId>
+      <NearestCameraName>IH635 @ Preston</NearestCameraName>
+    </LaneClosure>
+    <LaneClosure>
+      <NetworkId>01</NetworkId>
+      <Id>2b4b1ad777df4516bc1bdad89b7921b4</Id>
+      <Description>All lanes will be closed for fan testing.</Description>
+      <RoadStartName>Spur 366</RoadStartName>
+      <CrossStreetStartName>US 75</CrossStreetStartName>
+      <StartLocation Latitude="32.796011" Longitude="-96.793519" />
+      <StartLatitude>32.796011</StartLatitude>
+      <StartLongitude>-96.793519</StartLongitude>
+      <RoadEndName>Spur 366</RoadEndName>
+      <CrossStreetEndName>IH 35E</CrossStreetEndName>
+      <EndLocation Latitude="32.782114" Longitude="-96.811816" />
+      <EndLatitude>32.782114</EndLatitude>
+      <EndLongitude>-96.811816</EndLongitude>
+      <Direction>West</Direction>
+      <LinkId>Bogus Link 4</LinkId>
+      <UpdateType>New</UpdateType>
+      <CurrentStatus>Opened</CurrentStatus>
+      <AffectedLanes>Lane1 Lane2 Lane3 Lane4</AffectedLanes>
+      <HighwayConditions />
+      <Source />
+      <DaysClosed>Wednesday Thursday Friday</DaysClosed>
+      <StartTime>2012-04-28T21:00:00</StartTime>
+      <EndTime>2012-04-28T18:00:00</EndTime>
+      <StartDate>2012-05-02T00:00:00</StartDate>
+      <EndDate>2012-05-04T00:00:00</EndDate>
+      <Extent>
+        <Location Latitude="32.782114" Longitude="-96.811816" />
+      </Extent>
+      <NearestCameraId>431</NearestCameraId>
+      <NearestCameraName>Spur 366 @ Routh St</NearestCameraName>
+    </LaneClosure>
+    <LaneClosure>
+      <NetworkId>01</NetworkId>
+      <Id>ddf43aa1e4a248c0895a147b1081ed02</Id>
+      <Description>The northbound ramp will be closed for concrete traffic barrier placement.</Description>
+      <RoadStartName>IH 20</RoadStartName>
+      <CrossStreetStartName>IH 45</CrossStreetStartName>
+      <StartLocation Latitude="32.661606" Longitude="-96.726619" />
+      <StartLatitude>32.661606</StartLatitude>
+      <StartLongitude>-96.726619</StartLongitude>
+      <RoadEndName>IH 20</RoadEndName>
+      <CrossStreetEndName>IH 45</CrossStreetEndName>
+      <EndLocation Latitude="32.661606" Longitude="-96.726619" />
+      <EndLatitude>32.661606</EndLatitude>
+      <EndLongitude>-96.726619</EndLongitude>
+      <Direction>East</Direction>
+      <LinkId>732F0A00ECA146E9816BFA6891C6904C</LinkId>
+      <UpdateType>New</UpdateType>
+      <CurrentStatus>Opened</CurrentStatus>
+      <AffectedLanes>ExitRamp</AffectedLanes>
+      <HighwayConditions />
+      <Source />
+      <DaysClosed>Wednesday Thursday</DaysClosed>
+      <StartTime>2012-04-28T21:00:00</StartTime>
+      <EndTime>2012-04-28T05:30:00</EndTime>
+      <StartDate>2012-05-09T00:00:00</StartDate>
+      <EndDate>2012-05-10T00:00:00</EndDate>
+      <Extent />
+      <NearestCameraId>627</NearestCameraId>
+      <NearestCameraName>IH20 @ IH45 S.W. 1</NearestCameraName>
+    </LaneClosure>
+    <LaneClosure>
+      <NetworkId>01</NetworkId>
+      <Id>bcfa8b040d9a453b82e69dd56d53ef91</Id>
+      <Description>The northbound ramp will be closed for work zone striping.</Description>
+      <RoadStartName>IH 20</RoadStartName>
+      <CrossStreetStartName>IH 45</CrossStreetStartName>
+      <StartLocation Latitude="32.661606" Longitude="-96.726619" />
+      <StartLatitude>32.661606</StartLatitude>
+      <StartLongitude>-96.726619</StartLongitude>
+      <RoadEndName>IH 20</RoadEndName>
+      <CrossStreetEndName>IH 45</CrossStreetEndName>
+      <EndLocation Latitude="32.661606" Longitude="-96.726619" />
+      <EndLatitude>32.661606</EndLatitude>
+      <EndLongitude>-96.726619</EndLongitude>
+      <Direction>East</Direction>
+      <LinkId>732F0A00ECA146E9816BFA6891C6904C</LinkId>
+      <UpdateType>New</UpdateType>
+      <CurrentStatus>Opened</CurrentStatus>
+      <AffectedLanes>ExitRamp</AffectedLanes>
+      <HighwayConditions />
+      <Source />
+      <DaysClosed>Monday</DaysClosed>
+      <StartTime>2012-04-28T09:00:00</StartTime>
+      <EndTime>2012-04-28T15:30:00</EndTime>
+      <StartDate>2012-05-07T00:00:00</StartDate>
+      <EndDate>2012-05-07T00:00:00</EndDate>
+      <Extent />
+      <NearestCameraId>627</NearestCameraId>
+      <NearestCameraName>IH20 @ IH45 S.W. 1</NearestCameraName>
+    </LaneClosure>
+    <LaneClosure>
+      <NetworkId>01</NetworkId>
+      <Id>c5061a0cf2654c8f80547af11acb72e9</Id>
+      <Description>2 left lanes will be closed for work zone striping.</Description>
+      <RoadStartName>IH 45</RoadStartName>
+      <CrossStreetStartName>Dowdy Ferry Rd</CrossStreetStartName>
+      <StartLocation Latitude="32.648916" Longitude="-96.707406" />
+      <StartLatitude>32.648916</StartLatitude>
+      <StartLongitude>-96.707406</StartLongitude>
+      <RoadEndName>IH 45</RoadEndName>
+      <CrossStreetEndName>Simpson Stuart Rd</CrossStreetEndName>
+      <EndLocation Latitude="32.681737" Longitude="-96.744119" />
+      <EndLatitude>32.681737</EndLatitude>
+      <EndLongitude>-96.744119</EndLongitude>
+      <Direction>North</Direction>
+      <LinkId>ae4c8ce5d5454809bcd7d8541e861d21</LinkId>
+      <UpdateType>New</UpdateType>
+      <CurrentStatus>Opened</CurrentStatus>
+      <AffectedLanes>Lane1</AffectedLanes>
+      <HighwayConditions />
+      <Source />
+      <DaysClosed>Tuesday</DaysClosed>
+      <StartTime>2012-04-28T09:00:00</StartTime>
+      <EndTime>2012-04-28T15:30:00</EndTime>
+      <StartDate>2012-05-08T00:00:00</StartDate>
+      <EndDate>2012-05-08T00:00:00</EndDate>
+      <Extent>
+        <Location Latitude="32.648916" Longitude="-96.707406" />
+        <Location Latitude="32.663185" Longitude="-96.726179" />
+        <Location Latitude="32.663237" Longitude="-96.726287" />
+        <Location Latitude="32.681737" Longitude="-96.744119" />
+      </Extent>
+      <NearestCameraId>629</NearestCameraId>
+      <NearestCameraName>IH45 @ Wintergreen North</NearestCameraName>
+    </LaneClosure>
+    <LaneClosure>
+      <NetworkId>01</NetworkId>
+      <Id>b3f6f6650a4e4026843cff798a8dfe8a</Id>
+      <Description>The left lane will be closed for grading.</Description>
+      <RoadStartName>US 80</RoadStartName>
+      <CrossStreetStartName>Collins Rd</CrossStreetStartName>
+      <StartLocation Latitude="32.784851" Longitude="-96.562626" />
+      <StartLatitude>32.784851</StartLatitude>
+      <StartLongitude>-96.562626</StartLongitude>
+      <RoadEndName>US 80</RoadEndName>
+      <CrossStreetEndName>Collins Rd</CrossStreetEndName>
+      <EndLocation Latitude="32.784851" Longitude="-96.562626" />
+      <EndLatitude>32.784851</EndLatitude>
+      <EndLongitude>-96.562626</EndLongitude>
+      <Direction>East</Direction>
+      <LinkId>Bogus Link 2</LinkId>
+      <UpdateType>New</UpdateType>
+      <CurrentStatus>Opened</CurrentStatus>
+      <AffectedLanes>Lane1</AffectedLanes>
+      <HighwayConditions />
+      <Source />
+      <DaysClosed>Monday Tuesday Wednesday Thursday Friday</DaysClosed>
+      <StartTime>2012-04-28T09:00:00</StartTime>
+      <EndTime>2012-04-28T15:00:00</EndTime>
+      <StartDate>2012-04-30T00:00:00</StartDate>
+      <EndDate>2012-05-04T00:00:00</EndDate>
+      <Extent />
+      <NearestCameraId>331</NearestCameraId>
+      <NearestCameraName>IH635 @ Towne Centre</NearestCameraName>
+    </LaneClosure>
+    <LaneClosure>
+      <NetworkId>01</NetworkId>
+      <Id>e3ff080a33c745dd9a9ad1ca413ca1d3</Id>
+      <Description>various lanes closed</Description>
+      <RoadStartName>IH 635</RoadStartName>
+      <CrossStreetStartName>Josey Ln</CrossStreetStartName>
+      <StartLocation Latitude="32.910883" Longitude="-96.881904" />
+      <StartLatitude>32.910883</StartLatitude>
+      <StartLongitude>-96.881904</StartLongitude>
+      <RoadEndName>IH 635</RoadEndName>
+      <CrossStreetEndName>Welch Rd</CrossStreetEndName>
+      <EndLocation Latitude="32.925816" Longitude="-96.828547" />
+      <EndLatitude>32.925816</EndLatitude>
+      <EndLongitude>-96.828547</EndLongitude>
+      <Direction>East</Direction>
+      <LinkId>Bogus Link 4</LinkId>
+      <UpdateType>New</UpdateType>
+      <CurrentStatus>Opened</CurrentStatus>
+      <AffectedLanes>Lane1 Lane2 Lane3 Lane4</AffectedLanes>
+      <HighwayConditions />
+      <Source />
+      <DaysClosed>Monday Tuesday Wednesday Thursday Friday Saturday</DaysClosed>
+      <StartTime>2012-04-28T20:00:00</StartTime>
+      <EndTime>2012-04-28T06:00:00</EndTime>
+      <StartDate>2012-04-30T00:00:00</StartDate>
+      <EndDate>2012-05-04T00:00:00</EndDate>
+      <Extent>
+        <Location Latitude="32.910883" Longitude="-96.881904" />
+        <Location Latitude="32.925816" Longitude="-96.828547" />
+      </Extent>
+      <NearestCameraId>128</NearestCameraId>
+      <NearestCameraName>IH635 @ Webb Chapel</NearestCameraName>
+    </LaneClosure>
+    <LaneClosure>
+      <NetworkId>01</NetworkId>
+      <Id>10ca1468afcb403eb9b00e9801b2d988</Id>
+      <Description>various lanes closed</Description>
+      <RoadStartName>IH 635</RoadStartName>
+      <CrossStreetStartName>Welch Rd</CrossStreetStartName>
+      <StartLocation Latitude="32.926023" Longitude="-96.828585" />
+      <StartLatitude>32.926023</StartLatitude>
+      <StartLongitude>-96.828585</StartLongitude>
+      <RoadEndName>IH 635</RoadEndName>
+      <CrossStreetEndName>Josey Ln</CrossStreetEndName>
+      <EndLocation Latitude="32.911225" Longitude="-96.881647" />
+      <EndLatitude>32.911225</EndLatitude>
+      <EndLongitude>-96.881647</EndLongitude>
+      <Direction>West</Direction>
+      <LinkId>Bogus Link 4</LinkId>
+      <UpdateType>New</UpdateType>
+      <CurrentStatus>Opened</CurrentStatus>
+      <AffectedLanes>Lane1 Lane2 Lane3 Lane4</AffectedLanes>
+      <HighwayConditions />
+      <Source />
+      <DaysClosed>Monday Tuesday Wednesday Thursday Friday Saturday</DaysClosed>
+      <StartTime>2012-04-28T20:00:00</StartTime>
+      <EndTime>2012-04-28T06:00:00</EndTime>
+      <StartDate>2012-04-30T00:00:00</StartDate>
+      <EndDate>2012-05-04T00:00:00</EndDate>
+      <Extent>
+        <Location Latitude="32.926023" Longitude="-96.828585" />
+        <Location Latitude="32.911225" Longitude="-96.881647" />
+      </Extent>
+      <NearestCameraId>136</NearestCameraId>
+      <NearestCameraName>IH635 @ Welch</NearestCameraName>
+    </LaneClosure>
+    <LaneClosure>
+      <NetworkId>01</NetworkId>
+      <Id>9da7baf73e8640b8a56743a321add976</Id>
+      <Description>right lane closed. 1 mile before to 1 miolie past fm 548</Description>
+      <RoadStartName>US 80</RoadStartName>
+      <CrossStreetStartName>FM 548</CrossStreetStartName>
+      <StartLocation Latitude="32.742607" Longitude="-96.448684" />
+      <StartLatitude>32.742607</StartLatitude>
+      <StartLongitude>-96.448684</StartLongitude>
+      <RoadEndName>US 80</RoadEndName>
+      <CrossStreetEndName>FM 548</CrossStreetEndName>
+      <EndLocation Latitude="32.742607" Longitude="-96.448684" />
+      <EndLatitude>32.742607</EndLatitude>
+      <EndLongitude>-96.448684</EndLongitude>
+      <Direction>East</Direction>
+      <LinkId>Bogus Link 2</LinkId>
+      <UpdateType>Update</UpdateType>
+      <CurrentStatus>Closed</CurrentStatus>
+      <AffectedLanes>Lane2</AffectedLanes>
+      <HighwayConditions />
+      <Source />
+      <DaysClosed>Saturday</DaysClosed>
+      <StartTime>2012-04-28T08:00:00</StartTime>
+      <EndTime>2012-04-28T15:00:00</EndTime>
+      <StartDate>2012-04-28T00:00:00</StartDate>
+      <EndDate>2012-04-28T00:00:00</EndDate>
+      <Extent />
+      <NearestCameraId>331</NearestCameraId>
+      <NearestCameraName>IH635 @ Towne Centre</NearestCameraName>
+    </LaneClosure>
+    <LaneClosure>
+      <NetworkId>01</NetworkId>
+      <Id>f9c6d564735840eba930a05674a44451</Id>
+      <Description>left lane closed 1 mile before to 1 mile past FM548</Description>
+      <RoadStartName>US 80</RoadStartName>
+      <CrossStreetStartName>FM 548</CrossStreetStartName>
+      <StartLocation Latitude="32.742607" Longitude="-96.448684" />
+      <StartLatitude>32.742607</StartLatitude>
+      <StartLongitude>-96.448684</StartLongitude>
+      <RoadEndName>US 80</RoadEndName>
+      <CrossStreetEndName>FM 548</CrossStreetEndName>
+      <EndLocation Latitude="32.742607" Longitude="-96.448684" />
+      <EndLatitude>32.742607</EndLatitude>
+      <EndLongitude>-96.448684</EndLongitude>
+      <Direction>East</Direction>
+      <LinkId>Bogus Link 2</LinkId>
+      <UpdateType>New</UpdateType>
+      <CurrentStatus>Opened</CurrentStatus>
+      <AffectedLanes>Lane1</AffectedLanes>
+      <HighwayConditions />
+      <Source />
+      <DaysClosed>Monday Tuesday Wednesday Thursday Friday</DaysClosed>
+      <StartTime>2012-04-28T08:00:00</StartTime>
+      <EndTime>2012-04-28T15:00:00</EndTime>
+      <StartDate>2012-04-30T00:00:00</StartDate>
+      <EndDate>2012-05-04T00:00:00</EndDate>
+      <Extent />
+      <NearestCameraId>331</NearestCameraId>
+      <NearestCameraName>IH635 @ Towne Centre</NearestCameraName>
+    </LaneClosure>
+    <LaneClosure>
+      <NetworkId>01</NetworkId>
+      <Id>d01706642ded44e894b4d1e984129f32</Id>
+      <Description>left lane closed  1 mile before to 1 mile past FM548</Description>
+      <RoadStartName>US 80</RoadStartName>
+      <CrossStreetStartName>FM 548</CrossStreetStartName>
+      <StartLocation Latitude="32.742814" Longitude="-96.448596" />
+      <StartLatitude>32.742814</StartLatitude>
+      <StartLongitude>-96.448596</StartLongitude>
+      <RoadEndName>US 80</RoadEndName>
+      <CrossStreetEndName>FM 548</CrossStreetEndName>
+      <EndLocation Latitude="32.742814" Longitude="-96.448596" />
+      <EndLatitude>32.742814</EndLatitude>
+      <EndLongitude>-96.448596</EndLongitude>
+      <Direction>West</Direction>
+      <LinkId>Bogus Link 2</LinkId>
+      <UpdateType>New</UpdateType>
+      <CurrentStatus>Opened</CurrentStatus>
+      <AffectedLanes>Lane1</AffectedLanes>
+      <HighwayConditions />
+      <Source />
+      <DaysClosed>Monday Tuesday Wednesday Thursday Friday</DaysClosed>
+      <StartTime>2012-04-28T09:00:00</StartTime>
+      <EndTime>2012-04-28T15:30:00</EndTime>
+      <StartDate>2012-04-30T00:00:00</StartDate>
+      <EndDate>2012-05-04T00:00:00</EndDate>
+      <Extent />
+      <NearestCameraId>331</NearestCameraId>
+      <NearestCameraName>IH635 @ Towne Centre</NearestCameraName>
+    </LaneClosure>
+    <LaneClosure>
+      <NetworkId>01</NetworkId>
+      <Id>ef15d73faaed4154b48e20659d3bdaf8</Id>
+      <Description>Closing the right lane.</Description>
+      <RoadStartName>IH 635</RoadStartName>
+      <CrossStreetStartName>Marsh Ln</CrossStreetStartName>
+      <StartLocation Latitude="32.91783" Longitude="-96.85606" />
+      <StartLatitude>32.91783</StartLatitude>
+      <StartLongitude>-96.85606</StartLongitude>
+      <RoadEndName>IH 635</RoadEndName>
+      <CrossStreetEndName>Welch Rd</CrossStreetEndName>
+      <EndLocation Latitude="32.925816" Longitude="-96.828547" />
+      <EndLatitude>32.925816</EndLatitude>
+      <EndLongitude>-96.828547</EndLongitude>
+      <Direction>East</Direction>
+      <LinkId>Bogus Link 4</LinkId>
+      <UpdateType>New</UpdateType>
+      <CurrentStatus>Opened</CurrentStatus>
+      <AffectedLanes>Lane4</AffectedLanes>
+      <HighwayConditions />
+      <Source />
+      <DaysClosed>Monday Tuesday Wednesday Thursday Friday Sunday</DaysClosed>
+      <StartTime>2012-04-28T20:00:00</StartTime>
+      <EndTime>2012-04-28T06:00:00</EndTime>
+      <StartDate>2012-05-07T00:00:00</StartDate>
+      <EndDate>2012-05-10T00:00:00</EndDate>
+      <Extent>
+        <Location Latitude="32.91783" Longitude="-96.85606" />
+        <Location Latitude="32.925816" Longitude="-96.828547" />
+      </Extent>
+      <NearestCameraId>127</NearestCameraId>
+      <NearestCameraName>IH635 @ Rosser</NearestCameraName>
+    </LaneClosure>
+    <LaneClosure>
+      <NetworkId>01</NetworkId>
+      <Id>21d4469b72ab4920a54e2f76991561b6</Id>
+      <Description>Closing the right lane.</Description>
+      <RoadStartName>IH 635</RoadStartName>
+      <CrossStreetStartName>Marsh Ln</CrossStreetStartName>
+      <StartLocation Latitude="32.91783" Longitude="-96.85606" />
+      <StartLatitude>32.91783</StartLatitude>
+      <StartLongitude>-96.85606</StartLongitude>
+      <RoadEndName>IH 635</RoadEndName>
+      <CrossStreetEndName>Welch Rd</CrossStreetEndName>
+      <EndLocation Latitude="32.925816" Longitude="-96.828547" />
+      <EndLatitude>32.925816</EndLatitude>
+      <EndLongitude>-96.828547</EndLongitude>
+      <Direction>East</Direction>
+      <LinkId>Bogus Link 4</LinkId>
+      <UpdateType>New</UpdateType>
+      <CurrentStatus>Opened</CurrentStatus>
+      <AffectedLanes>Lane4</AffectedLanes>
+      <HighwayConditions />
+      <Source />
+      <DaysClosed>Friday Saturday</DaysClosed>
+      <StartTime>2012-04-28T21:00:00</StartTime>
+      <EndTime>2012-04-28T10:00:00</EndTime>
+      <StartDate>2012-05-11T00:00:00</StartDate>
+      <EndDate>2012-05-12T00:00:00</EndDate>
+      <Extent>
+        <Location Latitude="32.91783" Longitude="-96.85606" />
+        <Location Latitude="32.925816" Longitude="-96.828547" />
+      </Extent>
+      <NearestCameraId>127</NearestCameraId>
+      <NearestCameraName>IH635 @ Rosser</NearestCameraName>
+    </LaneClosure>
+    <LaneClosure>
+      <NetworkId>01</NetworkId>
+      <Id>690a57f1e293409db275268f3e4df268</Id>
+      <Description>Closing the right lane.</Description>
+      <RoadStartName>IH 635</RoadStartName>
+      <CrossStreetStartName>Marsh Ln</CrossStreetStartName>
+      <StartLocation Latitude="32.91783" Longitude="-96.85606" />
+      <StartLatitude>32.91783</StartLatitude>
+      <StartLongitude>-96.85606</StartLongitude>
+      <RoadEndName>IH 635</RoadEndName>
+      <CrossStreetEndName>Welch Rd</CrossStreetEndName>
+      <EndLocation Latitude="32.925816" Longitude="-96.828547" />
+      <EndLatitude>32.925816</EndLatitude>
+      <EndLongitude>-96.828547</EndLongitude>
+      <Direction>East</Direction>
+      <LinkId>Bogus Link 4</LinkId>
+      <UpdateType>New</UpdateType>
+      <CurrentStatus>Opened</CurrentStatus>
+      <AffectedLanes>Lane4</AffectedLanes>
+      <HighwayConditions />
+      <Source />
+      <DaysClosed>Saturday Sunday</DaysClosed>
+      <StartTime>2012-04-28T20:00:00</StartTime>
+      <EndTime>2012-04-28T12:00:00</EndTime>
+      <StartDate>2012-05-12T00:00:00</StartDate>
+      <EndDate>2012-05-13T00:00:00</EndDate>
+      <Extent>
+        <Location Latitude="32.91783" Longitude="-96.85606" />
+        <Location Latitude="32.925816" Longitude="-96.828547" />
+      </Extent>
+      <NearestCameraId>127</NearestCameraId>
+      <NearestCameraName>IH635 @ Rosser</NearestCameraName>
+    </LaneClosure>
+    <LaneClosure>
+      <NetworkId>01</NetworkId>
+      <Id>30597ce27e234521995296f62d632548</Id>
+      <Description>2 right lanes closed Monday through Wednesday.</Description>
+      <RoadStartName>IH 635</RoadStartName>
+      <CrossStreetStartName>Luna Rd</CrossStreetStartName>
+      <StartLocation Latitude="32.907374" Longitude="-96.920927" />
+      <StartLatitude>32.907374</StartLatitude>
+      <StartLongitude>-96.920927</StartLongitude>
+      <RoadEndName>IH 635</RoadEndName>
+      <CrossStreetEndName>IH 35E West (B&amp;N Railway)</CrossStreetEndName>
+      <EndLocation Latitude="32.907434" Longitude="-96.909133" />
+      <EndLatitude>32.907434</EndLatitude>
+      <EndLongitude>-96.909133</EndLongitude>
+      <Direction>East</Direction>
+      <LinkId>786dbef22cfa4725abe5cc41dfdd28ad</LinkId>
+      <UpdateType>New</UpdateType>
+      <CurrentStatus>Opened</CurrentStatus>
+      <AffectedLanes>Lane4 Lane5</AffectedLanes>
+      <HighwayConditions />
+      <Source />
+      <DaysClosed>Monday Tuesday Wednesday Thursday</DaysClosed>
+      <StartTime>2012-04-28T09:00:00</StartTime>
+      <EndTime>2012-04-28T15:30:00</EndTime>
+      <StartDate>2012-04-30T00:00:00</StartDate>
+      <EndDate>2012-05-03T00:00:00</EndDate>
+      <Extent>
+        <Location Latitude="32.907374" Longitude="-96.920927" />
+        <Location Latitude="32.907434" Longitude="-96.909133" />
+      </Extent>
+      <NearestCameraId>229</NearestCameraId>
+      <NearestCameraName>IH635 @ IH35E West</NearestCameraName>
+    </LaneClosure>
+    <LaneClosure>
+      <NetworkId>01</NetworkId>
+      <Id>b058a6fa652343c28e84ab3354ec5fa9</Id>
+      <Description>2 left lanes will be closed.</Description>
+      <RoadStartName>IH 635</RoadStartName>
+      <CrossStreetStartName>Luna Rd</CrossStreetStartName>
+      <StartLocation Latitude="32.907374" Longitude="-96.920927" />
+      <StartLatitude>32.907374</StartLatitude>
+      <StartLongitude>-96.920927</StartLongitude>
+      <RoadEndName>IH 635</RoadEndName>
+      <CrossStreetEndName>IH 35E West (B&amp;N Railway)</CrossStreetEndName>
+      <EndLocation Latitude="32.907434" Longitude="-96.909133" />
+      <EndLatitude>32.907434</EndLatitude>
+      <EndLongitude>-96.909133</EndLongitude>
+      <Direction>East</Direction>
+      <LinkId>786dbef22cfa4725abe5cc41dfdd28ad</LinkId>
+      <UpdateType>New</UpdateType>
+      <CurrentStatus>Opened</CurrentStatus>
+      <AffectedLanes>Lane1 Lane2</AffectedLanes>
+      <HighwayConditions />
+      <Source />
+      <DaysClosed>Thursday Friday</DaysClosed>
+      <StartTime>2012-04-28T09:00:00</StartTime>
+      <EndTime>2012-04-28T15:30:00</EndTime>
+      <StartDate>2012-05-03T00:00:00</StartDate>
+      <EndDate>2012-05-04T00:00:00</EndDate>
+      <Extent>
+        <Location Latitude="32.907374" Longitude="-96.920927" />
+        <Location Latitude="32.907434" Longitude="-96.909133" />
+      </Extent>
+      <NearestCameraId>229</NearestCameraId>
+      <NearestCameraName>IH635 @ IH35E West</NearestCameraName>
+    </LaneClosure>
+    <LaneClosure>
+      <NetworkId>01</NetworkId>
+      <Id>06b3b728110c4a1298ddb2f3333118eb</Id>
+      <Description>Main lanes will be reduced from 4 down to 1 far left lane.</Description>
+      <RoadStartName>IH 635</RoadStartName>
+      <CrossStreetStartName>Midway Rd</CrossStreetStartName>
+      <StartLocation Latitude="32.925071" Longitude="-96.838541" />
+      <StartLatitude>32.925071</StartLatitude>
+      <StartLongitude>-96.838541</StartLongitude>
+      <RoadEndName>IH 635</RoadEndName>
+      <CrossStreetEndName>Dallas North Tollway</CrossStreetEndName>
+      <EndLocation Latitude="32.925729" Longitude="-96.820642" />
+      <EndLatitude>32.925729</EndLatitude>
+      <EndLongitude>-96.820642</EndLongitude>
+      <Direction>East</Direction>
+      <LinkId>Bogus Link 4</LinkId>
+      <UpdateType>Update</UpdateType>
+      <CurrentStatus>Opened</CurrentStatus>
+      <AffectedLanes>Lane2 Lane3 Lane4 EntranceRamp</AffectedLanes>
+      <HighwayConditions />
+      <Source />
+      <DaysClosed>Saturday Sunday</DaysClosed>
+      <StartTime>2012-04-28T20:00:00</StartTime>
+      <EndTime>2012-04-28T12:00:00</EndTime>
+      <StartDate>2012-04-28T00:00:00</StartDate>
+      <EndDate>2012-04-29T00:00:00</EndDate>
+      <Extent>
+        <Location Latitude="32.925071" Longitude="-96.838541" />
+        <Location Latitude="32.925729" Longitude="-96.820642" />
+      </Extent>
+      <NearestCameraId>136</NearestCameraId>
+      <NearestCameraName>IH635 @ Welch</NearestCameraName>
+    </LaneClosure>
+    <LaneClosure>
+      <NetworkId>01</NetworkId>
+      <Id>280994a4002842b0a24b1964aba9ee83</Id>
+      <Description>Left lane closed.</Description>
+      <RoadStartName>US 75</RoadStartName>
+      <CrossStreetStartName>Eldorado Pkwy</CrossStreetStartName>
+      <StartLocation Latitude="33.171889" Longitude="-96.640508" />
+      <StartLatitude>33.171889</StartLatitude>
+      <StartLongitude>-96.640508</StartLongitude>
+      <RoadEndName>US 75</RoadEndName>
+      <CrossStreetEndName>White Ave</CrossStreetEndName>
+      <EndLocation Latitude="33.209771" Longitude="-96.63783" />
+      <EndLatitude>33.209771</EndLatitude>
+      <EndLongitude>-96.63783</EndLongitude>
+      <Direction>North</Direction>
+      <LinkId>Bogus Link 2</LinkId>
+      <UpdateType>Update</UpdateType>
+      <CurrentStatus>Opened</CurrentStatus>
+      <AffectedLanes>Lane1</AffectedLanes>
+      <HighwayConditions />
+      <Source />
+      <DaysClosed>Monday Tuesday Wednesday Thursday Friday Sunday</DaysClosed>
+      <StartTime>2012-04-28T21:00:00</StartTime>
+      <EndTime>2012-04-28T06:00:00</EndTime>
+      <StartDate>2012-04-29T00:00:00</StartDate>
+      <EndDate>2012-05-04T00:00:00</EndDate>
+      <Extent>
+        <Location Latitude="33.171889" Longitude="-96.640508" />
+        <Location Latitude="33.209771" Longitude="-96.63783" />
+      </Extent>
+      <NearestCameraId>620</NearestCameraId>
+      <NearestCameraName>US75 @ Eldorado South</NearestCameraName>
+    </LaneClosure>
+    <LaneClosure>
+      <NetworkId>01</NetworkId>
+      <Id>a44dd6541d434eee81341626e22e5434</Id>
+      <Description>Alternating lanes closed.</Description>
+      <RoadStartName>US 75</RoadStartName>
+      <CrossStreetStartName>Bloomdale Rd</CrossStreetStartName>
+      <StartLocation Latitude="33.239764" Longitude="-96.630227" />
+      <StartLatitude>33.239764</StartLatitude>
+      <StartLongitude>-96.630227</StartLongitude>
+      <RoadEndName>US 75</RoadEndName>
+      <CrossStreetEndName>US 380 (University Dr)</CrossStreetEndName>
+      <EndLocation Latitude="33.216742" Longitude="-96.636471" />
+      <EndLatitude>33.216742</EndLatitude>
+      <EndLongitude>-96.636471</EndLongitude>
+      <Direction>South</Direction>
+      <LinkId>Bogus Link 2</LinkId>
+      <UpdateType>Update</UpdateType>
+      <CurrentStatus>Opened</CurrentStatus>
+      <AffectedLanes>Unknown</AffectedLanes>
+      <HighwayConditions />
+      <Source />
+      <DaysClosed>Tuesday Wednesday Thursday</DaysClosed>
+      <StartTime>2012-04-28T07:00:00</StartTime>
+      <EndTime>2012-04-28T15:00:00</EndTime>
+      <StartDate>2012-05-01T00:00:00</StartDate>
+      <EndDate>2012-05-04T00:00:00</EndDate>
+      <Extent>
+        <Location Latitude="33.239764" Longitude="-96.630227" />
+        <Location Latitude="33.216742" Longitude="-96.636471" />
+      </Extent>
+      <NearestCameraId>615</NearestCameraId>
+      <NearestCameraName>US75 @ US380 North</NearestCameraName>
+    </LaneClosure>
+    <LaneClosure>
+      <NetworkId>01</NetworkId>
+      <Id>4191510efcf64ad5a630111cc033e743</Id>
+      <Description>Left lane closed to replace overhead signs and structure.</Description>
+      <RoadStartName>IH 20</RoadStartName>
+      <CrossStreetStartName>Mountain Creek Pkwy</CrossStreetStartName>
+      <StartLocation Latitude="32.670581" Longitude="-96.970335" />
+      <StartLatitude>32.670581</StartLatitude>
+      <StartLongitude>-96.970335</StartLongitude>
+      <RoadEndName>IH 20</RoadEndName>
+      <CrossStreetEndName>Cedar Ridge Dr</CrossStreetEndName>
+      <EndLocation Latitude="32.669485" Longitude="-96.925581" />
+      <EndLatitude>32.669485</EndLatitude>
+      <EndLongitude>-96.925581</EndLongitude>
+      <Direction>East</Direction>
+      <LinkId>5B7DF0D0B05840DCA1C39F9FF8E48F34</LinkId>
+      <UpdateType>Update</UpdateType>
+      <CurrentStatus>Opened</CurrentStatus>
+      <AffectedLanes>Lane1</AffectedLanes>
+      <HighwayConditions />
+      <Source />
+      <DaysClosed>Monday</DaysClosed>
+      <StartTime>2012-04-28T09:00:00</StartTime>
+      <EndTime>2012-04-28T12:00:00</EndTime>
+      <StartDate>2012-04-30T00:00:00</StartDate>
+      <EndDate>2012-04-30T00:00:00</EndDate>
+      <Extent>
+        <Location Latitude="32.670581" Longitude="-96.970335" />
+        <Location Latitude="32.669602" Longitude="-96.968038" />
+        <Location Latitude="32.66791" Longitude="-96.957738" />
+        <Location Latitude="32.669975" Longitude="-96.949703" />
+        <Location Latitude="32.669334" Longitude="-96.940385" />
+        <Location Latitude="32.669485" Longitude="-96.925581" />
+      </Extent>
+      <NearestCameraId>419</NearestCameraId>
+      <NearestCameraName>IH20 @ Mountain Creek Pkwy</NearestCameraName>
+    </LaneClosure>
+    <LaneClosure>
+      <NetworkId>01</NetworkId>
+      <Id>4e20c838485a4eb098d54f7a11c0a4d7</Id>
+      <Description>HOV lane closed for asphalt repair.</Description>
+      <RoadStartName>IH 30</RoadStartName>
+      <CrossStreetStartName>US 80</CrossStreetStartName>
+      <StartLocation Latitude="32.800081" Longitude="-96.676146" />
+      <StartLatitude>32.800081</StartLatitude>
+      <StartLongitude>-96.676146</StartLongitude>
+      <RoadEndName>IH 30</RoadEndName>
+      <CrossStreetEndName>Buckner Blvd (Loop 12)</CrossStreetEndName>
+      <EndLocation Latitude="32.798203" Longitude="-96.682438" />
+      <EndLatitude>32.798203</EndLatitude>
+      <EndLongitude>-96.682438</EndLongitude>
+      <Direction>West</Direction>
+      <LinkId>f6c49b3c6ece4b1b9317ab0169ebf4b5</LinkId>
+      <UpdateType>Update</UpdateType>
+      <CurrentStatus>Opened</CurrentStatus>
+      <AffectedLanes>Unknown</AffectedLanes>
+      <HighwayConditions />
+      <Source />
+      <DaysClosed>Tuesday</DaysClosed>
+      <StartTime>2012-04-28T11:00:00</StartTime>
+      <EndTime>2012-04-28T15:00:00</EndTime>
+      <StartDate>2012-05-01T00:00:00</StartDate>
+      <EndDate>2012-05-01T00:00:00</EndDate>
+      <Extent>
+        <Location Latitude="32.800081" Longitude="-96.676146" />
+        <Location Latitude="32.798203" Longitude="-96.682438" />
+      </Extent>
+      <NearestCameraId>383</NearestCameraId>
+      <NearestCameraName>IH30 @ US80</NearestCameraName>
+    </LaneClosure>
+    <LaneClosure>
+      <NetworkId>01</NetworkId>
+      <Id>f723a6d16aa441bd8318877eb6035de0</Id>
+      <Description>Right lane and exit to Hillcrest will be closed nightly.</Description>
+      <RoadStartName>IH 635</RoadStartName>
+      <CrossStreetStartName>Preston Rd</CrossStreetStartName>
+      <StartLocation Latitude="32.925322" Longitude="-96.803581" />
+      <StartLatitude>32.925322</StartLatitude>
+      <StartLongitude>-96.803581</StartLongitude>
+      <RoadEndName>IH 635</RoadEndName>
+      <CrossStreetEndName>Hillcrest Rd</CrossStreetEndName>
+      <EndLocation Latitude="32.924613" Longitude="-96.786309" />
+      <EndLatitude>32.924613</EndLatitude>
+      <EndLongitude>-96.786309</EndLongitude>
+      <Direction>East</Direction>
+      <LinkId>Bogus Link 4</LinkId>
+      <UpdateType>Update</UpdateType>
+      <CurrentStatus>Opened</CurrentStatus>
+      <AffectedLanes>Lane4 ExitRamp</AffectedLanes>
+      <HighwayConditions />
+      <Source />
+      <DaysClosed>Monday Tuesday Wednesday Thursday</DaysClosed>
+      <StartTime>2012-04-28T20:00:00</StartTime>
+      <EndTime>2012-04-28T06:00:00</EndTime>
+      <StartDate>2012-04-30T00:00:00</StartDate>
+      <EndDate>2012-05-03T00:00:00</EndDate>
+      <Extent>
+        <Location Latitude="32.925322" Longitude="-96.803581" />
+        <Location Latitude="32.924613" Longitude="-96.786309" />
+      </Extent>
+      <NearestCameraId>638</NearestCameraId>
+      <NearestCameraName>IH635 @ Preston</NearestCameraName>
+    </LaneClosure>
+    <LaneClosure>
+      <NetworkId>01</NetworkId>
+      <Id>7cfeffdb5497477383c463a896c67843</Id>
+      <Description>various lanes closed</Description>
+      <RoadStartName>IH 635</RoadStartName>
+      <CrossStreetStartName>Dallas North Tollway</CrossStreetStartName>
+      <StartLocation Latitude="32.925999" Longitude="-96.820513" />
+      <StartLatitude>32.925999</StartLatitude>
+      <StartLongitude>-96.820513</StartLongitude>
+      <RoadEndName>IH 635</RoadEndName>
+      <CrossStreetEndName>Midway Rd</CrossStreetEndName>
+      <EndLocation Latitude="32.925241" Longitude="-96.838589" />
+      <EndLatitude>32.925241</EndLatitude>
+      <EndLongitude>-96.838589</EndLongitude>
+      <Direction>West</Direction>
+      <LinkId>Bogus Link 4</LinkId>
+      <UpdateType>Update</UpdateType>
+      <CurrentStatus>Opened</CurrentStatus>
+      <AffectedLanes>Lane1 Lane2 Lane3 Lane4</AffectedLanes>
+      <HighwayConditions />
+      <Source />
+      <DaysClosed>Friday Saturday</DaysClosed>
+      <StartTime>2012-04-28T21:00:00</StartTime>
+      <EndTime>2012-04-28T10:00:00</EndTime>
+      <StartDate>2012-05-04T00:00:00</StartDate>
+      <EndDate>2012-05-05T00:00:00</EndDate>
+      <Extent>
+        <Location Latitude="32.925999" Longitude="-96.820513" />
+        <Location Latitude="32.925241" Longitude="-96.838589" />
+      </Extent>
+      <NearestCameraId>135</NearestCameraId>
+      <NearestCameraName>IH635 @ Montfort</NearestCameraName>
+    </LaneClosure>
+    <LaneClosure>
+      <NetworkId>01</NetworkId>
+      <Id>9f07eb414c2a4b05ac842e6df73ff4ba</Id>
+      <Description>various lanes closed</Description>
+      <RoadStartName>IH 635</RoadStartName>
+      <CrossStreetStartName>Dallas North Tollway</CrossStreetStartName>
+      <StartLocation Latitude="32.925999" Longitude="-96.820513" />
+      <StartLatitude>32.925999</StartLatitude>
+      <StartLongitude>-96.820513</StartLongitude>
+      <RoadEndName>IH 635</RoadEndName>
+      <CrossStreetEndName>Midway Rd</CrossStreetEndName>
+      <EndLocation Latitude="32.925241" Longitude="-96.838589" />
+      <EndLatitude>32.925241</EndLatitude>
+      <EndLongitude>-96.838589</EndLongitude>
+      <Direction>West</Direction>
+      <LinkId>Bogus Link 4</LinkId>
+      <UpdateType>Update</UpdateType>
+      <CurrentStatus>Opened</CurrentStatus>
+      <AffectedLanes>Lane1 Lane2 Lane3 Lane4</AffectedLanes>
+      <HighwayConditions />
+      <Source />
+      <DaysClosed>Saturday Sunday</DaysClosed>
+      <StartTime>2012-04-28T19:00:00</StartTime>
+      <EndTime>2012-04-28T12:00:00</EndTime>
+      <StartDate>2012-05-05T00:00:00</StartDate>
+      <EndDate>2012-05-06T00:00:00</EndDate>
+      <Extent>
+        <Location Latitude="32.925999" Longitude="-96.820513" />
+        <Location Latitude="32.925241" Longitude="-96.838589" />
+      </Extent>
+      <NearestCameraId>135</NearestCameraId>
+      <NearestCameraName>IH635 @ Montfort</NearestCameraName>
+    </LaneClosure>
+    <LaneClosure>
+      <NetworkId>01</NetworkId>
+      <Id>27fadef1e313415d8dc8a77e8fa23381</Id>
+      <Description>Exit ramp to Story Rd will be closed.</Description>
+      <RoadStartName>SH 183</RoadStartName>
+      <CrossStreetStartName>Irving Blvd</CrossStreetStartName>
+      <StartLocation Latitude="32.836929" Longitude="-96.987984" />
+      <StartLatitude>32.836929</StartLatitude>
+      <StartLongitude>-96.987984</StartLongitude>
+      <RoadEndName>SH 183</RoadEndName>
+      <CrossStreetEndName>Story Rd</CrossStreetEndName>
+      <EndLocation Latitude="32.83692" Longitude="-96.976523" />
+      <EndLatitude>32.83692</EndLatitude>
+      <EndLongitude>-96.976523</EndLongitude>
+      <Direction>East</Direction>
+      <LinkId>898067ca084a4766abacf8997806dfc7</LinkId>
+      <UpdateType>Update</UpdateType>
+      <CurrentStatus>Closed</CurrentStatus>
+      <AffectedLanes>ExitRamp</AffectedLanes>
+      <HighwayConditions />
+      <Source />
+      <DaysClosed>Monday Friday Saturday Sunday</DaysClosed>
+      <StartTime>2012-04-28T20:00:00</StartTime>
+      <EndTime>2012-04-28T06:00:00</EndTime>
+      <StartDate>2012-04-27T00:00:00</StartDate>
+      <EndDate>2012-04-30T00:00:00</EndDate>
+      <Extent>
+        <Location Latitude="32.836929" Longitude="-96.987984" />
+        <Location Latitude="32.835939" Longitude="-96.984783" />
+        <Location Latitude="32.835921" Longitude="-96.984761" />
+        <Location Latitude="32.835909" Longitude="-96.977382" />
+        <Location Latitude="32.835966" Longitude="-96.977176" />
+        <Location Latitude="32.83692" Longitude="-96.976523" />
+      </Extent>
+      <NearestCameraId>107</NearestCameraId>
+      <NearestCameraName>SH183 @ Belt Line</NearestCameraName>
+    </LaneClosure>
+    <LaneClosure>
+      <NetworkId>01</NetworkId>
+      <Id>3e126b6a9bea4a1f86f0e14506046d80</Id>
+      <Description>Right lane closed.</Description>
+      <RoadStartName>Loop 12</RoadStartName>
+      <CrossStreetStartName>SH 183</CrossStreetStartName>
+      <StartLocation Latitude="32.836749" Longitude="-96.914595" />
+      <StartLatitude>32.836749</StartLatitude>
+      <StartLongitude>-96.914595</StartLongitude>
+      <RoadEndName>Loop 12</RoadEndName>
+      <CrossStreetEndName>SH 114</CrossStreetEndName>
+      <EndLocation Latitude="32.845849" Longitude="-96.91172" />
+      <EndLatitude>32.845849</EndLatitude>
+      <EndLongitude>-96.91172</EndLongitude>
+      <Direction>North</Direction>
+      <LinkId>F796D24F1B38467B9BBA66ECA64B4E2D</LinkId>
+      <UpdateType>Update</UpdateType>
+      <CurrentStatus>Closed</CurrentStatus>
+      <AffectedLanes>Lane3</AffectedLanes>
+      <HighwayConditions />
+      <Source />
+      <DaysClosed>Saturday</DaysClosed>
+      <StartTime>2012-04-28T06:00:00</StartTime>
+      <EndTime>2012-04-28T15:00:00</EndTime>
+      <StartDate>2012-04-28T00:00:00</StartDate>
+      <EndDate>2012-04-28T00:00:00</EndDate>
+      <Extent>
+        <Location Latitude="32.836749" Longitude="-96.914595" />
+        <Location Latitude="32.837082" Longitude="-96.913867" />
+        <Location Latitude="32.842521" Longitude="-96.913337" />
+        <Location Latitude="32.842606" Longitude="-96.913323" />
+        <Location Latitude="32.845849" Longitude="-96.91172" />
+      </Extent>
+      <NearestCameraId>153</NearestCameraId>
+      <NearestCameraName>SH183 @ Loop 12</NearestCameraName>
+    </LaneClosure>
+    <LaneClosure>
+      <NetworkId>01</NetworkId>
+      <Id>75cce21a814f4613b339ee8dc965bd36</Id>
+      <Description>Right lane closed for striping adjustments.</Description>
+      <RoadStartName>IH 35E</RoadStartName>
+      <CrossStreetStartName>FM 66 (S Rogers St)</CrossStreetStartName>
+      <StartLocation Latitude="32.374497" Longitude="-96.863579" />
+      <StartLatitude>32.374497</StartLatitude>
+      <StartLongitude>-96.863579</StartLongitude>
+      <RoadEndName>IH 35E</RoadEndName>
+      <CrossStreetEndName>FM 66 (S Rogers St)</CrossStreetEndName>
+      <EndLocation Latitude="32.374496" Longitude="-96.863579" />
+      <EndLatitude>32.374496</EndLatitude>
+      <EndLongitude>-96.863579</EndLongitude>
+      <Direction>North</Direction>
+      <LinkId>6947CEA4B26847A09493DA1E7DA0B57D</LinkId>
+      <UpdateType>Update</UpdateType>
+      <CurrentStatus>Opened</CurrentStatus>
+      <AffectedLanes>Unknown</AffectedLanes>
+      <HighwayConditions />
+      <Source />
+      <DaysClosed>Wednesday Thursday</DaysClosed>
+      <StartTime>2012-04-28T07:00:00</StartTime>
+      <EndTime>2012-04-28T19:00:00</EndTime>
+      <StartDate>2012-05-02T00:00:00</StartDate>
+      <EndDate>2012-05-03T00:00:00</EndDate>
+      <Extent>
+        <Location Latitude="32.374497" Longitude="-96.863579" />
+        <Location Latitude="32.374496" Longitude="-96.863579" />
+      </Extent>
+      <NearestCameraId>585</NearestCameraId>
+      <NearestCameraName>IH35E @ US77 South</NearestCameraName>
+    </LaneClosure>
+  </Items>
+</LaneClosures>
