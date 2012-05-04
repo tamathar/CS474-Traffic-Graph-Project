@@ -1,6 +1,6 @@
-#ifndef Data_h
-#define Data_h
+#ifndef cURL_h
+#define cURL_h
 
-void retrieveXML(const char *URL);
+const char *retrieveXML(const char *URL);
 
 #endif

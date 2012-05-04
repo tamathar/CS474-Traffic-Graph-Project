@@ -6,49 +6,47 @@
 #include <curl/curl.h>
 #include "cURL.h"
 
-void retrieveXML(const char *URL) {
+const char *retrieveXML(const char *URL) {
   CURL *curl;
   CURLcode curl_res;
 
   long http_code;
   double c_length;  
-  FILE *tmp;
+  
+  const char *fileName = "data.xml";
+    
+  FILE *dataFile;
 
-  tmp=fopen("roads.xml", "w");
-  if(tmp==NULL) {
-    printf("ERROR to open file roads.xml\n");
+  dataFile=fopen(fileName, "w");
+  if(dataFile==NULL) {
+    printf("\n\n--------------\nERROR opening file roads.xml\n--------------\n");
+    exit(2);
+  }
+  
+  //init curl session
+  curl = curl_easy_init();
+    
+  //set url to download
+  curl_easy_setopt(curl, CURLOPT_URL, URL);
+
+  //set file handler to write
+  curl_easy_setopt(curl, CURLOPT_WRITEDATA,  dataFile);
+
+  //download the file
+  curl_res = curl_easy_perform(curl);
+  
+    if(curl_res!=0) {
+    printf("\n\n--------------\nERROR in dowloading file\n--------------\n");
+    fclose(dataFile);
+    curl_easy_cleanup(curl);
     exit(2);
   }
 
-  printf("init curl session\n");
-  curl = curl_easy_init();
-  printf("set url to download\n");
-  //curl_easy_setopt(curl, CURLOPT_URL, "http://www.daltrans.org/daltrans/roads.xml");
-  curl_easy_setopt(curl, CURLOPT_URL, URL);
-
-  printf("set file handler to write\n");
-  curl_easy_setopt(curl, CURLOPT_WRITEDATA,  tmp);
-
-  printf("download the file\n");
-  curl_res = curl_easy_perform(curl);
-  if(curl_res==0) {
-    printf("file downloaded\n");
-  } else {
-    printf("ERROR in dowloading file\n");
-    fclose(tmp);
-    curl_easy_cleanup(curl);
-  }
-
-  printf("get http return code\n");
-  curl_easy_getinfo(curl, CURLINFO_RESPONSE_CODE, &http_code);
-  printf("http code: %lu\n", http_code);
-
-  printf("get size of download page\n");
-  curl_easy_getinfo(curl, CURLINFO_SIZE_DOWNLOAD, &c_length);
-  printf("length: %g\n", c_length);
-
-  printf("END: close all files and sessions\n");
-  fclose(tmp);
+  
+  //END: close all files and sessions
+  fclose(dataFile);
   curl_easy_cleanup(curl);
+    
+  return fileName;
 
 }
